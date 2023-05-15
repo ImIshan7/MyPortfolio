@@ -436,3 +436,323 @@ justify-content: center;
     padding-bottom: 123px;
     margin-top: 72px;
 }
+/*Skills*/
+
+
+/*Gallery*/
+
+.Gallery{
+    position: relative;
+    width: 1300px;
+    height: 550px;
+    top: 30px;
+    left: 30px;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 5px;
+
+}
+
+.Gallery .Image1 {
+    background-image: url("/assets/GalleryImages/014328f4-5d93-4ac1-8f8b-9a18c14b1ff6.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px 2px rgb(0 0 0 /30%);
+
+}
+
+.Gallery .Image2{
+    background-image: url("/assets/GalleryImages/IMG-8530.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px 2px rgb(0 0 0 /30%);
+}
+
+.Gallery .Image3{
+    background-image: url("/assets/GalleryImages/Cap.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px 2px rgb(0 0 0 /30%);
+    grid-column: 3/4;
+    grid-row: 1/4;
+}
+
+.Gallery .Image4{
+    background-image: url("/assets/GalleryImages/Cricket.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px 2px rgb(0 0 0 /30%);
+}
+
+.Gallery .Image5{
+    background-image: url("/assets/GalleryImages/Mates.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px 2px rgb(0 0 0 /30%);
+}
+
+.Gallery .Image6{
+    background-image: url("/assets/GalleryImages/Mates.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px 2px rgb(0 0 0 /30%);
+    grid-column: 2/1;
+    grid-row: 2/2;
+}
+
+/*Images*/
+
+/*Contact*/
+
+#Contact{
+
+    top:0;
+    margin: 0.67em;
+    padding-bottom: 100px;
+}
+
+.contact{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Arial Black";
+}
+
+.location {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    height: 18%;
+    width: 35%;
+    background-color: #051e8f;
+    border-radius: 25px;
+    box-shadow: 0px 3px 5px 2px rgb(0 0 0 /30%);
+}
+
+.Contact2 .call{
+    position: absolute;
+    margin: auto;
+    margin-top: 127px;
+    left: 0;
+    right: 0;
+    height: 18%;
+    width: 35%;
+    background-color: #051e8f;
+    border-radius: 25px;
+    box-shadow: 0px 3px 5px 2px rgb(0 0 0 /30%);
+}
+
+.Contact2 .gmail{
+    position: absolute;
+    margin: auto;
+    margin-top: 255px;
+    left: 0;
+    right: 0;
+    height: 18%;
+    width: 35%;
+    background-color: #051e8f;
+    border-radius: 25px;
+    box-shadow: 0px 3px 5px 2px rgb(0 0 0 /30%);
+}
+
+.Contact2 .yandex{
+    position: absolute;
+    margin: auto;
+    margin-top: 383px;
+    left: 0;
+    right: 0;
+    height: 18%;
+    width:35%;
+    background-color:#051e8f;
+    border-radius: 25px;
+    box-shadow: 0px 3px 5px 2px rgb(0 0 0 /30%);
+}
+
+ #location{
+
+     position: relative;
+     margin: 50px;
+     margin-top: 40px;
+     cursor: pointer;
+     left: 398px;
+     top: -30px;
+ }
+
+ #callus{
+     position: relative;
+     margin: 50px;
+     margin-top: 40px;
+     cursor: pointer;
+     left: 398px;
+     top: -244px;
+ }
+
+
+#mail{
+    position: relative;
+    margin: 50px;
+    margin-top: 40px;
+    cursor: pointer;
+    left: 398px;
+    top: -412px;
+}
+
+#yandex{
+    position: relative;
+    margin: 50px;
+    margin-top: 40px;
+    cursor: pointer;
+    left: 398px;
+    top: -580px;
+}
+
+#details{
+    position: relative;
+    margin: 50px;
+    margin-top: 40px;
+    cursor: pointer;
+    top: -192px;
+    left: 500px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Arial Black";
+}
+
+#phoneNo{
+    position: relative;
+    margin: 50px;
+    margin-top: 40px;
+    cursor: pointer;
+    top: -392px;
+    left: 530px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Arial Black";
+}
+
+#ishandanu{
+    position: relative;
+    margin: 50px;
+    margin-top: 40px;
+    cursor: pointer;
+    top: -565px;
+    left: 530px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Arial Black";
+}
+
+#dhananjanayandex{
+    position: relative;
+    margin: 50px;
+    margin-top: 40px;
+    cursor: pointer;
+    top: -730px;
+    left: 530px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Arial Black";
+}
+
+.contactMe{
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    top: 30px;
+    left: 30px;
+    display: block;
+    margin-top: -680px;
+
+}
+
+#contactimg{
+    position: absolute;
+    right: 0;
+    bottom: 88px;
+
+}
+
+#fullname{
+
+    font-size: 20px;
+    font-family: "JetBrains Mono NL ExtraBold";
+    font-weight: bold;
+    margin: auto;
+    margin-top: 10px;
+    left: 0;
+    right: 0;
+}
+
+#email{
+    font-size: 20px;
+    font-family: "JetBrains Mono NL ExtraBold";
+    font-weight: bold;
+    position: absolute;
+    margin: auto;
+    margin-top: 30px;
+    left: 0;
+    right: 0;
+}
+
+#msg{
+
+    font-size: 20px;
+    font-family: "JetBrains Mono NL ExtraBold";
+    font-weight: bold;
+    margin: auto;
+    margin-top: 40px;
+    left: 0;
+    right: 0;
+}
+
+#submit{
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    left: 0;
+    right: 50%;
+    bottom: 0;
+    margin:auto;
+    background-color: darkblue;
+}
+
+#nametxt{
+    height: 45px;
+    width: 450px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Arial Black";
+
+}
+
+#emailtxt{
+    height: 45px;
+    width: 450px;
+    margin-top: 80px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Arial Black";
+}
+
+#msgtxt{
+    height:180px;
+    width: 450px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Arial Black";
+}
