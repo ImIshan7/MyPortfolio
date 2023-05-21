@@ -6,12 +6,14 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <script src="assets/js/bootstrap.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
+
 <body>
 
 <header>
 
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" style="background-color: #ffae00;" >
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" style="background-color: #ff4400;" >
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="/assigment/CSS-FrameWork/ZenPosSystem/assets/Images/Zen-Final-Logo2-_Teal.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-center">
@@ -38,7 +40,189 @@
         </div>
     </nav>
 </header>
+<main class="container">
 
+    <h2 style="color: #fd8b05" class="mt-2 ">
+
+        <img src="/assigment/CSS-FrameWork/ZenPosSystem/assets/Images/icons8-order-64.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
+        ORDER
+
+    </h2>
+
+    <section class="row mt-3 border border-dark rounded p-5" style="background-color: #22d3a4">
+        <form action="">
+            <div class="row">
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">CustomerID</span>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Select ID</option>
+                            <option value="1">C001</option>
+                            <option value="2">C002</option>
+                            <option value="3">C003</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Customer Name</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Customer Contact</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Date</span>
+                        <input class="form-control" type="text" placeholder="2023-05-17" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="row mt-5 mb-2 p-3">
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Item ID</span>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Select ID</option>
+                            <option value="1">I001</option>
+                            <option value="2">I002</option>
+                            <option value="3">I003</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Item Name</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Item Price</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Qty On Hand</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+
+
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">QTY</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-10"></div>
+                <div class="col-2">
+                    <button type="button" class="btn btn-success">Add </button>
+                    <button type="button" class="btn btn-danger">Clear</button>
+                </div>
+            </div>
+
+        </form>
+    </section>
+
+    <section class="row mt-3">
+        <div class="row">
+            <table class="table table-light table-striped">
+                <thead>
+                <tr>
+                    <th style="background-color: #ffae00" scope="col">Item ID</th>
+                    <th style="background-color: #ffae00" scope="col">Item Name</th>
+                    <th style="background-color: #ffae00" scope="col">Qty</th>
+                    <th style="background-color: #ffae00" scope="col">Unit Price</th>
+                    <th style="background-color: #ffae00" scope="col">Total</th>
+                    <th style="background-color: #ffae00" scope="col">Action</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                    <th scope="col">I001</th>
+                    <th scope="col">MSI GraphivcCard</th>
+                    <th scope="col">1</th>
+                    <th scope="col">500,000.00</th>
+                    <th scope="col">500,000.00</th>
+                    <th scope="col">
+                        <button type="button" class="btn btn-warning">Edit</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </th>
+                </tr>
+                <tr>
+                    <th scope="col">I002</th>
+                    <th scope="col">MSI Moniter</th>
+                    <th scope="col">2</th>
+                    <th scope="col">120,000.00</th>
+                    <th scope="col">240,000.00</th>
+                    <th scope="col">
+                        <button type="button" class="btn btn-warning">Edit</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </th>
+                </tr>
+
+
+
+                </tbody>
+            </table>
+        </div>
+        <form action="">
+            <div class="row mt-3">
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Total-Rs:</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Discount-Rs:</span>
+                        <input class="form-control" type="number" placeholder="" aria-label="Disabled input example">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Sub Tot-Rs:</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="row mt-3">
+            <div class="col-10"></div>
+            <div class="col-2">
+                <button type="button" class="btn btn-primary">Purchase</button>
+                <button type="button" class="btn btn-danger">Cancel</button>
+            </div>
+        </div>
+    </section>
+</main>
 
 
 </body>

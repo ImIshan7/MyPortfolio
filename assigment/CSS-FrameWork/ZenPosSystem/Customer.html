@@ -10,7 +10,7 @@
 <body>
 <header>
 
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" style="background-color: #ffae00;" >
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" style="background-color: #ff4400;" >
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="/assigment/CSS-FrameWork/ZenPosSystem/assets/Images/Zen-Final-Logo2-_Teal.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-center">
@@ -37,8 +37,107 @@
         </div>
     </nav>
 </header>
+<main class="container">
+    <section class="row p-4 m-0 object-fit-contain "id="customer" style="font-weight: bold">
+
+        <h2 class="text-primary pt-5 m-lg-2">
+
+            <img src="/assigment/CSS-FrameWork/ZenPosSystem/assets/Images/customer.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
+                CUSTOMER
+
+        </h2>
+
+        <section class="col border-dark-subtle  m-3 border rounded-5 object-fit-contain" style="background-color: #1f1fc9"  >
+
+            <form>
+                <div class="form-floating mb-3 mt-2">
+                    <input type="text" class="form-control" id="cid" placeholder="Id">
+                    <label for="cid">Customer ID</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="Name" placeholder="Name">
+                    <label for="Name">Customer Name</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="Address" placeholder="Address">
+                    <label for="Address">Customer Address</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="contact" placeholder="Contact">
+                    <label for="contact">Customer Contact</label>
+                </div>
+            </form>
 
 
+        </section>
 
+        <section class="col border-dark m-3 border rounded object-fit-contain" >
+
+            <!--<form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>-->
+            <h5 class="text-dark text-center m-lg-3 pb-3" ></h5>
+            <table class="table table-light table-striped">
+                <thead>
+                <tr>
+                    <th style="background-color: #051e8f" scope="col">Customer Id</th>
+                    <th style="background-color: #051e8f" scope="col">Customer Name</th>
+                    <th style="background-color: #051e8f" scope="col">Customer Address</th>
+                    <th style="background-color: #051e8f" scope="col">Customer Contact</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">C001</th>
+                    <td>Ishan</td>
+                    <td>Galle</td>
+                    <td>0771867407</td>
+                </tr>
+                <tr>
+                    <th scope="row">C002</th>
+                    <td>Kushan</td>
+                    <td>Galle</td>
+                    <td>0771234567</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">C003</th>
+                    <td>Ushan</td>
+                    <td>Galle</td>
+                    <td>0721234567</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">C004</th>
+                    <td>Eshan</td>
+                    <td>Galle</td>
+                    <td>0701234567</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">C005</th>
+                    <td>Yashan</td>
+                    <td>Galle</td>
+                    <td>0711234567</td>
+
+                </tr>
+
+                </tr>
+                </tbody>
+            </table>
+        </section>
+    </section>
+
+</main>
+<div class="col-6 ms-5">
+    <button type="button" class="btn btn-primary me-1 mt-2 mb-3">ADD</button>
+    <button type="button" class="btn btn-success me-1 mt-2 mb-3 ms-4">UPDATE</button>
+    <button type="button" class="btn btn-danger me-1 mt-2 mb-3">DELETE</button>
+    <button type="button" class="btn btn-outline-warning me-1 mt-2 mb-3 ms-4">BACK</button>
+</div>
 </body>
 </html>
