@@ -1,0 +1,2648 @@
+/**
+ * @author : Nimesh Piyumantha
+ * @since : 0.1.0
+ **/
+
+
+@media (max-width: 1024px) {
+    /**-------------------------------------------- Header --------------------------------------------**/
+    .head {
+        height: 70px;
+    }
+
+    label.logo {
+        font-size: 26px;
+    }
+
+    nav ul li a {
+        font-size: 19px;
+        padding: 5px 5px;
+    }
+
+    /**-------------------------------------------- Main - Home --------------------------------------------**/
+    /** Main - Home- Main Content */
+    #Home {
+        position: relative;
+        height: 500px;
+        width: 100%;
+    }
+
+    body > main > section#Home > section:nth-child(2) {
+        top: 80px;
+    }
+
+    /** Main - Home- Main Content */
+    body > main > section#Home > section:nth-child(2) {
+        position: absolute;
+        width: 650px;
+        height: 400px;
+        top: 70px;
+        left: 100px;
+        justify-content: flex-start;
+    }
+
+    body > main > section#Home > section:nth-child(2) > section:nth-child(1) {
+        height: 200px;
+    }
+
+    body > main > section#Home > section:nth-child(2) > section:nth-child(1) > div {
+        height: calc(200px / 3);
+        display: flex;
+    }
+
+    body > main > section#Home > section:nth-child(2) > section:nth-child(1) > div:nth-child(1) h1 {
+        font-size: 30px;
+    }
+
+    body > main > section#Home > section:nth-child(2) > section:nth-child(1) > div:nth-child(2) h1 {
+        font-size: 37px;
+    }
+
+    body > main > section#Home > section:nth-child(2) > section:nth-child(1) > div:nth-child(3) h1 {
+        font-size: 20px;
+    }
+
+    body > main > section#Home > section:nth-child(2) > section:nth-child(2) {
+        height: 60px;
+        margin-left: 25px;
+    }
+
+    /**  Home_Content_Hire me Button */
+    .btn-Hire-Me {
+        padding: 13px 14px 8px 20px;
+        font-size: 25px;
+    }
+
+    .button-Circle {
+        height: 35px;
+        width: 35px;
+    }
+
+    #arrow_details {
+        left: 136px;
+        bottom: 17px;
+    }
+
+    body > main > section#Home > section:nth-child(2) > section:nth-child(3) {
+        height: 120px;
+        margin-left: 25px;
+        margin-top: 15px;
+    }
+
+    /**  Home_Content_Social Media Navigation */
+    .wrapper .button {
+        display: flex;
+        height: 60px;
+        width: 60px;
+    }
+
+    .wrapper .button:hover {
+        width: 180px;
+    }
+
+    .wrapper .button .icon {
+        height: 60px;
+        width: 60px;
+        line-height: 68px;
+    }
+
+    .wrapper .button .icon i {
+        font-size: 25px;
+        line-height: 58px;
+    }
+
+    .wrapper .button:hover .icon i {
+        color: #fff;
+    }
+
+    .wrapper .button span {
+        font-size: 20px;
+        font-weight: bolder;
+        line-height: 50px;
+        margin-left: 10px;
+        transition: all 0.3s ease-out;
+    }
+
+    .follow-content-text {
+        font-size: 30px;
+        font-weight: bolder;
+        margin-bottom:1.5rem;
+    }
+
+    /**-------------------------------------------- Main - About --------------------------------------------**/
+    #About {
+        width: 100%;
+        height: 1800px;
+    }
+
+    /** Main - About Header */
+    body > main > section > article h4 {
+        font-size: 25px;
+    }
+
+    body > main > section > article > h1 {
+        font-size: 33px;
+    }
+
+    body > main > section > article > h1 > span {
+        font-size: 33px;
+    }
+
+    body > main > section#About > div:nth-child(2) {
+        left: 42%;
+    }
+
+    body > main > section#About > div:nth-child(3) {
+        width: 80px;
+        left: 42%;
+    }
+
+    /** Main - About Header Article */
+    body > main > section#About > article#paragraphOne p {
+        font-size: 19px;
+        margin-left: 80px;
+        bottom: 30px;
+    }
+
+    body > main > section#About > article#paragraphTwo p {
+        font-size: 18px;
+        margin-left: 80px;
+        bottom: 40px;
+    }
+
+    /** Main - About Image Section */
+    #aboutImg {
+        height: 343px;
+        width: 265px;
+        bottom: 206px;
+        left: 610px;
+    }
+
+    /** Main - About Section Circle One Div  */
+    body > main > section#About > section#image > div#circleOne {
+        width: 105px;
+        height: 105px;
+        bottom: 470px;
+        left: 679px;
+    }
+
+    body > main > section#About > section#image > div#circleOne h1 {
+        font-size: 25px;
+        left: 41px;
+        top: 19px;
+    }
+
+    body > main > section#About > section#image > div#circleOne h2 {
+        font-size: 15px;
+        left: 15px;
+        top: 7px;
+    }
+
+    /** Main - About Section Circle Two Div  */
+    body > main > section#About > section#image > div#circleTwo {
+        width: 105px;
+        height: 105px;
+        bottom: 382px;
+        left: 813px;
+    }
+
+    body > main > section#About > section#image > div#circleTwo h1 {
+        font-size: 25px;
+        left: 33px;
+        top: 6px;
+    }
+
+    body > main > section#About > section#image > div#circleTwo h2 {
+        font-size: 15px;
+        left: 25px;
+        bottom: 8px;
+    }
+
+    /** Main - About Section Vector One Div  */
+    #vectorOne {
+        position: absolute;
+        width: 80%;
+        bottom: 1142px;
+        right: 165px;
+    }
+
+    /** Main - About Section Vector Two Div  */
+    #vectorTwo {
+        position: absolute;
+        width: 80%;
+        bottom: 1128px;
+        left: 60px;
+    }
+
+    /** Main - About Section Vector Star Div  */
+    #vectorStar {
+        position: relative;
+        left: 670px;
+        bottom: 545px;
+        width: 110px;
+    }
+
+    /** Main - About Section Article h3 First Child */
+    #details {
+        position: relative;
+        bottom: 575px;
+        margin-left: 69px;
+        width: 784px;
+    }
+
+    body > main > section#About > article#details > h3:nth-child(1) {
+        font-size: 22px;
+    }
+
+    body > main > section#About > article#details > h3:nth-child(1) span {
+        font-weight: bold;
+    }
+
+    /** Main - About Section Article h3 Second Child */
+    body > main > section#About > article#details > h3:nth-child(2) {
+        font-size: 22px;
+        padding-left: 300px;
+        padding-top: 18px;
+    }
+
+    body > main > section#About > article#details > h3:nth-child(2) span {
+        font-weight: bold;
+    }
+
+    /** Main - About Section Article h3 Third Child */
+    body > main > section#About > article#details > h3:nth-child(3) {
+        font-size: 22px;
+        margin-top: -7px;
+    }
+
+    body > main > section#About > article#details > h3:nth-child(3) span {
+        font-weight: bold;
+    }
+
+    /** Main - About Section Article h3 Fourth Child */
+    body > main > section#About > article#details > h3:nth-child(4) {
+        font-size: 22px;
+        padding-left: 300px;
+        padding-top: 18px;
+    }
+
+    body > main > section#About > article#details > h3:nth-child(4) span {
+        font-weight: bold;
+    }
+
+    /** Main - About Section Article h3 Fifth Child */
+    body > main > section#About > article#details > h3:nth-child(5) {
+        font-size: 22px;
+        margin-top: -7px;
+    }
+
+    body > main > section#About > article#details > h3:nth-child(5) span {
+        font-weight: bold;
+    }
+
+    /** Main - About Section Article h3 Sixth Child */
+    body > main > section#About > article#details > h3:nth-child(6) {
+        font-size: 22px;
+        padding-left: 300px;
+        padding-top: 18px;
+    }
+
+    body > main > section#About > article#details > h3:nth-child(6) span {
+        font-weight: bold;
+    }
+
+    /** Main - About Section Article h3 Seven Child */
+    body > main > section#About > article#details > h3:nth-child(7) {
+        font-size: 22px;
+        margin-top: -7px;
+    }
+
+    body > main > section#About > article#details > h3:nth-child(7) span {
+        font-weight: bold;
+    }
+
+    /** Main - About Section Article h3 Eight Child */
+    body > main > section#About > article#details > h3:nth-child(8) {
+        font-size: 22px;
+        padding-left: 300px;
+        padding-top: 15px;
+    }
+
+    body > main > section#About > article#details > h3:nth-child(8) span {
+        font-weight: bold;
+    }
+
+    /** Main - About Section Article h3 Ninth Child */
+    body > main > section#About > article#details > h3:nth-child(9) {
+        font-size: 22px;
+        margin-top: -7px;
+    }
+
+    body > main > section#About > article#details > h3:nth-child(9) span {
+        font-weight: bold;
+    }
+
+    /** Main - About Section Article h3 Tenth Child */
+    body > main > section#About > article#details > h3:nth-child(10) {
+        font-size: 22px;
+        padding-left: 300px;
+        padding-top: 7px;
+    }
+
+    body > main > section#About > article#details > h3:nth-child(10) span {
+        font-weight: bold;
+    }
+
+    /** Main - About Download CV Button */
+    .btn-DownloadTwo {
+        padding: 15px 0 0 20px;
+        height: 55px;
+        font-size: 25px;
+    }
+
+    .downloadCv_Button {
+        position: relative;
+        display: inline-block;
+        bottom: 498px;
+        left: 197px;
+    }
+
+    .button-CircleTwo {
+        height: 40px;
+        width: 40px;
+        right: 10px;
+        bottom: 8px;
+    }
+
+    #download_arrow {
+        left: 24px;
+    }
+
+    /** Main - About Hire Me Button */
+    .btn-Hire-MeTwo {
+        padding: 15px 0 0 20px;
+        height: 55px;
+        font-size: 25px;
+    }
+
+    .hireMe_Button {
+        position: relative;
+        display: inline-block;
+        bottom: 55px;
+        left: 370px;
+    }
+
+    .button-CircleThree {
+        height: 40px;
+        width: 40px;
+        right: 10px;
+        bottom: 8px;
+    }
+
+    #HireMe_arrow {
+        left: 129px;
+        top: 15px;
+    }
+
+    /** Main -  About Section Educational Section */
+    /** Main -  About Section Educational Section Ordinary Level Section */
+    body > main > section#About > section#education {
+        top: -168px;
+        position: relative;
+        width: 100%;
+        height: 942px;
+    }
+
+    /** Main - About Section Educational Section */
+    body > main > section#About > section#education > article > h4 {
+        font-size: 33px;
+        margin-top: -220px;
+    }
+
+    /** Main -  About Section Educational Section Underline */
+    body > main > section#About > section#education > div:nth-child(2) {
+        left: 430px;
+        position: relative;
+    }
+
+    body > main > section#About > section#education > div:nth-child(3) {
+        left: 430px;
+        position: relative;
+        top: -8px;
+    }
+
+    #Ordinary {
+        top: 50px;
+        left: -3px;
+        width: calc(100% / 2);
+        height: 360px;
+    }
+
+    #education_1 {
+        top: -81px;
+        right: 253px;
+    }
+
+    body > main > section#About > section#education > section#Ordinary > div:nth-child(2) {
+        height: 219px;
+        width: 3px;
+        right: 308px;
+        top: 125px;
+    }
+
+    body > main > section#About > section#education > section#Ordinary > div:nth-child(3) {
+        height: 50px;
+        width: 200px;
+        right: 145px;
+        bottom: 161px;
+    }
+
+    body > main > section#About > section#education > section#Ordinary > h3#OFirst {
+        font-size: 30px;
+        right: -146px;
+        bottom: 221px;
+    }
+
+    body > main > section#About > section#education > section#Ordinary > h3#OSecond {
+        font-size: 22px;
+        left: -13px;
+        bottom: 142px;
+        width: 354px;
+    }
+
+    body > main > section#About > section#education > section#Ordinary > h3#OSecond span {
+        font-size: 18px;
+    }
+
+    body > main > section#About > section#education > section#Ordinary > p {
+        font-size: 20px;
+        left: 157px;
+        bottom: 123px;
+        width: 354px;
+    }
+
+    /** Main -  About Section Educational Section Advanced Level Section **/
+    #Advanced {
+        left: -3px;
+        bottom: -49px;
+        width: calc(100% / 2);
+        height: 360px;
+    }
+
+    #education_2 {
+        display: inline-block;
+        position: relative;
+        left: 9px;
+        top: -107px;
+    }
+
+    body > main > section#About > section#education > section#Advanced > div:nth-child(2) {
+        top: 106px;
+        left: -47px;
+    }
+
+    body > main > section#About > section#education > section#Advanced > div:nth-child(3) {
+        left: 7px;
+        bottom: 132px;
+    }
+
+    body > main > section#About > section#education > section#Advanced > h3#AFirst {
+        right: 172px;
+        bottom: 142px;
+        font-size: 30px;
+    }
+
+    body > main > section#About > section#education > section#Advanced > h3#ASecond {
+        font-size: 20px;
+        left: 147px;
+        top: -112px;
+        width: 345px;
+    }
+
+    body > main > section#About > section#education > section#Advanced > h3#ASecond span {
+        font-size: 18px;
+    }
+
+    body > main > section#About > section#education > section#Advanced > p {
+        font-size: 20px;
+        left: 168px;
+        top: -79px;
+        width: 345px;
+    }
+
+    /** Main -  About Section Educational Section HND Level Section **/
+    #HNDLevel {
+        bottom: 670px;
+        left: 508px;
+        width: calc(100% / 2);
+        height: 360px;
+    }
+
+    #education_3 {
+        top: -81px;
+        left: 18px;
+    }
+
+    body > main > section#About > section#education > section#HNDLevel > div:nth-child(2) {
+        height: 219px;
+        width: 3px;
+        left: -37px;
+        top: 125px;
+    }
+
+    body > main > section#About > section#education > section#HNDLevel > div:nth-child(3) {
+        height: 50px;
+        width: 200px;
+        left: 14px;
+        bottom: 100px;
+    }
+
+    body > main > section#About > section#education > section#HNDLevel > h3#HFirst {
+        font-size: 30px;
+        right: 160px;
+        bottom: 110px;
+    }
+
+    body > main > section#About > section#education > section#HNDLevel > h3#HSecond {
+        font-size: 22px;
+        left: 147px;
+        top: -88px;
+        width: 360px;
+    }
+
+    body > main > section#About > section#education > section#HNDLevel > h3#HSecond span {
+        font-size: 18px;
+    }
+
+    body > main > section#About > section#education > section#HNDLevel > p {
+        font-size: 20px;
+        left: 158px;
+        top: -74px;
+        width: 343px;
+    }
+
+    /** Main -  About Section Educational Section Degree Level Section **/
+    #DegreeLevel {
+        bottom: 671px;
+        left: 509px;
+        width: calc(100% / 2);
+        height: 360px;
+    }
+
+    #education_4 {
+        top: -107px;
+        left: 15px;
+    }
+
+    body > main > section#About > section#education > section#DegreeLevel > div:nth-child(2) {
+        height: 219px;
+        width: 3px;
+        top: 106px;
+        left: -40px;
+    }
+
+    body > main > section#About > section#education > section#DegreeLevel > div:nth-child(3) {
+        bottom: 131px;
+        left: 20px;
+    }
+
+    body > main > section#About > section#education > section#DegreeLevel > h3#DFirst {
+        font-size: 30px;
+        right: 160px;
+        bottom: 142px;
+    }
+
+    body > main > section#About > section#education > section#DegreeLevel > h3#DSecond {
+        font-size: 22px;
+        left: 156px;
+        top: -114px;
+        width: 345px;
+    }
+
+    body > main > section#About > section#education > section#DegreeLevel > h3#DSecond span {
+        font-size: 18px;
+    }
+
+    body > main > section#About > section#education > section#DegreeLevel > p {
+        font-size: 20px;
+        left: 171px;
+        top: -91px;
+        width: 330px;
+    }
+
+    /** Main - About Section Educational Section Designs */
+    /**  Top Circle Group 1*/
+    body > main > section#About > section#design > div#circle1 {
+        height: 60px;
+        width: 60px;
+        bottom: 1096px;
+        left: 160px;
+    }
+
+    body > main > section#About > section#design > div#circle2 {
+        height: 60px;
+        width: 60px;
+        bottom: 1125px;
+        left: 182px;
+    }
+
+    /**  Top Circle Group 2*/
+    body > main > section#About > section#design > div#circle3 {
+        height: 60px;
+        width: 60px;
+        bottom: 1200px;
+        left: 730px;
+    }
+
+    body > main > section#About > section#design > div#circle4 {
+        height: 60px;
+        width: 60px;
+        bottom: 1236px;
+        left: 758px;
+    }
+
+    /** Main - About Section Educational Section Designs bottom Circle */
+    /**  Bottom Circle Group 1*/
+    body > main > section#About > section#design > div#circle5 {
+        height: 60px;
+        width: 60px;
+        bottom: 602px;
+        left: 283px;
+    }
+
+    body > main > section#About > section#design > div#circle6 {
+        height: 60px;
+        width: 60px;
+        bottom: 637px;
+        left: 304px;
+    }
+
+    /**  Bottom Circle Group 2*/
+    body > main > section#About > section#design > div#circle7 {
+        height: 60px;
+        width: 60px;
+        top: -711px;
+        left: 879px;
+    }
+
+    body > main > section#About > section#design > div#circle8 {
+        height: 60px;
+        width: 60px;
+        bottom: 739px;
+        left: 903px;
+    }
+
+    /** Main - About Section Educational Section Designs Center Vector */
+    #vector2 {
+        width: 43%;
+        bottom: 1456px;
+        left: 119px;
+    }
+
+    #vector3 {
+        width: 43%;
+        bottom: 1457px;
+        left: 105px;
+    }
+
+    /**-------------------------------------------- Main - Skills --------------------------------------------**/
+    /** Main - Skills Header */
+    #Skills {
+        width: 100%;
+        height: 900px;
+        position: relative;
+    }
+
+    section#Skills {
+        position: relative;
+    }
+
+    body > main > section#Skills > article > h1 {
+        position: absolute;
+        top: 99px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    body > main > section#Skills > section:nth-child(4) {
+        width: 100%;
+        height: 700px;
+        position: absolute;
+        top: 172px;
+        z-index: 1;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: space-evenly;
+    }
+
+    body > main > section#Skills > article > div:nth-child(3) {
+        width: 135px;
+        height: 7px;
+        background: #2ED573;
+        position: relative;
+        left: 44%;
+        border-radius: 3px;
+        z-index: 1;
+        top: 145px;
+    }
+
+    body > main > section#Skills > article > div:nth-child(4) {
+        width: 100px;
+        height: 7px;
+        position: relative;
+        background: #2ED573;
+        margin-top: 0.5em;
+        left: 44%;
+        border-radius: 3px;
+        z-index: 1;
+        top: 147px;
+    }
+
+    body > main > section#Skills > article > div:nth-child(5) {
+        background-size: cover;
+        width: 100%;
+        height: 900px;
+        opacity: 30%;
+        position: relative;
+        bottom: 21px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language {
+        position: relative;
+        z-index: 1;
+        display: flex;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child {
+        background: #FFFFFF;
+        width: 400px;
+        height: 670px;
+        position: relative;
+        border-radius: 15px;
+        box-shadow: 0 -1px 8px 2px #1c1717e8;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(1) {
+        background: #FF6348;
+        position: relative;
+        width: 300px;
+        height: 70px;
+        display: flex;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(1) h1 {
+        font-size: 35px;
+        font-family: Poppins, serif;
+        font-weight: bolder;
+        color: #F8F7F3;
+        text-align: center;
+        margin-top: calc(40px / 2);
+        margin-left: 50px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(2) {
+        background: #FFFFFF;
+        position: relative;
+        width: 336px;
+        height: 130px;
+        top: 55px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(2) > div:nth-child(1) {
+        background-size: cover;
+        position: relative;
+        width: 90px;
+        height: 90px;
+        left: 0;
+        border-radius: 15px;
+        box-shadow: 0 -1px 8px 2px #1c1717e8;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(2) > div:nth-child(2) {
+        background-size: cover;
+        position: relative;
+        width: 90px;
+        height: 90px;
+        border-radius: 15px;
+        left: 0;
+        box-shadow: 0 -1px 8px 2px #1c1717e8;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(2) > div:nth-child(3) {
+        background-size: cover;
+        position: relative;
+        width: 90px;
+        height: 90px;
+        border-radius: 15px;
+        box-shadow: 0 -1px 8px 2px #1c1717e8;
+        right: 0;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(3) {
+        background: #FFFFFF;
+        position: relative;
+        width: 336px;
+        height: 130px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 55px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(3) > div:nth-child(1) {
+        background-size: cover;
+        position: relative;
+        width: 90px;
+        height: 90px;
+        left: 0;
+        border-radius: 15px;
+        box-shadow: 0 -1px 8px 2px #1c1717e8;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(3) > div:nth-child(2) {
+        background-size: cover;
+        position: relative;
+        width: 90px;
+        height: 90px;
+        border-radius: 15px;
+        left: 0;
+        box-shadow: 0 -1px 8px 2px #1c1717e8;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(3) > div:nth-child(3) {
+        background-size: cover;
+        position: relative;
+        width: 90px;
+        height: 90px;
+        border-radius: 15px;
+        box-shadow: 0 -1px 8px 2px #1c1717e8;
+        right: 0;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(4) {
+        background: #FFFFFF;
+        position: relative;
+        width: 336px;
+        height: 130px;
+        top: 55px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(4) > div:nth-child(1) {
+        background-size: cover;
+        position: relative;
+        width: 90px;
+        height: 90px;
+        left: 0;
+        border-radius: 15px;
+        box-shadow: 0 -1px 8px 2px #1c1717e8;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(4) > div:nth-child(2) {
+        background-size: cover;
+        position: relative;
+        width: 90px;
+        height: 90px;
+        border-radius: 15px;
+        left: 0;
+        box-shadow: 0 -1px 8px 2px #1c1717e8;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(4) > div:nth-child(3) {
+        background-size: cover;
+        position: relative;
+        width: 90px;
+        height: 90px;
+        border-radius: 15px;
+        box-shadow: 0 -1px 8px 2px #1c1717e8;
+        right: 0;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(5) {
+        background: #FFFFFF;
+        position: relative;
+        width: 336px;
+        height: 130px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 55px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(5) > div:nth-child(1) {
+        background-size: cover;
+        position: relative;
+        width: 90px;
+        height: 90px;
+        left: 0;
+        border-radius: 15px;
+        box-shadow: 0 -1px 8px 2px #1c1717e8;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(5) > div:nth-child(2) {
+        background-size: cover;
+        position: relative;
+        width: 90px;
+        height: 90px;
+        border-radius: 15px;
+        left: 0;
+        box-shadow: 0 -1px 8px 2px #1c1717e8;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(5) > div:nth-child(3) {
+        background-size: cover;
+        position: relative;
+        width: 90px;
+        height: 90px;
+        border-radius: 15px;
+        box-shadow: 0 -1px 8px 2px #1c1717e8;
+        right: 0;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(1) {
+        background: #FF6348;
+        position: relative;
+        width: 300px;
+        height: 70px;
+        display: flex;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(1) h1 {
+        font-size: 35px;
+        font-family: Poppins, serif;
+        font-weight: bolder;
+        color: #F8F7F3;
+        text-align: center;
+        margin-top: calc(40px / 2);
+        margin-left: 110px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool {
+        position: relative;
+        z-index: 1;
+        display: flex;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child {
+        background: #FFFFFF;
+        width: 400px;
+        height: 670px;
+        position: relative;
+        border-radius: 15px;
+        box-shadow: 0 -1px 8px 2px #1c1717e8;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(1) {
+        background: #FF6348;
+        position: relative;
+        width: 300px;
+        height: 70px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: flex;
+        box-shadow: 0 -1px 8px 2px #1c1717e8;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(1) h1 {
+        font-size: 35px;
+        font-family: Poppins, serif;
+        font-weight: bolder;
+        color: #F8F7F3;
+        text-align: center;
+        margin-top: calc(40px / 2);
+        margin-left: 100px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(2) {
+        background: #FFFFFF;
+        position: relative;
+        width: 336px;
+        height: 130px;
+        top: 55px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(2) > div:nth-child(1) {
+        background-size: cover;
+        position: relative;
+        width: 90px;
+        height: 90px;
+        left: 0;
+        border-radius: 15px;
+        box-shadow: 0 -1px 8px 2px #1c1717e8;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(2) > div:nth-child(2) {
+        background-size: cover;
+        position: relative;
+        width: 90px;
+        height: 90px;
+        border-radius: 15px;
+        left: 0;
+        box-shadow: 0 -1px 8px 2px #1c1717e8;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(2) > div:nth-child(3) {
+        background-size: cover;
+        position: relative;
+        width: 90px;
+        height: 90px;
+        border-radius: 15px;
+        box-shadow: 0 -1px 8px 2px #1c1717e8;
+        right: 0;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(3) {
+        background: #FFFFFF;
+        position: relative;
+        width: 336px;
+        height: 130px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 55px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(3) > div:nth-child(1) {
+        background-size: cover;
+        position: relative;
+        width: 90px;
+        height: 90px;
+        left: 0;
+        border-radius: 15px;
+        box-shadow: 0 -1px 8px 2px #1c1717e8;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(3) > div:nth-child(2) {
+        background-size: cover;
+        position: relative;
+        width: 90px;
+        height: 90px;
+        border-radius: 15px;
+        left: 0;
+        box-shadow: 0 -1px 8px 2px #1c1717e8;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(3) > div:nth-child(3) {
+        background-size: cover;
+        position: relative;
+        width: 90px;
+        height: 90px;
+        border-radius: 15px;
+        box-shadow: 0 -1px 8px 2px #1c1717e8;
+        right: 0;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(4) {
+        background: #FFFFFF;
+        position: relative;
+        width: 336px;
+        height: 130px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 55px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(4) > div:nth-child(1) {
+        background-size: cover;
+        position: relative;
+        width: 90px;
+        height: 90px;
+        left: 0;
+        border-radius: 15px;
+        box-shadow: 0 -1px 8px 2px #1c1717e8;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(4) > div:nth-child(2) {
+        background-size: cover;
+        position: relative;
+        width: 90px;
+        height: 90px;
+        border-radius: 15px;
+        left: 0;
+        box-shadow: 0 -1px 8px 2px #1c1717e8;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(4) > div:nth-child(3) {
+        background-size: cover;
+        position: relative;
+        width: 90px;
+        height: 90px;
+        border-radius: 15px;
+        box-shadow: 0 -1px 8px 2px #1c1717e8;
+        right: 0;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(5) {
+        background: #FFFFFF;
+        position: relative;
+        width: 336px;
+        height: 130px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 55px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(5) > div:nth-child(1) {
+        background-size: cover;
+        position: relative;
+        width: 90px;
+        height: 90px;
+        left: 0;
+        border-radius: 15px;
+        box-shadow: 0 -1px 8px 2px #1c1717e8;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(5) > div:nth-child(2) {
+        background-size: cover;
+        position: relative;
+        width: 90px;
+        height: 90px;
+        border-radius: 15px;
+        left: 0;
+        box-shadow: 0 -1px 8px 2px #1c1717e8;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(5) > div:nth-child(3) {
+        background-size: cover;
+        position: relative;
+        width: 90px;
+        height: 90px;
+        border-radius: 15px;
+        box-shadow: 0 -1px 8px 2px #1c1717e8;
+        right: 0;
+    }
+
+    #skill_main_vector {
+        position: absolute;
+        left: 133px;
+        top: 210px;
+        width: 78%;
+    }
+
+    #box-circle1 {
+        left: 14px;
+        width: 11%;
+    }
+
+    #box-circle2 {
+        right: 14px;
+        width: 11%;
+    }
+
+    body > main > section#Skills > div:nth-child(2) i {
+        top: 97px;
+        font-size: 89px;
+    }
+
+    body > main > section#Skills > div:nth-child(3) i {
+        bottom: 80px;
+        right: 4px;
+        font-size: 74px;
+    }
+
+    /**-------------------------------------------- Main - Gallery --------------------------------------------**/
+    /** Main - Gallery Header */
+    #Gallery {
+        width: 100%;
+        height: 1000px;
+    }
+
+    body > main > section#Gallery > article > div:nth-child(3) {
+        left: 40%;
+    }
+
+    body > main > section#Gallery > article > div:nth-child(4) {
+        left: 40%;
+    }
+
+    /** Main - Gallery Header Vectors */
+    body > main > section#Gallery > section#vector > img:nth-child(1) {
+        width: 50px;
+        height: 90px;
+    }
+
+    body > main > section#Gallery > section#vector > img:nth-child(2) {
+        width: 90px;
+        top: 80px;
+        right: 25px;
+        height: 150px;
+    }
+
+    body > main > section#Gallery > section#vector > img:nth-child(3) {
+        width: 50px;
+        height: 110px;
+        bottom: 45px;
+    }
+
+    body > main > section#Gallery > section#vector > img:nth-child(4) {
+        height: 240px;
+        width: 120px;
+        top: 366px;
+        left: 839px;
+    }
+
+    body > main > section#Gallery > section#vector > img:nth-child(5) {
+        height: 240px;
+        width: 120px;
+        top: -6px;
+        left: 30px;
+    }
+
+    body > main > section#Gallery > section#image_section {
+        width: 900px;
+        height: 703px;
+        top: 210px;
+    }
+
+    /**-------------------------------------------- Main - Achievements --------------------------------------------**/
+    /** Main - Achievements Header */
+    #Achievements {
+        background: #ECF0F3;
+        width: 100%;
+        height: 780px;
+        position: relative;
+    }
+
+    /** Main - Achievements About Header */
+    body > main > section#Achievements > article h4 {
+        top: 1px;
+    }
+
+    body > main > section#Achievements > article > h1 {
+        top: 110px;
+    }
+
+    /** Main - Achievements Header Underline */
+    body > main > section#Achievements > article > div:nth-child(3) {
+        top: 160px;
+        left: 36%;
+    }
+
+    body > main > section#Achievements > article > div:nth-child(4) {
+        top: 160px;
+        left: 36%;
+    }
+
+    /** Main - Achievements Main Image */
+    body > main > section#Achievements > section div#images > img:nth-child(1) {
+        height: 780px;
+    }
+
+    /** Main - Achievements Main Vector */
+    body > main > section#Achievements > section div#images > img:nth-child(2) {;
+        width: 80%;
+        bottom: 120px;
+        left: 70px;
+    }
+
+    /** Main - Achievements Star Vector 1 */
+    body > main > section#Achievements > section div#images > img:nth-child(3) {
+        position: absolute;
+        top: 120px;
+        left: 50px;
+        margin: auto;
+    }
+
+    /** Main - Achievements Star Vector 2 */
+    body > main > section#Achievements > section div#images > img:nth-child(4) {
+        position: absolute;
+        bottom: 85px;
+        right: 27px;
+        margin: auto;
+    }
+
+    /**-------------------------------------------- Main - Project --------------------------------------------**/
+    #Project {
+        width: 100%;
+        height: 650px;
+        position: relative;
+    }
+
+    body > main > section#Project > article > div:nth-child(3) {
+        left: 41%;
+    }
+
+    body > main > section#Project > article > div:nth-child(4) {
+        left: 41%;
+    }
+
+    body > main > section#Project > section#ProjectSection {
+        width: 100%;
+        height: 550px;
+    }
+
+    body > main > section#Project > section#ProjectSection > div {
+        width: calc(100% / 3.20);
+        height: 350px;
+    }
+
+    /**  Projects Button */
+    .Projects {
+        font-size: 28px;
+    }
+
+    /** Main - Project Section Java Projects */
+    body > main > section#Project > section#ProjectSection > div:nth-child(1) > img {
+        height: 180px;
+        width: 280px;
+    }
+
+    /** Main - Project Section HTML Projects */
+    body > main > section#Project > section#ProjectSection > div:nth-child(2) > img {
+        height: 180px;
+        width: 280px;
+    }
+
+    /** Main - Project Section Python Projects */
+    body > main > section#Project > section#ProjectSection > div:nth-child(3) > img {
+        height: 180px;
+        width: 280px;
+    }
+
+    /** Main - Project Section Background Designs*/
+    /** Vector 1 */
+    body > main > section#Project > section#DesignProjects img:nth-child(1) {
+        top: 130px;
+        left: 64px;
+        position: absolute;
+        width: 72px;
+    }
+
+    /** Circle Design */
+    body > main > section#Project > section#DesignProjects > section > div:nth-child(1) {
+        width: 60px;
+        height: 60px;
+        top: 114px;
+        left: 845px;
+        opacity: 70%;
+    }
+
+    body > main > section#Project > section#DesignProjects > section > div:nth-child(2) {
+        width: 60px;
+        height: 60px;
+        background: #2ED573;
+        position: absolute;
+        border-radius: 100%;
+        top: 142px;
+        left: 854px;
+        opacity: 30%;
+        box-shadow: 0 -1px 8px 2px #1c1717e8;
+    }
+
+    /** Vector 2 */
+    body > main > section#Project > section#DesignProjects img:nth-child(3) {
+        top: 601px;
+        left: 399px;
+        position: absolute;
+        width: 72px;
+    }
+
+    /** Vector 3 */
+    body > main > section#Project > section#DesignProjects img:nth-child(4) {
+        top: 598px;
+        left: 819px;
+        position: absolute;
+        width: 73px;
+    }
+
+    /** Vector 4 */
+    body > main > section#Project > section#DesignProjects img:nth-child(5) {
+        top: 596px;
+        left: 61px;
+        position: absolute;
+    }
+
+    /** Vector 5 */
+    body > main > section#Project > section#DesignProjects img:nth-child(6) {
+        top: 379px;
+        left: 651px;
+        position: absolute;
+    }
+
+    /** Vector 6 */
+    body > main > section#Project > section#DesignProjects img:nth-child(7) {
+        top: 379px;
+        left: 315px;
+        position: absolute;
+    }
+
+    /**-------------------------------------------- Main - Services --------------------------------------------**/
+    /** Main - Services Header */
+    #Services {
+        width: 100%;
+        height: 850px;
+    }
+
+    body > main > section#Services > article > h1 {
+        position: absolute;
+        top: 110px;
+    }
+
+    /** Main - Services Header Underline */
+    body > main > section#Services > article > div:nth-child(3) {
+        left: 43%;
+        top: 150px;
+    }
+
+    body > main > section#Services > article > div:nth-child(4) {
+        left: 43%;
+        top: 150px;
+    }
+
+    /** Main - Services Background Design*/
+    body > main > section#Services > section#ServicesBGDesign > aside:first-child {
+        position: relative;
+    }
+
+    /** Main - Services Background Design Aside one-First Circle*/
+    body > main > section#Services > section#ServicesBGDesign > aside:first-child > div:nth-child(1) {
+        width: 60px;
+        height: 60px;
+    }
+
+    /** Main - Services Background Design Aside one-Second Circle*/
+    body > main > section#Services > section#ServicesBGDesign > aside:first-child > div:nth-child(2) {
+        width: 60px;
+        height: 60px;
+    }
+
+    /** Main - Services Background Design Aside Two-First Circle*/
+    body > main > section#Services > section#ServicesBGDesign > aside:nth-child(2) > div:nth-child(1) {
+        width: 60px;
+        height: 60px;
+    }
+
+    /** Main - Services Background Design Aside Two-Second Circle*/
+    body > main > section#Services > section#ServicesBGDesign > aside:nth-child(2) > div:nth-child(2) {
+        width: 60px;
+        height: 60px;
+    }
+
+    /** Main - Services Background Vector*/
+    body > main > section#Services > section#ServicesBGDesign > img {
+        width: 96%;
+    }
+
+    body > main > section#Services > section#ServicesButton {
+        width: 800px;
+        height: 90px;
+        position: absolute;
+    }
+
+    body > main > section#Services > section#ServicesButton > div#Development > a > button {
+        padding: 11px 30px 11px 30px;
+        font-size: 30px;
+        border-radius: 15px;
+    }
+
+    /** Main - Services Background Button - Design*/
+    body > main > section#Services > section#ServicesButton > div#SDesign {
+        position: absolute;
+        cursor: pointer;
+        z-index: 1;
+        margin-left: 20px;
+    }
+
+    body > main > section#Services > section#ServicesButton > div#SDesign > a > button {
+        padding: 11px 70px 11px 70px;
+        font-size: 30px;
+        border-radius: 15px;
+    }
+
+    /** Main - Services Background Button - Marketing*/
+    body > main > section#Services > section#ServicesButton > div#Marketing {
+        position: absolute;
+        cursor: pointer;
+        z-index: 1;
+        right: 0;
+    }
+
+    body > main > section#Services > section#ServicesButton > div#Marketing > a > button {
+        padding: 11px 40px 11px 40px;
+        font-size: 30px;
+        border-radius: 15px;
+    }
+
+    /** Main - Services Development - Section*/
+    body > main > section#Services > section#MainSection {
+        position: relative;
+        width: 915px;
+        height: 550px;
+        top: 330px;
+    }
+
+    /** Main - Services Development - Section - Enterprise Application */
+    body > main > section#Services > section#MainSection > div:nth-child(1) {
+        position: absolute;
+        width: calc(1100px / 4);
+        height: 450px;
+        background: #ECF0F3;
+        left: 0;
+        border-radius: 20px;
+        box-shadow: 0 -1px 8px 2px #1c1717e8;
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(1) > div:first-child {
+        position: absolute;
+        width: calc(1100px / 4);
+        height: 100px;
+        background: #FF6348;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        box-shadow: inset -13px -13px 16px #FF6348, inset 13px 13px 16px rgba(13, 39, 80, 0.16);
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(1) > div:first-child > div:first-child {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: #F9FAFB;
+        border-radius: 100%;
+        box-shadow: 0 -1px 8px 2px #1c1717e8, inset -13px -13px 16px #F9FAFB, inset 13px 13px 16px rgba(13, 39, 80, 0.16), inset 13px 13px 16px rgba(13, 39, 80, 0.16);
+        top: 90px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(1) > div:first-child > div:first-child > i {
+        font-size: 50px;
+        color: #FF6348;
+        position: absolute;
+        top: 25px;
+        left: 20px;
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(1) > h2 {
+        position: absolute;
+        top: 163px;
+        left: 49px;
+        font-family: Inter, sans-serif;
+        color: #2C3E50;
+        font-weight: bolder;
+        font-size: 18px;
+        /* background: #2c3e50; */
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(1) > p {
+        position: absolute;
+        top: 195px;
+        left: 63px;
+        color: #57606F;
+        font-size: 15px;
+        padding-right: 47px;
+        border-left-width: 32px;
+    }
+
+    /** Main - Services Development - Section - Web Development */
+    body > main > section#Services > section#MainSection > div:nth-child(2) {
+        position: absolute;
+        width: calc(1100px / 4);
+        height: 450px;
+        background: #ECF0F3;
+        border-radius: 20px;
+        left: 320px;
+        box-shadow: 0 -1px 8px 2px #1c1717e8;
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(2) > div:first-child {
+        position: absolute;
+        width: calc(1100px / 4);
+        height: 100px;
+        background: #FF6348;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        box-shadow: inset -13px -13px 16px #FF6348, inset 13px 13px 16px rgba(13, 39, 80, 0.16);
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(2) > div:first-child > div:first-child {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 90px;
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(2) > div:first-child > div:first-child > i {
+        font-size: 55px;
+        color: #FF6348;
+        position: absolute;
+        top: 20px;
+        left: 15px;
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(2) > h2 {
+        top: 163px;
+        left: 52px;
+        font-family: Inter, sans-serif;
+        color: #2C3E50;
+        font-weight: bolder;
+        font-size: 18px;
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(2) > p {
+        top: 195px;
+        left: 63px;
+        color: #57606F;
+        font-size: 15px;
+    }
+
+    /** Main - Services Development - Section - App Development */
+    body > main > section#Services > section#MainSection > div:nth-child(3) {
+        position: absolute;
+        width: calc(1100px / 4);
+        height: 450px;
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(3) > div:first-child {
+        width: calc(1100px / 4);
+        height: 100px;
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(3) > div:first-child > div:first-child {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 100px;
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(3) > div:first-child > div:first-child > i {
+        font-size: 50px;
+        color: #FF6348;
+        position: absolute;
+        top: 25px;
+        left: 35px;
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(3) > h2 {
+        top: 163px;
+        left: 49px;
+        font-family: Inter, sans-serif;
+        color: #2C3E50;
+        font-weight: bolder;
+        font-size: 18px;
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(3) > p {
+        top: 195px;
+        left: 63px;
+        color: #57606F;
+        font-size: 15px;
+    }
+
+    /**-------------------------------------------- Main - Hire --------------------------------------------**/
+    /** Main - Hire Header */
+    #HireMe {
+        width: 100%;
+        height: 850px;
+        position: relative;
+    }
+
+    /** Main - HireMe Header Underline */
+    body > main > section#HireMe > article > div:nth-child(3) {
+        left: 40%;
+        top: 157px;
+    }
+
+    body > main > section#HireMe > article > div:nth-child(4) {
+        left: 40%;
+        top: 165px;
+    }
+
+    /** Main - HireMe Section Main */
+    body > main > section#HireMe > section#HireMe_Main {
+        width: 960px;
+        height: 500px;
+        position: absolute;
+        top: 123px;
+    }
+
+    /** Main - HireMe Section Main - Basic*/
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(1) {
+        width: calc(1200px / 4);
+        height: 490px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(1) > div:nth-child(1) {
+        width: 220px;
+        height: 60px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(1) > div:nth-child(1) > h3 {
+        font-size: 28px;
+        top: 18px;
+        left: 117px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(1) > h2 {
+        font-size: 31px;
+        font-family: Poppins, sans-serif;
+        font-weight: bolder;
+        color: #2C3E50;
+        top: 87px;
+        left: 42px;
+        position: absolute;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(1) > h2 > sup {
+        font-size: 24px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(1) > p {
+        font-size: 18px;
+        color: #2C3E50;
+        font-family: Poppins, sans-serif;
+        font-weight: bolder;
+        position: absolute;
+        top: 137px;
+        left: 38px;
+        margin: auto;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(1) > div:nth-child(4) {
+        background: #2ED573;
+        width: 237px;
+        height: 8px;
+        top: 204px;
+        left: 37px;
+        margin: auto;
+        position: absolute;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(1) > p:nth-child(5) {
+        font-size: 22px;
+        color: #2C3E50;
+        font-family: Poppins, sans-serif;
+        font-weight: bolder;
+        position: absolute;
+        top: 231px;
+        left: 24px;
+        text-align: center;
+    }
+
+    /** Main - HireMe Section Main -BASIC  Button */
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(1) > div#BASIC {
+        position: absolute;
+        top: 396px;
+        left: 30px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(1) > div#BASIC > a > button {
+        padding: 14px 6px 8px 16px;
+        font-size: 23px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(1) > div#BASIC > a > button div {
+        height: 35px;
+        width: 35px;
+        top: -4px;
+        left: -4px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(1) > div#BASIC > a > button i {
+        color: #2ED573;
+        position: absolute;
+        left: 194px;
+        top: 16px;
+        z-index: 1;
+    }
+
+    /** Main - HireMe Section Main - Premium*/
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(2) {
+        width: calc(1200px / 4);
+        height: 490px;
+        left: 330px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(2) > div:nth-child(1) {
+        width: 220px;
+        height: 60px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(2) > div:nth-child(1) > h3 {
+        font-size: 28px;
+        top: 18px;
+        left: 95px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(2) > h2 {
+        font-size: 31px;
+        font-family: Poppins, sans-serif;
+        font-weight: bolder;
+        color: #2C3E50;
+        top: 87px;
+        left: 42px;
+        position: absolute;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(2) > h2 > sup {
+        font-size: 24px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(2) > p {
+        font-size: 18px;
+        top: 137px;
+        left: 38px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(2) > div:nth-child(4) {
+        background: #2ED573;
+        width: 237px;
+        height: 8px;
+        top: 204px;
+        left: 37px;
+        margin: auto;
+        position: absolute;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(2) > p:nth-child(5) {
+        font-size: 22px;
+        color: #2C3E50;
+        font-family: Poppins, sans-serif;
+        font-weight: bolder;
+        position: absolute;
+        top: 231px;
+        left: 24px;
+        text-align: center;
+    }
+
+    /** Main - HireMe Section Main -Premium Button */
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(2) > div#PREMIUM {
+        position: absolute;
+        top: 396px;
+        left: 30px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(2) > div#PREMIUM > a > button {
+        padding: 14px 6px 8px 16px;
+        font-size: 23px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(2) > div#PREMIUM > a > button div {
+        height: 35px;
+        width: 35px;
+        top: -4px;
+        left: -4px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(2) > div#PREMIUM > a > button i {
+        color: #2ED573;
+        position: absolute;
+        left: 194px;
+        top: 16px;
+        z-index: 1;
+    }
+
+    /** Main - HireMe Section Main - ADVANCED*/
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(3) {
+        width: calc(1200px / 4);
+        height: 490px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(3) > div:nth-child(1) {
+        width: 220px;
+        height: 60px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(3) > div:nth-child(1) > h3 {
+        font-size: 28px;
+        top: 18px;
+        left: 80px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(3) > h2 {
+        font-size: 31px;
+        font-family: Poppins, sans-serif;
+        font-weight: bolder;
+        color: #2C3E50;
+        top: 87px;
+        left: 42px;
+        position: absolute;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(3) > h2 > sup {
+        font-size: 24px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(3) > p {
+        font-size: 18px;
+        top: 137px;
+        left: 38px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(3) > div:nth-child(4) {
+        width: 237px;
+        height: 8px;
+        top: 204px;
+        left: 37px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(3) > p:nth-child(5) {
+        font-size: 22px;
+        color: #2C3E50;
+        font-family: Poppins, sans-serif;
+        font-weight: bolder;
+        position: absolute;
+        top: 231px;
+        left: 24px;
+        text-align: center;
+    }
+
+    /** Main - HireMe Section Main - ADVANCED Button */
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(3) > div#ADVANCE {
+        position: absolute;
+        top: 396px;
+        left: 30px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(3) > div#ADVANCE > a > button {
+        padding: 14px 6px 8px 16px;
+        font-size: 23px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(3) > div#ADVANCE > a > button div {
+        height: 35px;
+        width: 35px;
+        top: -4px;
+        left: -4px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(3) > div#ADVANCE > a > button i {
+        color: #2ED573;
+        position: absolute;
+        left: 194px;
+        top: 16px;
+        z-index: 1;
+    }
+
+    /** Main - HireMe Section BGDesigns -  Design */
+    /*First Group*/
+    /** First Circle */
+    body > main > section#HireMe > section#BGDesigns > div:nth-child(1) > div:nth-child(1) {
+        height: 70px;
+        width: 70px;
+        border: 8px solid #2ED573;
+        border-radius: 100%;
+        opacity: 70%;
+        position: absolute;
+        top: 110px;
+        left: 160px;
+        z-index: 1;
+    }
+
+    /** Second Circle */
+    body > main > section#HireMe > section#BGDesigns > div:nth-child(1) > div:nth-child(2) {
+        height: 70px;
+        width: 70px;
+        background: #2ED573;
+        border-radius: 100%;
+        opacity: 30%;
+        position: absolute;
+        top: 135px;
+        left: 193px;
+        box-shadow: 0 -1px 8px 2px #1c1717e8;
+    }
+
+    /** Vector One */
+    body > main > section#HireMe > section#BGDesigns > img:nth-child(2) {
+        position: absolute;
+        width: 120px;
+        right: 170px;
+        top: 110px;
+    }
+
+    /** Vector two */
+    body > main > section#HireMe > section#BGDesigns > img:nth-child(3) {
+        position: absolute;
+        left: 402px;
+        bottom: 35px;
+    }
+
+    /** Vector three */
+    body > main > section#HireMe > section#BGDesigns > img:nth-child(4) {
+        position: absolute;
+        left: 100px;
+        bottom: 35px;
+    }
+
+    /*Second Group*/
+    /** First Circle */
+    body > main > section#HireMe > section#BGDesigns > div:nth-child(5) > div:nth-child(1) {
+        height: 70px;
+        width: 70px;
+        border: 8px solid #FF6348;
+        border-radius: 100%;
+        opacity: 70%;
+        position: absolute;
+        bottom: 75px;
+        right: 180px;
+    }
+
+    /** Second Circle */
+    body > main > section#HireMe > section#BGDesigns > div:nth-child(5) > div:nth-child(2) {
+        height: 70px;
+        width: 70px;
+        background: #FF6348;
+        border-radius: 100%;
+        opacity: 30%;
+        position: absolute;
+        bottom: 35px;
+        right: 160px;
+        box-shadow: 0 -1px 8px 2px #1c1717e8;
+    }
+
+    /**-------------------------------------------- Main - Testimonials --------------------------------------------**/
+    /** Main - Testimonials Header */
+    #Testimonials {
+        width: 100%;
+        height: 750px;
+        position: relative;
+    }
+
+    body > main > section#Testimonials > article > h1 {
+        font-size: 33px;
+        top: 105px;
+        position: relative;
+    }
+
+    /** Main - Testimonials Header Underline */
+    body > main > section#Testimonials > article > div:nth-child(3) {
+        left: 34%;
+        top: 150px;
+    }
+
+    body > main > section#Testimonials > article > div:nth-child(4) {
+        left: 34%;
+        top: 160px;
+    }
+
+    /** Main - Testimonials Client says*/
+    body > main > section#Testimonials > section#Says {
+        width: 812px;
+        height: 290px;
+        inset: 150px 0 0 28px;
+    }
+
+    body > main > section#Testimonials > section#Says > section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 99%;
+        height: 100%;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div {
+        height: 272px;
+        width: 255px;
+        border-radius: 50px;
+        cursor: grab;
+    }
+
+    /* Client says one */
+    body > main > section#Testimonials > section#Says > section > div:nth-child(1) {
+        background: #ECF0F3;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(1):hover {
+        background: #7bed9f;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(1) > div:nth-child(1) > p {
+        color: #2C3E50;
+        font-weight: bolder;
+        font-family: 'Inconsolata', serif;
+        font-size: 17px;
+        margin: 0 25px 0 30px;
+        display: flow-root;
+        position: relative;
+        top: 30px;
+        text-align: center;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(1) > div:nth-child(1) > p:hover {
+        color: #ff4757;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(1) > div:nth-child(2) {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 45px;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+        width: 80px;
+        height: 70px;
+        margin-left: 30px;
+        border-radius: 100%;
+        border: 8px solid #903EE7;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
+        position: relative;
+        top: 5px;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) h1 {
+        font-size: 20px;
+        margin-left: 12px;
+        font-family: Inter, sans-serif;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) h2 {
+        font-size: 14px;
+        margin-left: 20px;
+        font-family: Inter, sans-serif;
+        position: relative;
+        bottom: 12px;
+    }
+
+    /* Client says two */
+    body > main > section#Testimonials > section#Says > section > div:nth-child(2) {
+        background: #ECF0F3;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(2):hover {
+        background: #7bed9f;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(2) > div:nth-child(1) > p {
+        color: #2C3E50;
+        font-weight: bolder;
+        font-family: 'Inconsolata', serif;
+        font-size: 17px;
+        margin: 0 25px 0 30px;
+        display: flow-root;
+        position: relative;
+        top: 30px;
+        text-align: center;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(2) > div:nth-child(1) > p:hover {
+        color: #ff4757;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(2) > div:nth-child(2) {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 60px;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+        width: 80px;
+        height: 70px;
+        margin-left: 30px;
+        border-radius: 100%;
+        border: 8px solid #903EE7;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+        position: relative;
+        top: 5px;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) h1 {
+        font-size: 20px;
+        margin-left: 12px;
+        font-family: Inter, sans-serif;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) h2 {
+        font-size: 14px;
+        margin-left: 20px;
+        font-family: Inter, sans-serif;
+        position: relative;
+        bottom: 12px;
+    }
+
+    /* Client says Three */
+    body > main > section#Testimonials > section#Says > section > div:nth-child(3) {
+        background: #ECF0F3;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(3):hover {
+        background: #7bed9f;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(3) > div:nth-child(1) > p {
+        color: #2C3E50;
+        font-weight: bolder;
+        font-family: 'Inconsolata', serif;
+        font-size: 17px;
+        margin: 0 25px 0 30px;
+        display: flow-root;
+        position: relative;
+        top: 30px;
+        text-align: center;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(3) > div:nth-child(1) > p:hover {
+        color: #ff4757;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(3) > div:nth-child(2) {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 60px;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) {
+        width: 80px;
+        height: 70px;
+        margin-left: 30px;
+        border-radius: 100%;
+        border: 8px solid #903EE7;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) {
+        position: relative;
+        top: 5px;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) h1 {
+        font-size: 20px;
+        margin-left: 12px;
+        font-family: Inter, sans-serif;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) h2 {
+        font-size: 14px;
+        margin-left: 20px;
+        font-family: Inter, sans-serif;
+        position: relative;
+        bottom: 12px;
+    }
+
+    /** Main - Testimonials Background Design*/
+    body > main > section#Testimonials > section:nth-child(4) > img:nth-child(1) {
+        position: absolute;
+        top: -303px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        z-index: 1;
+        width: 12%;
+    }
+
+    body > main > section#Testimonials > section:nth-child(4) > img:nth-child(2) {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 36px;
+        margin: auto;
+        opacity: 35%;
+        height: 54%;
+    }
+
+    body > main > section#Testimonials > section:nth-child(4) > img:nth-child(3) {
+        position: absolute;
+        top: 0;
+        bottom: -105px;
+        right: 42px;
+        margin: auto;
+        opacity: 35%;
+        height: 54%;
+    }
+
+    /** Main - Testimonials Background Design Circle*/
+    body > main > section#Testimonials > section:nth-child(4) > div:nth-child(4) {
+        width: 60px;
+        height: 60px;
+        top: 165px;
+        left: 175px;
+    }
+
+    body > main > section#Testimonials > section:nth-child(4) > div:nth-child(5) {
+        width: 40px;
+        height: 40px;
+        top: 380px;
+        left: 179px;
+    }
+
+    body > main > section#Testimonials > section:nth-child(4) > div:nth-child(6) {
+        width: 40px;
+        height: 40px;
+        top: 640px;
+        left: 157px;
+    }
+
+    body > main > section#Testimonials > section:nth-child(4) > img:nth-child(7) {
+        position: absolute;
+        width: 110px;
+        top: 0;
+        bottom: -438px;
+        left: 22px;
+        margin: auto;
+    }
+
+    body > main > section#Testimonials > section:nth-child(4) > img:nth-child(8) {
+        position: absolute;
+        width: 110px;
+        top: 140px;
+        right: 28px;
+        margin: auto;
+    }
+
+    body > main > section#Testimonials > section:nth-child(4) > img:nth-child(9) {
+        position: absolute;
+        width: 110px;
+        top: 140px;
+        left: 30px;
+        margin: auto;
+    }
+
+    body > main > section#Testimonials > section:nth-child(4) > img:nth-child(10) {
+        position: absolute;
+        width: 110px;
+        bottom: 310px;
+        right: 3px;
+        margin: auto;
+    }
+
+    body > main > section#Testimonials > section:nth-child(4) > img:nth-child(11) {
+        position: absolute;
+        width: 110px;
+        top: 354px;
+        left: 56px;
+        margin: auto;
+    }
+
+    body > main > section#Testimonials > section:nth-child(4) > img:nth-child(12) {
+        position: absolute;
+        width: 110px;
+        bottom: 70px;
+        right: 59px;
+        margin: auto;
+    }
+
+    /**-------------------------------------------- Main - Contact --------------------------------------------**/
+    /** Main - Contact Header */
+    #Contact {
+        width: 100%;
+        height: 900px;
+        position: relative;
+    }
+
+    /** Main - Contact Header Underline */
+    body > main > section#Contact > article > div:nth-child(3) {
+        left: 36.5%;
+        top: 150px;
+    }
+
+    body > main > section#Contact > article > div:nth-child(4) {
+        left: 36.5%;
+        top: 155px;
+    }
+
+    /** Main - Contact Details Box sectioning */
+    body > main > section#Contact > section:nth-child(3) {
+        width: 400px;
+        height: 570px;
+        top: 246px;
+        left: 109px;
+    }
+
+    body > main > section#Contact > section:nth-child(3) > form > input:nth-child(1) {
+        width: 343px;
+        height: 55px;
+        top: 40px;
+        left: 27px;
+    }
+
+    body > main > section#Contact > section:nth-child(3) > form > input:nth-child(2) {
+        width: 343px;
+        height: 55px;
+        top: 132px;
+        left: 27px;
+    }
+
+    body > main > section#Contact > section:nth-child(3) > form > input:nth-child(3) {
+        width: 343px;
+        height: 55px;
+        top: 223px;
+        left: 27px;
+    }
+
+    body > main > section#Contact > section:nth-child(3) > form > textarea:nth-child(4) {
+        width: 343px;
+        height: 152px;
+        top: 321px;
+        left: 27px;
+    }
+
+    /** Main - Contact Details Button */
+    body > main > section#Contact > section:nth-child(3) > div:nth-child(2) {
+        position: absolute;
+        top: 500px;
+        left: 70px;
+    }
+
+    /** Main - Contact Details Get In Touch */
+    body > main > section#Contact > section:nth-child(4) {
+        width: 490px;
+        height: 550px;
+        top: 154px;
+        left: 527px;
+    }
+
+    body > main > section#Contact > section:nth-child(4) > article:nth-child(1) {
+        width: 100%;
+        height: 50px;
+    }
+
+    body > main > section#Contact > section:nth-child(4) > article:nth-child(1) > h2:nth-child(1) {
+        font-size: 30px;
+    }
+
+
+    body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > div:nth-child(1) {
+        height: 150px;
+    }
+
+    body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > div:nth-child(1) > h2 {
+        font-size: 24px;
+        font-family: cursive;
+        font-weight: bolder;
+        margin-left: 35px;
+    }
+
+    /** Main - Contact Details Get In Touch Section - Address*/
+    body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > div:nth-child(2) i {
+        font-size: 30px;
+        margin-left: 80px;
+    }
+    body > footer > section:nth-child(2) > section:nth-child(1) > section:nth-child(3) > div:nth-child(2) {
+        width: 200px;
+        height: 30px;
+        position: absolute;
+        top: 104px;
+    }
+    body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > div:nth-child(2) p {
+        font-family: cursive;
+        font-weight: bolder;
+        position: relative;
+        font-size: 23px;
+        left: 16px;
+    }
+
+    /** Main - Contact Details Get In Touch Section - Contact*/
+    body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > div:nth-child(3) i {
+        font-size: 30px;
+        margin-left: 80px;
+    }
+
+    body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > div:nth-child(3) h3 {
+        font-family: cursive;
+        font-weight: bolder;
+        position: relative;
+        font-size: 23px;
+        left: 16px;
+    }
+
+    /** Main - Contact Details Get In Touch Section - Email*/
+    body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > div:nth-child(4) i {
+        font-size: 30px;
+        margin-left: 80px;
+    }
+
+    body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > div:nth-child(4) h3 {
+        font-family: cursive;
+        font-weight: bolder;
+        position: relative;
+        font-size: 23px;
+        left: 16px;
+    }
+
+    /** Main - Contact Details - Social Media*/
+    body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > div:nth-child(5) {
+        height: 130px;
+    }
+
+    /** Main - Contact Details - Background Design */
+    body > main > section#Contact > section:nth-child(5) > img:nth-child(1) {
+        position: absolute;
+        top: 92px;
+        right: 0;
+        left: 255px;
+        bottom: auto;
+        margin: auto;
+        width: 70%;
+    }
+
+    body > main > section#Contact > section:nth-child(5) > div:nth-child(2) {
+        width: 50px;
+        height: 50px;
+        background: #ECCC68;
+        position: absolute;
+        top: 100px;
+        left: 313px;
+        border-radius: 100%;
+        box-shadow: 0 7px 5px rgba(0, 0, 0, 0.5);
+        opacity: 70%;
+    }
+
+    body > main > section#Contact > section:nth-child(5) > div:nth-child(3) {
+        width: 50px;
+        height: 50px;
+        background: #2ED573;
+        position: absolute;
+        bottom: 197px;
+        right: 223px;
+        border-radius: 100%;
+        box-shadow: 0 7px 5px rgba(0, 0, 0, 0.5);
+        opacity: 70%;
+    }
+
+    body > main > section#Contact > section:nth-child(5) > div:nth-child(4) {
+        width: 90px;
+        height: 90px;
+        opacity: 70%;
+        border: 8px solid #2ED573;
+        position: absolute;
+        top: 474px;
+        right: 114px;
+        border-radius: 100%;
+        box-shadow: 0 7px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    body > main > section#Contact > section:nth-child(5) > div:nth-child(5) {
+        width: 81px;
+        height: 81px;
+        bottom: 75px;
+        right: 398px;
+    }
+
+    body > main > section#Contact > section:nth-child(5) > img:nth-child(6) {
+        position: absolute;
+        top: 63px;
+        right: 72px;
+        margin: auto;
+        width: 12%;
+    }
+
+    /**-------------------------------------------- Footer Section  --------------------------------------------**/
+    /** Footer Section - Get on Touch*/
+
+    /** Main - Contact Details Get In Touch Section - Phone Number*/
+    body > footer > section:nth-child(2) > section:nth-child(1) > section:nth-child(3) > div:nth-child(3) {
+        width: 250px;
+        height: 30px;
+        position: absolute;
+        top: 153px;
+    }
+
+
+    /** Main - Contact Details Get In Touch Section - E-Mail*/
+    body > footer > section:nth-child(2) > section:nth-child(1) > section:nth-child(3) > div:nth-child(4) {
+        width: 250px;
+        height: 30px;
+        position: absolute;
+        top: 203px;
+    }
+
+    body > footer > section:nth-child(2) > section:nth-child(1) > section:nth-child(4){
+        display: none;
+    }
+}

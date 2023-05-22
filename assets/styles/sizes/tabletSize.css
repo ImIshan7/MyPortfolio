@@ -1,0 +1,2133 @@
+/**
+ * @author : Nimesh Piyumantha
+ * @since : 0.1.0
+ **/
+
+@media (max-width: 768px) {
+    /** Header */
+    .checkBtn {
+        display: block;
+    }
+
+    .link_Nav {
+        position: fixed;
+        width: 100%;
+        height: 50vh;
+        background: #E8F0EE;
+        top: 70px;
+        left: -120%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 2;
+    }
+
+    .head .link_Nav li {
+        display: block;
+        margin: 30px 0;
+        line-height: 30px;
+    }
+
+    .head .link_Nav li a {
+        font-size: 20px;
+    }
+
+    a:hover, a.active {
+        background: none;
+        color: #FF6348;
+    }
+
+    #check:checked ~ .link_Nav {
+        left: 0;
+    }
+
+    /** Main - Home -Animate Background */
+    .box div {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        border-radius: 10px;
+        opacity: 0.5;
+    }
+
+    .box div:nth-child(1) {
+        top: 6%;
+        left: 42%;
+        animation: animate 10s linear infinite;
+        background-color: transparent;
+        border: 3px solid rgba(22, 160, 133, 1.0);
+    }
+
+    .box div:nth-child(2) {
+        top: 35%;
+        left: 50%;
+        animation: animate 7s linear infinite;
+        background-color: transparent;
+        border: 3px solid rgba(230, 126, 34, 1.0);
+    }
+
+    .box div:nth-child(3) {
+        top: 8%;
+        left: 6%;
+        animation: animate 9s linear infinite;
+        background-color: rgba(230, 126, 34, 1.0);
+        border: transparent;
+    }
+
+    .box div:nth-child(4) {
+        top: 10%;
+        left: 60%;
+        animation: animate 10s linear infinite;
+        background-color: rgba(22, 160, 133, 1.0);
+        border: transparent;
+    }
+
+    .box div:nth-child(5) {
+        top: 33%;
+        left: 90%;
+        animation: animate 6s linear infinite;
+        background-color: transparent;
+        border: 3px solid rgba(22, 160, 133, 1.0);
+    }
+
+    .box div:nth-child(6) {
+        top: 40%;
+        left: 70%;
+        animation: animate 12s linear infinite;
+        background-color: transparent;
+        border: 3px solid rgba(44, 62, 80, 1.0);
+    }
+
+    .box div:nth-child(7) {
+        top: 30%;
+        left: 80%;
+        animation: animate 15s linear infinite;
+        background-color: transparent;
+        border: 3px solid rgba(22, 160, 133, 1.0);
+    }
+
+    .box div:nth-child(8) {
+        top: 16%;
+        left: 25%;
+        animation: animate 16s linear infinite;
+        background-color: rgba(22, 160, 133, 1.0);
+        border: transparent;
+    }
+
+    .box div:nth-child(9) {
+        top: 50%;
+        left: 25%;
+        animation: animate 9s linear infinite;
+        background-color: rgba(230, 126, 34, 1.0);
+        border: transparent;
+    }
+
+    .box div:nth-child(10) {
+        top: 10%;
+        left: 80%;
+        animation: animate 5s linear infinite;
+        background-color: transparent;
+        border: 3px solid rgba(22, 160, 133, 1.0);
+    }
+
+    .box div:nth-child(11) {
+        top: 26%;
+        left: 95%;
+        animation: animate 10s linear infinite;
+        background-color: rgba(44, 62, 80, 1.0);
+        border: transparent;
+    }
+
+    .box div:nth-child(12) {
+        top: 21%;
+        left: 100%;
+        animation: animate 10s linear infinite;
+        background-color: rgba(44, 62, 80, 1.0);
+        border: transparent;
+    }
+
+    @keyframes animate {
+        0% {
+            transform: scale(0) translateY(0) rotate(0);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1.3) translateY(-90px) rotate(360deg);
+            opacity: 1;
+        }
+    }
+
+    /**-------------------------------------------- Main - Home --------------------------------------------**/
+    /** Main - Home- Main Content */
+    #Home {
+        position: relative;
+        height: 350px;
+        width: 100%;
+    }
+
+    body > main > section#Home > section:nth-child(2) {
+        top: 80px;
+    }
+
+    /** Main - Home- Main Content */
+    body > main > section#Home > section:nth-child(2) {
+        position: absolute;
+        width: 650px;
+        height: 320px;
+        top: 58px;
+        left: 37px;
+    }
+
+    body > main > section#Home > section:nth-child(2) > section:nth-child(1) {
+        height: 150px;
+    }
+
+    body > main > section#Home > section:nth-child(2) > section:nth-child(1) > div {
+        height: calc(150px / 3);
+        display: flex;
+    }
+
+    body > main > section#Home > section:nth-child(2) > section:nth-child(1) > div:nth-child(1) h1 {
+        font-size: 25px;
+    }
+
+    body > main > section#Home > section:nth-child(2) > section:nth-child(1) > div:nth-child(2) h1 {
+        font-size: 32px;
+    }
+
+    body > main > section#Home > section:nth-child(2) > section:nth-child(1) > div:nth-child(3) h1 {
+        font-size: 17px;
+    }
+
+    body > main > section#Home > section:nth-child(2) > section:nth-child(2) {
+        height: 43px;
+        margin-left: 25px;
+    }
+
+    /**  Home_Content_Hire me Button */
+    .btn-Hire-Me {
+        padding: 13px 10px 2px 21px;
+        font-size: 16px;
+    }
+
+    .button-Circle {
+        height: 28px;
+        width: 28px;
+    }
+
+    #arrow_details {
+        left: 105px;
+        bottom: 12px;
+        font-size: 18px;
+    }
+
+    body > main > section#Home > section:nth-child(2) > section:nth-child(3) {
+        height: 90px;
+        margin-left: 25px;
+        margin-top: 16px;
+    }
+
+    /**  Home_Content_Social Media Navigation */
+    .wrapper .button {
+        display: flex;
+        height: 50px;
+        width: 50px;
+    }
+
+    .wrapper .button:hover {
+        width: 180px;
+    }
+
+    .wrapper .button .icon {
+        height: 50px;
+        width: 50px;
+        line-height: 68px;
+    }
+
+    .wrapper .button .icon i {
+        font-size: 25px;
+        line-height: 58px;
+    }
+
+    .wrapper .button:hover .icon i {
+        color: #fff;
+    }
+
+    .wrapper .button span {
+        font-size: 15px;
+    }
+
+    .follow-content-text {
+        font-size: 25px;
+        margin-bottom: 0.7rem;
+    }
+
+    /**-------------------------------------------- Main - About --------------------------------------------**/
+    #About {
+        width: 100%;
+        height: 1225px;
+    }
+
+    /* About Header */
+    body > main > section > article h4 {
+        font-size: 22px;
+    }
+
+    body > main > section > article > h1 {
+        font-size: 27px;
+    }
+
+    body > main > section#About > div:nth-child(2) {
+        left: 40%;
+    }
+
+    body > main > section#About > div:nth-child(3) {
+        left: 40%;
+    }
+
+    /* About Paragraph */
+    body > main > section#About > article#paragraphOne p {
+        font-size: 15px;
+        margin-left: 80px;
+        bottom: 55px;
+    }
+
+    body > main > section#About > article#paragraphTwo p {
+        font-size: 14px;
+        margin-left: 80px;
+        bottom: 55px;
+    }
+
+    #details {
+        position: relative;
+        bottom: 625px;
+        margin-left: 61px;
+        width: 650px;
+    }
+
+    #vectorOne {
+        display: none;
+    }
+
+    #vectorTwo {
+        display: none;
+    }
+
+    body > main > section#About > article#details > h3:nth-child(1) {
+        font-size: 18px;
+        width: 700px;
+    }
+
+    body > main > section#About > article#details > h3:nth-child(2) {
+        font-size: 18px;
+        width: 700px;
+    }
+
+    body > main > section#About > article#details > h3:nth-child(3) {
+        font-size: 18px;
+        width: 700px;
+    }
+
+    body > main > section#About > article#details > h3:nth-child(4) {
+        font-size: 18px;
+        width: 700px;
+    }
+
+    body > main > section#About > article#details > h3:nth-child(5) {
+        font-size: 18px;
+        width: 700px;
+    }
+
+    body > main > section#About > article#details > h3:nth-child(6) {
+        font-size: 18px;
+        width: 700px;
+    }
+
+    body > main > section#About > article#details > h3:nth-child(7) {
+        font-size: 18px;
+        width: 700px;
+    }
+
+    body > main > section#About > article#details > h3:nth-child(8) {
+        font-size: 18px;
+        width: 700px;
+    }
+
+    body > main > section#About > article#details > h3:nth-child(9) {
+        font-size: 18px;
+        width: 700px;
+    }
+
+    body > main > section#About > article#details > h3:nth-child(10) {
+        font-size: 18px;
+        top: 8px;
+        position: relative;
+        width: 700px;
+    }
+
+    #aboutImg {
+        height: 228px;
+        width: 150px;
+        bottom: 210px;
+        left: 520px;
+    }
+
+    #vectorStar {
+        position: relative;
+        left: 561px;
+        bottom: 438px;
+        width: 59px;
+    }
+
+    body > main > section#About > section#image > div#circleOne {
+        width: 70px;
+        height: 70px;
+        bottom: 379px;
+        left: 549px;
+    }
+
+    body > main > section#About > section#image > div#circleOne h1 {
+        font-size: 18px;
+        left: 26px;
+        top: 12px;
+    }
+
+    body > main > section#About > section#image > div#circleOne h2 {
+        font-size: 11px;
+        left: 11px;
+        top: 1px;
+    }
+
+    body > main > section#About > section#image > div#circleTwo {
+        width: 70px;
+        height: 70px;
+        bottom: 334px;
+        left: 643px;
+    }
+
+    body > main > section#About > section#image > div#circleTwo h1 {
+        font-size: 18px;
+        left: 20px;
+        top: 1px;
+    }
+
+    body > main > section#About > section#image > div#circleTwo h2 {
+        font-size: 11px;
+        left: 11px;
+        top: -8px;
+    }
+
+    .downloadCv_Button {
+        position: relative;
+        display: inline-block;
+        bottom: 602px;
+        left: 146px;
+    }
+
+    .btn-DownloadTwo {
+        padding: 12px 0 0 20px;
+        height: 48px;
+        font-size: 19px;
+    }
+
+    #download_arrow {
+        left: 21px;
+    }
+
+    .hireMe_Button {
+        position: relative;
+        display: inline-block;
+        bottom: 49px;
+        left: 300px;
+    }
+
+    .btn-Hire-MeTwo {
+        padding: 12px 0 0 20px;
+        height: 48px;
+        font-size: 19px;
+    }
+
+    #HireMe_arrow {
+        left: 105px;
+        top: 14px;
+        font-size: 21px;
+    }
+
+    .button-CircleThree {
+        height: 33px;
+        width: 33px;
+        right: 10px;
+        bottom: 7px;
+    }
+
+    /* Education*/
+    body > main > section#About > section#education {
+        top: -294px;
+        position: relative;
+        width: 100%;
+        height: 942px;
+    }
+
+    body > main > section#About > section#education > div:nth-child(2) {
+        left: 305px;
+        position: relative;
+    }
+
+    body > main > section#About > section#education > div:nth-child(3) {
+        left: 305px;
+        position: relative;
+    }
+
+    #Ordinary {
+        top: 30px;
+        left: -3px;
+        width: calc(100% / 2);
+        height: 250px;
+    }
+
+    #education_1 {
+        top: -104px;
+        right: 195px;
+        width: 17%;
+    }
+
+    body > main > section#About > section#education > section#Ordinary > div:nth-child(2) {
+        height: 176px;
+        width: 3px;
+        right: 233px;
+        top: 67px;
+    }
+
+    body > main > section#About > section#education > section#Ordinary > div:nth-child(3) {
+        height: 35px;
+        width: 167px;
+        right: 127px;
+        bottom: 161px;
+    }
+
+    body > main > section#About > section#education > section#Ordinary > h3#OFirst {
+        font-size: 25px;
+        right: 107px;
+        bottom: 195px;
+    }
+
+    body > main > section#About > section#education > section#Ordinary > h3#OSecond {
+        font-size: 18px;
+        left: 94px;
+        bottom: 176px;
+        width: 280px;
+    }
+
+    body > main > section#About > section#education > section#Ordinary > h3#OSecond span {
+        font-size: 15px;
+    }
+
+    body > main > section#About > section#education > section#Ordinary > p {
+        font-size: 17px;
+        left: 96px;
+        bottom: 160px;
+        width: 290px;
+    }
+
+    #Advanced {
+        top: 30px;
+        left: -3px;
+        width: calc(100% / 2);
+        height: 250px;
+    }
+
+    #education_2 {
+        top: -104px;
+        left: 16px;
+        width: 17%;
+    }
+
+    body > main > section#About > section#education > section#Advanced > div:nth-child(2) {
+        height: 176px;
+        width: 3px;
+        left: -24px;
+        top: 67px;
+    }
+
+    body > main > section#About > section#education > section#Advanced > div:nth-child(3) {
+        height: 35px;
+        width: 167px;
+        right: 127px;
+        bottom: 118px;
+    }
+
+    body > main > section#About > section#education > section#Advanced > h3#AFirst {
+        font-size: 25px;
+        right: 141px;
+        bottom: 126px;
+    }
+
+    body > main > section#About > section#education > section#Advanced > h3#ASecond {
+        font-size: 18px;
+        left: 94px;
+        bottom: 176px;
+        width: 290px;
+    }
+
+    body > main > section#About > section#education > section#Advanced > h3#ASecond span {
+        font-size: 15px;
+    }
+
+    body > main > section#About > section#education > section#Advanced > p {
+        font-size: 17px;
+        left: 96px;
+        width: 290px;
+        top: -98px;
+        position: relative;
+    }
+
+    #HNDLevel {
+        bottom: 470px;
+        left: 380px;
+        width: calc(100% / 2);
+        height: 250px;
+    }
+
+    #education_3 {
+        top: -104px;
+        left: 16px;
+        width: 17%;
+    }
+
+    body > main > section#About > section#education > section#HNDLevel > div:nth-child(2) {
+        height: 176px;
+        width: 3px;
+        left: -24px;
+        top: 67px;
+    }
+
+    body > main > section#About > section#education > section#HNDLevel > div:nth-child(3) {
+        height: 35px;
+        width: 167px;
+        right: 127px;
+        bottom: 118px;
+    }
+
+    body > main > section#About > section#education > section#HNDLevel > h3#HFirst {
+        font-size: 25px;
+        right: 141px;
+        bottom: 126px;
+    }
+
+    body > main > section#About > section#education > section#HNDLevel > h3#HSecond {
+        font-size: 18px;
+        left: 94px;
+        top: -109px;
+        width: 290px;
+    }
+
+    body > main > section#About > section#education > section#HNDLevel > h3#HSecond span {
+        font-size: 15px;
+    }
+
+    body > main > section#About > section#education > section#HNDLevel > p {
+        font-size: 15px;
+        left: 96px;
+        width: 290px;
+        top: -98px;
+        position: relative;
+    }
+
+    #DegreeLevel {
+        bottom: 470px;
+        left: 381px;
+        width: calc(100% / 2);
+        height: 250px;
+    }
+
+    #education_4 {
+        top: -104px;
+        left: 16px;
+        width: 17%;
+    }
+
+    body > main > section#About > section#education > section#DegreeLevel > div:nth-child(2) {
+        height: 176px;
+        width: 3px;
+        left: -24px;
+        top: 67px;
+    }
+
+    body > main > section#About > section#education > section#DegreeLevel > div:nth-child(3) {
+        height: 35px;
+        width: 167px;
+        right: 127px;
+        bottom: 118px;
+    }
+
+    body > main > section#About > section#education > section#DegreeLevel > h3#DFirst {
+        font-size: 25px;
+        right: 141px;
+        bottom: 126px;
+    }
+
+    body > main > section#About > section#education > section#DegreeLevel > h3#DSecond {
+        font-size: 18px;
+        left: 94px;
+        bottom: 176px;
+        width: 290px;
+    }
+
+    body > main > section#About > section#education > section#DegreeLevel > h3#DSecond span {
+        font-size: 15px;
+    }
+
+    body > main > section#About > section#education > section#DegreeLevel > p {
+        font-size: 17px;
+        left: 96px;
+        width: 290px;
+        top: -98px;
+        position: relative;
+    }
+
+    body > main > section#About > section#design > div#circle1 {
+        height: 50px;
+        width: 50px;
+        bottom: 1230px;
+        left: 101px
+    }
+
+    body > main > section#About > section#design > div#circle2 {
+        height: 50px;
+        width: 50px;
+        bottom: 1254px;
+        left: 130px;
+    }
+
+    body > main > section#About > section#design > div#circle3 {
+        height: 50px;
+        width: 50px;
+        bottom: 1327px;
+        left: 550px;
+    }
+
+    body > main > section#About > section#design > div#circle4 {
+        height: 50px;
+        width: 50px;
+        bottom: 1355px;
+        left: 580px;
+    }
+
+    body > main > section#About > section#design > div#circle5 {
+        height: 50px;
+        width: 50px;
+        bottom: 913px;
+        left: 289px;
+    }
+
+    body > main > section#About > section#design > div#circle6 {
+        height: 50px;
+        width: 50px;
+        bottom: 940px;
+        left: 319px;
+    }
+
+    body > main > section#About > section#design > div#circle7 {
+        height: 50px;
+        width: 50px;
+        top: 1146px;
+        left: 638px;
+        position: absolute;
+    }
+
+    body > main > section#About > section#design > div#circle8 {
+        height: 50px;
+        width: 50px;
+        bottom: 971px;
+        left: 667px;
+    }
+
+    #vector3 {
+        width: 43%;
+        bottom: 1457px;
+        left: 82px;
+    }
+
+    /**-------------------------------------------- Main - Skills --------------------------------------------**/
+    #Skills {
+        width: 100%;
+        height: 750px;
+        position: relative;
+    }
+
+    body > main > section#Skills > article > div:nth-child(3) {
+        left: 42%;
+    }
+
+    body > main > section#Skills > article > div:nth-child(4) {
+        left: 42%;
+    }
+
+    body > main > section#Skills > article > div:nth-child(5) {
+        height: 750px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) {
+        width: 100%;
+        height: 450px;
+        top: 260px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child {
+        background: #FFFFFF;
+        width: 315px;
+        height: 450px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(1) {
+        background: #FF6348;
+        position: relative;
+        width: 230px;
+        height: 60px;
+        display: flex;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(1) h1 {
+        font-size: 25px;
+        margin-top: calc(25px / 2);
+        margin-left: 50px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(2) {
+        width: 258px;
+        height: 90px;
+        top: 30px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(2) > div:nth-child(1) {
+        width: 70px;
+        height: 70px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(2) > div:nth-child(2) {
+        width: 70px;
+        height: 70px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(2) > div:nth-child(3) {
+        width: 70px;
+        height: 70px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(3) {
+        width: 258px;
+        height: 90px;
+        top: 30px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(3) > div:nth-child(1) {
+        width: 70px;
+        height: 70px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(3) > div:nth-child(2) {
+        width: 70px;
+        height: 70px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(3) > div:nth-child(3) {
+        width: 70px;
+        height: 70px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(4) {
+        width: 258px;
+        height: 90px;
+        top: 30px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(4) > div:nth-child(1) {
+        width: 70px;
+        height: 70px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(4) > div:nth-child(2) {
+        width: 70px;
+        height: 70px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(4) > div:nth-child(3) {
+        width: 70px;
+        height: 70px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(5) {
+        width: 258px;
+        height: 70px;
+        top: 30px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(5) > div:nth-child(1) {
+        width: 70px;
+        height: 70px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(5) > div:nth-child(2) {
+        width: 70px;
+        height: 70px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(5) > div:nth-child(3) {
+        width: 70px;
+        height: 70px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child {
+        background: #FFFFFF;
+        width: 315px;
+        height: 450px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(1) {
+        background: #FF6348;
+        position: relative;
+        width: 230px;
+        height: 60px;
+        display: flex;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(1) h1 {
+        font-size: 25px;
+        margin-top: calc(25px / 2);
+        margin-left: 85px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(2) {
+        width: 258px;
+        height: 90px;
+        top: 30px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(2) > div:nth-child(1) {
+        width: 70px;
+        height: 70px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(2) > div:nth-child(2) {
+        width: 70px;
+        height: 70px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(2) > div:nth-child(3) {
+        width: 70px;
+        height: 70px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(3) {
+        width: 258px;
+        height: 90px;
+        top: 30px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(3) > div:nth-child(1) {
+        width: 70px;
+        height: 70px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(3) > div:nth-child(2) {
+        width: 70px;
+        height: 70px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(3) > div:nth-child(3) {
+        width: 70px;
+        height: 70px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(4) {
+        width: 258px;
+        height: 90px;
+        top: 30px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(4) > div:nth-child(1) {
+        width: 70px;
+        height: 70px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(4) > div:nth-child(2) {
+        width: 70px;
+        height: 70px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(4) > div:nth-child(3) {
+        width: 70px;
+        height: 70px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(5) {
+        width: 258px;
+        height: 70px;
+        top: 30px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(5) > div:nth-child(1) {
+        width: 70px;
+        height: 70px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(5) > div:nth-child(2) {
+        width: 70px;
+        height: 70px;
+    }
+
+    body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(5) > div:nth-child(3) {
+        width: 70px;
+        height: 70px;
+    }
+
+    body > main > section#Skills > div:nth-child(2) i {
+        top: 189px;
+        font-size: 63px;
+    }
+
+    body > main > section#Skills > div:nth-child(3) i {
+        top: 676px;
+        font-size: 63px;
+    }
+
+    #skill_main_vector {
+        position: absolute;
+        left: 99px;
+        top: 232px;
+        width: 78%;
+    }
+
+    /**-------------------------------------------- Main - Gallery --------------------------------------------**/
+    #Gallery {
+        width: 100%;
+        height: 800px;
+    }
+
+    body > main > section#Gallery > article > div:nth-child(3) {
+        left: 38%;
+    }
+
+    body > main > section#Gallery > article > div:nth-child(4) {
+        left: 38%;
+    }
+
+    body > main > section#Gallery > section#image_section {
+        width: 708px;
+        height: 600px;
+        top: 175px;
+    }
+
+    body > main > section#Gallery > section#vector > img:nth-child(1) {
+        width: 42px;
+        height: 82px;
+        top: 75px;
+    }
+
+    body > main > section#Gallery > section#vector > img:nth-child(3) {
+        width: 30px;
+        height: 70px;
+        bottom: 45px;
+    }
+
+    body > main > section#Gallery > section#vector > img:nth-child(4) {
+        display: none;
+    }
+
+    body > main > section#Gallery > section#vector > img:nth-child(5) {
+        display: none;
+    }
+
+    /**-------------------------------------------- Main - Achievements --------------------------------------------**/
+    #Achievements {
+        display: none;
+    }
+
+    /**-------------------------------------------- Main - Projects --------------------------------------------**/
+    #Project {
+        width: 100%;
+        height: 500px;
+        position: relative;
+    }
+
+    body > main > section#Project > section#ProjectSection {
+        width: 100%;
+        height: 287px;
+        top: 150px;
+    }
+
+    body > main > section#Project > section#ProjectSection > div {
+        width: calc(100% / 3.20);
+        height: 251px;
+    }
+
+    body > main > section#Project > section#ProjectSection > div:nth-child(1) > img {
+        height: 130px;
+        width: 209px;
+        top: 27px;
+    }
+
+    body > main > section#Project > section#ProjectSection > div:nth-child(2) > img {
+        height: 130px;
+        width: 209px;
+        top: 27px;
+    }
+
+    body > main > section#Project > section#ProjectSection > div:nth-child(3) > img {
+        height: 130px;
+        width: 209px;
+        top: 27px;
+    }
+
+    .Projects {
+        padding: 11px 21px 9px 17px;
+        font-size: 22px;
+    }
+
+    body > main > section#Project > section#DesignProjects > section > div:nth-child(1) {
+        width: 50px;
+        height: 50px;
+        top: 114px;
+        left: 635px;
+        opacity: 70%;
+    }
+
+    body > main > section#Project > section#DesignProjects > section > div:nth-child(2) {
+        width: 50px;
+        height: 50px;
+        top: 135px;
+        left: 659px;
+    }
+
+    body > main > section#Project > section#DesignProjects img:nth-child(5) {
+        top: 459px;
+        left: 44px;
+        position: absolute;
+        width: 29px;
+    }
+
+    body > main > section#Project > section#DesignProjects img:nth-child(6) {
+        top: 272px;
+        left: 479px;
+        position: absolute;
+    }
+
+    body > main > section#Project > section#DesignProjects img:nth-child(7) {
+        top: 352px;
+        left: 223px;
+        position: absolute;
+    }
+
+    body > main > section#Project > section#DesignProjects img:nth-child(3) {
+        top: 462px;
+        left: 350px;
+        position: absolute;
+        width: 43px;
+    }
+
+    body > main > section#Project > section#DesignProjects img:nth-child(4) {
+        top: 462px;
+        left: 635px;
+        position: absolute;
+        width: 43px;
+    }
+
+    /**-------------------------------------------- Main - Services --------------------------------------------**/
+    #Services {
+        width: 100%;
+        height: 600px;
+    }
+
+    body > main > section#Services > article > h1 {
+        position: absolute;
+        top: 93px;
+    }
+
+    body > main > section#Services > article > div:nth-child(3) {
+        left: 41%;
+        top: 132px;
+    }
+
+    body > main > section#Services > article > div:nth-child(4) {
+        left: 41%;
+        top: 132px;
+    }
+
+    body > main > section#Services > section#ServicesButton {
+        width: 589px;
+        height: 90px;
+        position: absolute;
+        top: 170px;
+    }
+
+    body > main > section#Services > section#ServicesButton > div#Development > a > button {
+        font-size: 22px;
+    }
+
+    body > main > section#Services > section#ServicesButton > div#SDesign > a > button {
+        font-size: 22px;
+        padding: 11px 40px 11px 40px;
+    }
+
+    body > main > section#Services > section#ServicesButton > div#Marketing > a > button {
+        font-size: 22px;
+    }
+
+    body > main > section#Services > section#MainSection {
+        position: relative;
+        width: 717px;
+        height: 325px;
+        top: 235px;
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(1) {
+        width: calc(900px / 4);
+        height: 300px;
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(1) > div:first-child {
+        width: calc(900px / 4);
+        height: 80px;
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(1) > div:first-child > div:first-child {
+        width: 80px;
+        height: 80px;
+        top: 70px;
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(1) > div:first-child > div:first-child > i {
+        font-size: 40px;
+        top: 17px;
+        left: 16px;
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(1) > h2 {
+        top: 119px;
+        left: 37px;
+        font-size: 16px;
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(1) > p {
+        position: absolute;
+        top: 147px;
+        left: 37px;
+        color: #57606F;
+        font-size: 12px;
+        padding-right: 18px;
+        width: 178px;
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(2) {
+        width: calc(900px / 4);
+        height: 300px;
+        left: 247px;
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(2) > div:first-child {
+        width: calc(900px / 4);
+        height: 80px;
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(2) > div:first-child > div:first-child {
+        width: 80px;
+        height: 80px;
+        top: 70px;
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(2) > div:first-child > div:first-child > i {
+        font-size: 40px;
+        top: 17px;
+        left: 16px;
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(2) > h2 {
+        top: 119px;
+        left: 37px;
+        font-size: 16px;
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(2) > p {
+        position: absolute;
+        top: 147px;
+        left: 37px;
+        color: #57606F;
+        font-size: 12px;
+        padding-right: 18px;
+        width: 178px;
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(3) {
+        width: calc(900px / 4);
+        height: 300px;
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(3) > div:first-child {
+        width: calc(900px / 4);
+        height: 80px;
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(3) > div:first-child > div:first-child {
+        width: 80px;
+        height: 80px;
+        top: 70px;
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(3) > div:first-child > div:first-child > i {
+        font-size: 40px;
+        top: 17px;
+        left: 25px;
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(3) > h2 {
+        top: 119px;
+        left: 37px;
+        font-size: 16px;
+    }
+
+    body > main > section#Services > section#MainSection > div:nth-child(3) > p {
+        position: absolute;
+        top: 147px;
+        left: 37px;
+        color: #57606F;
+        font-size: 12px;
+        padding-right: 18px;
+        width: 178px;
+    }
+
+    body > main > section#Services > section#ServicesBGDesign > aside:first-child > div:nth-child(1) {
+        width: 50px;
+        height: 50px;
+    }
+
+    body > main > section#Services > section#ServicesBGDesign > aside:first-child > div:nth-child(2) {
+        width: 50px;
+        height: 50px;
+    }
+
+    body > main > section#Services > section#ServicesBGDesign > aside:nth-child(2) > div:nth-child(1) {
+        width: 50px;
+        height: 50px;
+    }
+
+    body > main > section#Services > section#ServicesBGDesign > aside:nth-child(2) > div:nth-child(2) {
+        width: 50px;
+        height: 50px;
+    }
+
+    /**-------------------------------------------- Main - Hire Me --------------------------------------------**/
+    #HireMe {
+        width: 100%;
+        height: 650px;
+        position: relative;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main {
+        width: 722px;
+        height: 400px;
+        position: absolute;
+        top: 181px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(1) {
+        width: calc(900px / 4);
+        height: 370px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(1) > div:nth-child(1) {
+        width: 185px;
+        height: 50px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(1) > div:nth-child(1) > h3 {
+        font-size: 25px;
+        top: 9px;
+        left: 80px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(1) > h2 {
+        font-size: 22px;
+        font-family: Poppins, sans-serif;
+        font-weight: bolder;
+        color: #2C3E50;
+        top: 80px;
+        left: 35px;
+        position: absolute;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(1) > h2 > sup {
+        font-size: 20px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(1) > p {
+        font-size: 13px;
+        color: #2C3E50;
+        top: 127px;
+        left: 30px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(1) > div:nth-child(4) {
+        background: #2ED573;
+        width: 182px;
+        height: 8px;
+        top: 162px;
+        left: 24px;
+        margin: auto;
+        position: absolute;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(1) > p:nth-child(5) {
+        font-size: 16px;
+        color: #2C3E50;
+        font-family: Poppins, sans-serif;
+        font-weight: bolder;
+        position: absolute;
+        top: 185px;
+        left: 25px;
+        text-align: center;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(1) > div#BASIC {
+        position: absolute;
+        top: 298px;
+        left: 23px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(1) > div#BASIC > a > button {
+        padding: 12px 6px 1px 13px;
+        font-size: 18px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(1) > div#BASIC > a > button div {
+        height: 30px;
+        width: 30px;
+        top: -6px;
+        left: -4px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(1) > div#BASIC > a > button i {
+        color: #2ED573;
+        position: absolute;
+        left: 157px;
+        top: 12px;
+        z-index: 1;
+    }
+
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(2) {
+        width: calc(900px / 4);
+        height: 370px;
+        left: 247px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(2) > div:nth-child(1) {
+        width: 185px;
+        height: 50px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(2) > div:nth-child(1) > h3 {
+        font-size: 25px;
+        top: 9px;
+        left: 60px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(2) > h2 {
+        font-size: 22px;
+        font-family: Poppins, sans-serif;
+        font-weight: bolder;
+        color: #2C3E50;
+        top: 80px;
+        left: 35px;
+        position: absolute;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(2) > h2 > sup {
+        font-size: 20px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(2) > p {
+        font-size: 13px;
+        color: #2C3E50;
+        top: 127px;
+        left: 30px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(2) > div:nth-child(4) {
+        background: #2ED573;
+        width: 182px;
+        height: 8px;
+        top: 162px;
+        left: 24px;
+        margin: auto;
+        position: absolute;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(2) > p:nth-child(5) {
+        font-size: 16px;
+        color: #2C3E50;
+        font-family: Poppins, sans-serif;
+        font-weight: bolder;
+        position: absolute;
+        top: 185px;
+        left: 25px;
+        text-align: center;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(2) > div#PREMIUM {
+        position: absolute;
+        top: 298px;
+        left: 23px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(2) > div#PREMIUM > a > button {
+        padding: 12px 6px 1px 13px;
+        font-size: 18px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(2) > div#PREMIUM > a > button div {
+        height: 30px;
+        width: 30px;
+        top: -6px;
+        left: -4px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(2) > div#PREMIUM > a > button i {
+        color: #2ED573;
+        position: absolute;
+        left: 157px;
+        top: 12px;
+        z-index: 1;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(3) {
+        width: calc(900px / 4);
+        height: 370px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(3) > div:nth-child(1) {
+        width: 185px;
+        height: 50px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(3) > div:nth-child(1) > h3 {
+        font-size: 25px;
+        top: 9px;
+        left: 45px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(3) > h2 {
+        font-size: 22px;
+        font-family: Poppins, sans-serif;
+        font-weight: bolder;
+        color: #2C3E50;
+        top: 80px;
+        left: 35px;
+        position: absolute;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(3) > h2 > sup {
+        font-size: 20px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(3) > p {
+        font-size: 13px;
+        color: #2C3E50;
+        top: 127px;
+        left: 30px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(3) > div:nth-child(4) {
+        background: #2ED573;
+        width: 182px;
+        height: 8px;
+        top: 162px;
+        left: 24px;
+        margin: auto;
+        position: absolute;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(3) > p:nth-child(5) {
+        font-size: 16px;
+        color: #2C3E50;
+        font-family: Poppins, sans-serif;
+        font-weight: bolder;
+        position: absolute;
+        top: 185px;
+        left: 25px;
+        text-align: center;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(3) > div#ADVANCE {
+        position: absolute;
+        top: 298px;
+        left: 23px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(3) > div#ADVANCE > a > button {
+        padding: 12px 6px 1px 13px;
+        font-size: 18px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(3) > div#ADVANCE > a > button div {
+        height: 30px;
+        width: 30px;
+        top: -6px;
+        left: -4px;
+    }
+
+    body > main > section#HireMe > section#HireMe_Main > section:nth-child(3) > div#ADVANCE > a > button i {
+        color: #2ED573;
+        position: absolute;
+        left: 157px;
+        top: 12px;
+        z-index: 1;
+    }
+
+    body > main > section#HireMe > section#BGDesigns > div:nth-child(1) > div:nth-child(1) {
+        display: none;
+    }
+
+    body > main > section#HireMe > section#BGDesigns > div:nth-child(1) > div:nth-child(2) {
+        display: none;
+    }
+
+    body > main > section#HireMe > section#BGDesigns > img:nth-child(2) {
+        display: none;
+    }
+
+    body > main > section#HireMe > section#BGDesigns > img:nth-child(3) {
+        display: none;
+    }
+
+    body > main > section#HireMe > section#BGDesigns > img:nth-child(4) {
+        display: none;
+    }
+
+    body > main > section#HireMe > section#BGDesigns > div:nth-child(5) > div:nth-child(1) {
+        display: none;
+    }
+
+    body > main > section#HireMe > section#BGDesigns > div:nth-child(5) > div:nth-child(2) {
+        display: none;
+    }
+
+    /**-------------------------------------------- Main - Testimonials --------------------------------------------**/
+    #Testimonials {
+        width: 100%;
+        height: 500px;
+        position: relative;
+    }
+
+    body > main > section#Testimonials > article > h1 {
+        font-size: 33px;
+        top: 90px;
+        position: relative;
+    }
+
+    body > main > section#Testimonials > article > div:nth-child(3) {
+        left: 29%;
+        top: 131px;
+    }
+
+    body > main > section#Testimonials > article > div:nth-child(4) {
+        left: 29%;
+        top: 135px;
+    }
+
+    body > main > section#Testimonials > section:nth-child(4) {
+        display: none;
+    }
+
+    body > main > section#Testimonials > section#Says {
+        width: 727px;
+        height: 254px;
+        inset: 150px 0 0 28px;
+        top: 160px;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div {
+        height: 245px;
+        width: 232px;
+        border-radius: 50px;
+        cursor: grab;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(1) > div:nth-child(1) > p {
+        color: #2C3E50;
+        font-weight: bolder;
+        font-family: 'Inconsolata', serif;
+        font-size: 14px;
+        margin: 0 25px 0 30px;
+        display: flow-root;
+        position: relative;
+        top: 30px;
+        text-align: center;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) h1 {
+        font-size: 19px;
+        margin-left: 8px;
+        font-family: Inter, sans-serif;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) h2 {
+        font-size: 14px;
+        margin-left: 10px;
+        font-family: Inter, sans-serif;
+        position: relative;
+        bottom: 11px;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+        width: 80px;
+        height: 70px;
+        margin-left: 16px;
+        border-radius: 100%;
+        border: 8px solid #903EE7;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(2) > div:nth-child(1) > p {
+        color: #2C3E50;
+        font-weight: bolder;
+        font-family: 'Inconsolata', serif;
+        font-size: 14px;
+        margin: 0 25px 0 30px;
+        display: flow-root;
+        position: relative;
+        top: 30px;
+        text-align: center;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) h1 {
+        font-size: 19px;
+        margin-left: 8px;
+        font-family: Inter, sans-serif;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) h2 {
+        font-size: 14px;
+        margin-left: 10px;
+        font-family: Inter, sans-serif;
+        position: relative;
+        bottom: 11px;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+        width: 80px;
+        height: 70px;
+        margin-left: 16px;
+        border-radius: 100%;
+        border: 8px solid #903EE7;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(3) > div:nth-child(1) > p {
+        color: #2C3E50;
+        font-weight: bolder;
+        font-family: 'Inconsolata', serif;
+        font-size: 12px;
+        margin: 0 25px 0 30px;
+        display: flow-root;
+        position: relative;
+        top: 30px;
+        text-align: center;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) h1 {
+        font-size: 19px;
+        margin-left: 8px;
+        font-family: Inter, sans-serif;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) h2 {
+        font-size: 14px;
+        margin-left: 8px;
+        font-family: Inter, sans-serif;
+        position: relative;
+        bottom: 11px;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(3) > div:nth-child(2) {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 81px;
+    }
+
+    body > main > section#Testimonials > section#Says > section > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) {
+        width: 80px;
+        height: 70px;
+        margin-left: 16px;
+        border-radius: 100%;
+        border: 8px solid #903EE7;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    /**-------------------------------------------- Main - Contact --------------------------------------------**/
+    #Contact {
+        width: 100%;
+        height: 700px;
+        position: relative;
+    }
+
+    /** Main - Contact Header Underline */
+    body > main > section#Contact > article > div:nth-child(3) {
+        top: 150px;
+    }
+
+    body > main > section#Contact > article > div:nth-child(4) {
+        top: 157px;
+    }
+
+    /** Main - Contact Details Box sectioning */
+    body > main > section#Contact > section:nth-child(3) {
+        width: 300px;
+        height: 362px;
+        top: 214px;
+        left: 110px;
+    }
+
+    body > main > section#Contact > section:nth-child(3) > form > input:nth-child(1) {
+        width: 250px;
+        height: 40px;
+        font-size: 20px;
+        top: 22px;
+    }
+
+    body > main > section#Contact > section:nth-child(3) > form > input:nth-child(2) {
+        width: 250px;
+        height: 40px;
+        font-size: 20px;
+        top: 75px;
+    }
+
+    body > main > section#Contact > section:nth-child(3) > form > input:nth-child(3) {
+        width: 250px;
+        height: 40px;
+        font-size: 20px;
+        top: 130px;
+    }
+
+    body > main > section#Contact > section:nth-child(3) > form > textarea:nth-child(4) {
+        width: 250px;
+        height: 80px;
+        font-size: 20px;
+        top: 185px;
+    }
+
+    /** Main - Contact Details Button */
+    body > main > section#Contact > section:nth-child(3) > div:nth-child(2) {
+        top: 294px;
+        left: 38px;
+    }
+
+    body > main > section#Contact > section:nth-child(3) > div:nth-child(2) > button {
+        padding: 10px 8px 0 8px;
+        font-size: 16px;
+    }
+
+    body > main > section#Contact > section:nth-child(3) > div:nth-child(2) > button > div {
+        bottom: 6px;
+        width: 30px;
+        left: 1px;
+        height: 30px;
+    }
+
+    body > main > section#Contact > section:nth-child(3) > div:nth-child(2) > button i {
+        left: 142px;
+        top: 10px;
+        font-size: 20px;
+    }
+
+    /** Main - Contact Details - Background Design */
+    body > main > section#Contact > section:nth-child(5) > img:nth-child(1) {
+        top: 109px;
+        left: 320px;
+        width: 990px;
+    }
+
+    body > main > section#Contact > section:nth-child(5) > div:nth-child(2) {
+        width: 50px;
+        height: 50px;
+        top: 135px;
+        left: 477px;
+    }
+
+    body > main > section#Contact > section:nth-child(5) > div:nth-child(3) {
+        width: 50px;
+        height: 50px;
+        bottom: 124px;
+        right: 181px;
+    }
+
+    body > main > section#Contact > section:nth-child(5) > div:nth-child(4) {
+        width: 70px;
+        height: 70px;
+        top: 446px;
+        right: 50px;
+    }
+
+    body > main > section#Contact > section:nth-child(5) > div:nth-child(5) {
+        width: 70px;
+        height: 70px;
+        bottom: 50px;
+        right: 420px;
+    }
+
+    body > main > section#Contact > section:nth-child(5) > img:nth-child(6) {
+        top: 130px;
+        right: 126px;
+        margin: auto;
+        width: 128px;
+    }
+
+    body > main > section#Contact > section:nth-child(5) {
+        display: none;
+    }
+
+    body > main > section#Contact > section:nth-child(4) {
+        width: 323px;
+        height: 322px;
+        top: 77px;
+        left: 419px;
+    }
+
+    body > main > section#Contact > section:nth-child(4) > article:nth-child(1) > h2:nth-child(1) {
+        font-size: 25px;
+    }
+
+    body > main > section#Contact > section:nth-child(4) > article:nth-child(1) > div:nth-child(2) {
+        width: 125px;
+        height: 7px;
+        top: 36px;
+        right: 151px;
+    }
+
+    body > main > section#Contact > section:nth-child(4) > article:nth-child(1) > div:nth-child(3) {
+        width: 87px;
+        height: 7px;
+        top: 18px;
+        right: -7px;
+    }
+
+    body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > div:nth-child(1) > h2 {
+        font-size: 20px;
+        font-family: cursive;
+        font-weight: bolder;
+        margin-left: 35px;
+        width: 274px;
+    }
+
+    body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > div:nth-child(2) i {
+        font-size: 25px;
+        margin-left: 60px;
+    }
+
+    body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > div:nth-child(2) p {
+        font-family: cursive;
+        font-weight: bolder;
+        position: relative;
+        font-size: 16px;
+        left: 16px;
+    }
+
+    body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > div:nth-child(3) i {
+        font-size: 22px;
+        margin-left: 60px;
+    }
+
+    body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > div:nth-child(3) h3 {
+        font-family: cursive;
+        font-weight: bolder;
+        position: relative;
+        font-size: 14px;
+        left: 16px;
+    }
+
+    body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > div:nth-child(4) i {
+        font-size: 22px;
+        margin-left: 60px;
+    }
+
+    body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > div:nth-child(4) h3 {
+        font-family: cursive;
+        font-weight: bolder;
+        position: relative;
+        font-size: 14px;
+        left: 16px;
+    }
+
+    body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > div:last-child {
+        display: none;
+    }
+
+    body > main > section#Iframe iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    /**-------------------------------------------- Main - Footer --------------------------------------------**/
+    body > footer {
+        width: 100%;
+        height: 350px;
+        position: relative;
+        top: -4px;
+    }
+    body > footer > section:nth-child(1) {
+        height: 350px;
+    }
+
+    body > footer > section:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: 340px;
+    }
+
+    body > footer > section:nth-child(2) > section:nth-child(1) {
+        width: 100%;
+        height: 315px;
+    }
+    body > footer > section:nth-child(2) > section:nth-child(1) section {
+        width: 259px;
+        height: 270px;
+    }
+
+    body > footer > section:nth-child(2) > section:nth-child(1) > section > article:nth-child(1) {
+        width: 245px;
+        height: 280px;
+        z-index: 1;
+    }
+
+    body > footer > section:nth-child(2) > section:nth-child(1) > section > article:nth-child(1) h1 {
+        color: #FF6348;
+        font-size: 19px;
+        font-family: Poppins, serif;
+        font-weight: bolder;
+    }
+
+    body > footer > section:nth-child(2) > section:nth-child(1) > section > article:nth-child(1) p {
+        color: #2C3E50;
+        font-size: 12px;
+        font-weight: bolder;
+        font-family: Poppins, serif;
+        display: flex;
+    }
+
+    body > footer > section:nth-child(2) > section:nth-child(1) > section:nth-child(2) {
+        width: 214px;
+    }
+
+    body > footer > section:nth-child(2) > section:nth-child(1) > section:nth-child(2) h1 {
+        font-family: Poppins, serif;
+        color: #FF6348;
+        font-size: 20px;
+        font-weight: bolder;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    body > footer > section:nth-child(2) > section:nth-child(1) > section:nth-child(2) nav ul li a {
+        font-family: Poppins, serif;
+        color: #2C3E50;
+        font-size: 13px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    body > footer > section:nth-child(2) > section:nth-child(1) > section:nth-child(3) h2 {
+        font-family: Poppins, serif;
+        color: #FF6348;
+        font-size: 20px;
+        display: flex;
+        top: 15px;
+        position: relative;
+    }
+
+    body > footer > section:nth-child(2) > section:nth-child(1) > section:nth-child(3) > div:nth-child(2) {
+        width: 200px;
+        height: 30px;
+        position: absolute;
+        top: 100px;
+    }
+
+    body > footer > section:nth-child(2) > section:nth-child(1) > section:nth-child(3) > div:nth-child(2) i {
+        font-size: 20px;
+    }
+
+    body > footer > section:nth-child(2) > section:nth-child(1) > section:nth-child(3) > div:nth-child(2) p {
+        font-family: cursive;
+        font-weight: bolder;
+        position: relative;
+        bottom: 23px;
+        left: 42px;
+        font-size: 13px;
+    }
+
+    body > footer > section:nth-child(2) > section:nth-child(1) > section:nth-child(3) > div:nth-child(3) {
+        width: 200px;
+        height: 30px;
+        position: absolute;
+        top: 128px;
+    }
+    body > footer > section:nth-child(2) > section:nth-child(1) > section:nth-child(3) > div:nth-child(3) i {
+        font-size: 20px;
+    }
+    body > footer > section:nth-child(2) > section:nth-child(1) > section:nth-child(3) > div:nth-child(3) h3 {
+        font-family: cursive;
+        font-weight: bolder;
+        position: relative;
+        bottom: 17px;
+        left: 42px;
+        font-size: 13px;
+    }
+
+    body > footer > section:nth-child(2) > section:nth-child(1) > section:nth-child(3) > div:nth-child(4) {
+        width: 200px;
+        height: 30px;
+        position: absolute;
+        top: 168px;
+    }
+    body > footer > section:nth-child(2) > section:nth-child(1) > section:nth-child(3) > div:nth-child(4) i {
+        font-size: 20px;
+    }
+    body > footer > section:nth-child(2) > section:nth-child(1) > section:nth-child(3) > div:nth-child(4) h3 {
+        font-family: cursive;
+        font-weight: bolder;
+        position: relative;
+        bottom: 1px;
+        left: 42px;
+        font-size: 13px;
+    }
+
+    body > footer > section:nth-child(2) > section:nth-child(1) > section > section:nth-child(2) {
+        width: 320px;
+        height: 74px;
+        z-index: 1;
+        top: -135px;
+        position: relative;
+    }
+    body > footer > section:nth-child(2) > section:nth-child(1) > section > section:nth-child(2) nav > div.social-menu ul {
+        position: relative;
+        left: 176px;
+        top: 35px;
+    }
+    body > footer > section:nth-child(2) > section:nth-child(1) > section > section:nth-child(2) nav > div.social-menu ul > li > a > i {
+        font-size: 22px;
+    }
+    body > footer > section:nth-child(2) > section:nth-child(1) > section > section:nth-child(2) nav > div.social-menu ul li a {
+        width: 40px;
+        height: 40px;
+        position: relative;
+    }
+
+    body > footer > section:nth-child(2) > section:nth-child(2) small {
+        font-size: 13px;
+        top: 0;
+    }
+}

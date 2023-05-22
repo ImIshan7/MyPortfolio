@@ -1,0 +1,2428 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Podkova&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arbutus&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/**  Customize Scrollbar  **/
+::-webkit-scrollbar {
+    display: none;
+    width: 10px;
+    background: #2ED573;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 5px;
+}
+
+/** Colors */
+.text-primary {
+    color: #21ff06 !important;
+    font-size: 80px;
+    font-family: "JetBrains Mono NL ExtraBold";
+    font-weight: bold;
+}
+
+.text-black {
+    color: #ffffff ;
+    font-weight: bold;
+    font-family: "Arial Black";
+}
+
+.text-green {
+    color: #ffae00 !important;
+}
+
+.text-white {
+    background: #F8F7F3 !important;
+}
+
+/** Loader */
+section#loader {
+    position: fixed;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: #2e3133;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+
+/** Header */
+.head {
+    background: #334442;
+    height: 90px;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 2px 8px 2px #ffab00;
+    z-index: 3;
+}
+
+label.logo {
+    font-family: "JetBrains Mono";
+    font-weight: bold;
+    font-size: 50px;
+    color: #ffae00;
+    line-height: 80px;
+    padding: 0 50px;
+}
+
+.head .link_Nav {
+    float: right;
+    margin-right: 20px;
+}
+
+.head .link_Nav li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    font-family: "Arial Black";
+    font-weight: bold;
+    font-size: 28px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+nav ul li a:hover {
+    text-decoration: overline;
+    text-decoration-thickness: 10px;
+    border-radius: 4px;
+}
+
+nav > ul > li > a.active, a:hover {
+    color: #000000;
+}
+
+.checkBtn {
+    font-size: 30px;
+    color: #FF6348;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/** Main - Home */
+main {
+    position: relative;
+
+}
+
+#Home {
+    position: relative;
+    height: 977px;
+    width: 100%;
+}
+
+.img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+
+
+/** Main - Home- Main Content */
+body > main > section#Home > section:nth-child(2) {
+    position: absolute;
+    width: 1200px;
+    height: 730px;
+    top: 140px;
+    left: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+body > main > section#Home > section:nth-child(2) > section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+body > main > section#Home > section:nth-child(2) > section:nth-child(1) {
+    height: 400px;
+}
+
+body > main > section#Home > section:nth-child(2) > section:nth-child(1) > div {
+    height: 120px;
+    display: flex;
+}
+
+body > main > section#Home > section:nth-child(2) > section:nth-child(1) > div:nth-child(1) h1 {
+    font-family: Poppins, sans-serif;
+    font-size: 60px;
+    font-weight: bolder;
+    align-items: center;
+}
+
+body > main > section#Home > section:nth-child(2) > section:nth-child(1) > div:nth-child(2) h1 {
+    font-family: Poppins, sans-serif;
+    font-size: 70px;
+    font-weight: bolder;
+    align-items: center;
+}
+
+body > main > section#Home > section:nth-child(2) > section:nth-child(1) > div:nth-child(3) h1 {
+    font-family: Poppins, sans-serif;
+    font-size: 45px;
+    font-weight: bolder;
+    align-items: center;
+}
+
+body > main > section#Home > section:nth-child(2) > section:nth-child(2) {
+    height: 80px;
+    margin-left: 50px;
+}
+
+
+
+/*#arrow_details {
+    color: #b2209f;
+    position: absolute;
+    left: 170px;
+    bottom: 25px;
+    z-index: 1;
+}*/
+
+body > main > section#Home > section:nth-child(2) > section:nth-child(3) {
+    height: 220px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+/**  Home_Content_Social Media Navigation */
+.wrapper .button {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin: 0 10px;
+    overflow: hidden;
+    background: #95A5A6;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    box-shadow: 0 -1px 8px 2px #1c1717e8;
+}
+
+.wrapper .button:hover {
+    width: 250px;
+}
+
+.wrapper .button .icon {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 100px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1):hover .icon {
+    background: #3b5998;
+}
+
+.wrapper .button:nth-child(2):hover .icon {
+    background: #0A66C2;
+}
+
+.wrapper .button:nth-child(3):hover .icon {
+    background: #1DA1F2;
+}
+
+.wrapper .button:nth-child(4):hover .icon {
+    background: #333;
+}
+
+.wrapper .button:nth-child(5):hover .icon {
+    background: #03175d;
+}
+.wrapper .button:nth-child(6):hover .icon {
+    background: deeppink;
+}
+
+
+.wrapper .button .icon i {
+    font-size: 40px;
+    line-height: 100px;
+    transition: all 0.3s ease-out;
+    color: #000000;
+}
+
+.wrapper .button:hover .icon i {
+    color: #fff;
+}
+
+.wrapper .button span {
+    font-size: 26px;
+    font-weight: bolder;
+    line-height: 100px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1) span {
+    color: #3b5998;
+}
+
+.wrapper .button:nth-child(2) span {
+    color: #0A66C2;
+}
+
+.wrapper .button:nth-child(3) span {
+    color: #1DA1F2;
+}
+
+.wrapper .button:nth-child(4) span {
+    color: #333;
+}
+
+.wrapper .button:nth-child(5) span {
+    color:#03175d;
+}
+
+.wrapper .button:nth-child(6) span {
+    color:deeppink;
+}
+
+.follow-content {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.follow-content-text {
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+
+
+
+/**-------------------------------------------- Main - About --------------------------------------------**/
+#About {
+    position: relative;
+    width: 100%;
+    height: 2200px;
+
+}
+
+/** Main - About Header */
+body > main > section > article h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    color: #00ff69 !important;
+    text-decoration: none;
+    text-align: left;
+    border-radius: 3px;
+    padding-top: 3em;
+}
+
+body > main > section > article > h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #2C3E50 !important;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+
+body > main > section > article > h1 > span {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #FF6348 !important;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3px;
+}
+
+
+
+/** Main - About Header Article */
+body > main > section#About > article#paragraphOne p {
+    font-family: "Arial Black";
+    font-weight: lighter;
+    font-size: 27px;
+    color: #ffffff !important;
+    text-decoration: none;
+    position: relative;
+    margin-left: 250px;
+    right: 45px;
+    padding-bottom: 1.5em;
+}
+
+body > main > section#About > article#paragraphTwo p {
+    font-family: "Podkova", sans-serif;
+    font-weight: lighter;
+    font-size: 27px;
+    color: #ffffff !important;
+    text-decoration: none;
+    position: relative;
+    margin-left: 250px;
+    right: 45px;
+}
+
+/** Main - About Image Section */
+#image {
+    width: 200%;
+    height: 600px;
+}
+
+#aboutImg {
+    position: relative;
+    box-shadow: 0 -1px 8px 2px #1c1717e8;
+    height: 100%;
+    width: 480px;
+    border-radius: 20px;
+    bottom: 300px;
+    left: 1180px;
+    z-index: 1;
+}
+
+/** Main - About Section Vector Star Div  */
+
+#vectorStar {
+    position: relative;
+    left: 1270px;
+    bottom: 890px;
+}
+
+/** Main - About Section Article h3 First Child */
+#details {
+    position: relative;
+    bottom: 450px;
+    margin-left: 190px;
+}
+
+body > main > section#About > article#details > h3:nth-child(1) {
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+    font-size: 36px;
+    color: #ffffff !important;
+    margin-bottom: -41px;
+}
+
+body > main > section#About > article#details > h3:nth-child(1) span {
+    font-weight: bold;
+}
+
+/** Main - About Section Article h3 Second Child */
+body > main > section#About > article#details > h3:nth-child(2) {
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+    font-size: 36px;
+    color: #ffffff !important;
+    text-decoration: none;
+    padding-left: 590px;
+    padding-bottom: 1em;
+}
+
+body > main > section#About > article#details > h3:nth-child(2) span {
+    font-weight: bold;
+}
+
+/** Main - About Section Article h3 Third Child */
+body > main > section#About > article#details > h3:nth-child(3) {
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+    font-size: 36px;
+    color: #ffffff !important;
+    text-decoration: none;
+    margin-bottom: -41px;
+}
+
+body > main > section#About > article#details > h3:nth-child(3) span {
+    font-weight: bold;
+}
+
+/** Main - About Section Article h3 Fourth Child */
+body > main > section#About > article#details > h3:nth-child(4) {
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+    font-size: 36px;
+    color: #ffffff !important;
+    text-decoration: none;
+    padding-left: 590px;
+    padding-bottom: 1em;
+}
+
+body > main > section#About > article#details > h3:nth-child(4) span {
+    font-weight: bold;
+}
+
+/** Main - About Section Article h3 Fifth Child */
+body > main > section#About > article#details > h3:nth-child(5) {
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+    font-size: 36px;
+    color: #ffffff !important;
+    text-decoration: none;
+    margin-bottom: -41px;
+}
+
+body > main > section#About > article#details > h3:nth-child(5) span {
+    font-weight: bold;
+}
+
+/** Main - About Section Article h3 Sixth Child */
+body > main > section#About > article#details > h3:nth-child(6) {
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+    font-size: 36px;
+    color: #ffffff !important;
+    text-decoration: none;
+    padding-left: 590px;
+    padding-bottom: 1em;
+}
+
+body > main > section#About > article#details > h3:nth-child(6) span {
+    font-weight: bold;
+}
+
+/** Main - About Section Article h3 Seventh Child */
+body > main > section#About > article#details > h3:nth-child(7) {
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+    font-size: 36px;
+    color: #ffffff !important;
+    text-decoration: none;
+    margin-bottom: -41px;
+}
+
+body > main > section#About > article #details > h3:nth-child(7) span {
+    font-weight: bold;
+}
+
+/** Main - About Section Article h3 Eight Child */
+body > main > section#About > article#details > h3:nth-child(8) {
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+    font-size: 36px;
+    color: #ffffff !important;
+    text-decoration: none;
+    padding-left: 590px;
+    padding-bottom: 1em;
+}
+
+body > main > section#About > article#details > h3:nth-child(8) span {
+    font-weight: bold;
+}
+
+/** Main - About Section Article h3 Ninth Child */
+body > main > section#About > article#details > h3:nth-child(9) {
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+    font-size: 36px;
+    color: #ffffff !important;
+    text-decoration: none;
+    margin-bottom: -41px;
+}
+
+body > main > section#About > article#details > h3:nth-child(9) span {
+    font-weight: bold;
+}
+
+/** Main - About Section Article h3 Tenth Child */
+body > main > section#About > article#details > h3:nth-child(10) {
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+    font-size: 36px;
+    color: #ffffff !important;
+    text-decoration: none;
+    padding-left: 590px;
+    padding-bottom: 1em;
+}
+
+body > main > section#About > article#details > h3:nth-child(10) span {
+    font-weight: bold;
+}
+
+
+/** Main - About Section Educational Section */
+body > main > section#About > section#education > article > h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #21ff00 !important;
+    margin-top: -140px;
+    text-align: left;
+}
+
+
+#education {
+    width: 100%;
+    height: 100px;
+}
+
+#Ordinary {
+    position: relative;
+    top: 10px;
+    left: 27px;
+    width: 950px;
+    height: 500px;
+    z-index: 1;
+}
+
+#education_1 {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    right: 270px;
+}
+
+body > main > section#About > section#education > section#Ordinary > div:nth-child(2) {
+    height: 219px;
+    width: 3px;
+    background: #2C3E50;
+    display: inline-block;
+    position: relative;
+    right: 325px;
+    top: 220px;
+}
+
+body > main > section#About > section#education > section#Ordinary > div:nth-child(3) {
+    height: 50px;
+    width: 200px;
+    background: #D9D9D9;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+    right: 270px;
+    bottom: 18px;
+    box-shadow: 0 -1px 8px 2px #1c1717e8;
+}
+
+body > main > section#About > section#education > section#Ordinary > h3#OFirst {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: #b2209f !important;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    right: 450px;
+    bottom: 30px;
+}
+
+body > main > section#About > section#education > section#Ordinary > h3#OSecond {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: #67fffd !important;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    left: 205px;
+    bottom: 20px;
+}
+
+body > main > section#About > section#education > section#Ordinary > h3#OSecond span {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #ffffff !important;
+}
+
+body > main > section#About > section#education > section#Ordinary > p {
+    font-family: "Arial";
+    font-weight: bold;
+    font-size: 30px;
+    color: #ffffff !important;
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    left: 205px;
+    bottom: 5px;
+}
+
+/** Main -  About Section Educational Section Advanced Level Section **/
+#Advanced {
+    position: relative;
+    bottom: 25px;
+    width: 950px;
+    height: 500px;
+    z-index: 1;
+}
+
+#education_2 {
+    display: inline-block;
+    position: relative;
+    left: 110px;
+}
+
+body > main > section#About > section#education > section#Advanced > div:nth-child(2) {
+    height: 219px;
+    width: 3px;
+    background: #2C3E50;
+    display: inline-block;
+    position: relative;
+    top: 210px;
+    left: 55px;
+}
+
+body > main > section#About > section#education > section#Advanced > div:nth-child(3) {
+    height: 50px;
+    width: 200px;
+    background: #D9D9D9;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+    left: 110px;
+    bottom: 18px;
+    box-shadow: 0 -1px 8px 2px #1c1717e8;
+}
+
+body > main > section#About > section#education > section#Advanced > h3#AFirst {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: #b2209f !important;
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    right: 70px;
+    bottom: 30px;
+}
+
+body > main > section#About > section#education > section#Advanced > h3#ASecond {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: #67fffd !important;
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    left: 230px;
+}
+
+body > main > section#About > section#education > section#Advanced > h3#ASecond span {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #ffffff !important;
+}
+
+body > main > section#About > section#education > section#Advanced > p {
+    font-family: "Arial";
+    font-weight: bold;
+    font-size: 30px;
+    color: #ffffff !important;
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    left: 230px;
+    top: 15px;
+}
+
+/** Main -  About Section Educational Section HND Level Section **/
+#HNDLevel {
+    position: relative;
+    bottom: 990px;
+    left: 950px;
+    width: 950px;
+    height: 500px;
+    z-index: 1;
+}
+
+#education_3 {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    left: 60px;
+}
+
+body > main > section#About > section#education > section#HNDLevel > div:nth-child(2) {
+    height: 219px;
+    width: 3px;
+    background: #2C3E50;
+    display: inline-block;
+    position: relative;
+    left: 2px;
+    top: 220px;
+}
+
+body > main > section#About > section#education > section#HNDLevel > div:nth-child(3) {
+    height: 50px;
+    width: 200px;
+    background: #D9D9D9;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+    left: 60px;
+    bottom: 18px;
+    box-shadow: 0 -1px 8px 2px #1c1717e8;
+}
+
+body > main > section#About > section#education > section#HNDLevel > h3#HFirst {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: #b2209f !important;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    right: 120px;
+    bottom: 30px;
+}
+
+body > main > section#About > section#education > section#HNDLevel > h3#HSecond {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: #67fffd !important;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    left: 180px;
+    top: 8px;
+}
+
+body > main > section#About > section#education > section#HNDLevel > h3#HSecond span {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #ffffff !important;
+}
+
+body > main > section#About > section#education > section#HNDLevel > p {
+    font-family: "Arial";
+    font-weight: bold;
+    font-size: 30px;
+    color: #ffffff !important;
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    left: 180px;
+    top: 20px;
+}
+
+/** Main -  About Section Educational Section Degree Level Section **/
+#DegreeLevel {
+    position: relative;
+    bottom: 1025px;
+    left: 950px;
+    width: 950px;
+    height: 500px;
+    z-index: 1;
+}
+
+#education_4 {
+    display: inline-block;
+    position: relative;
+    left: 60px;
+}
+
+body > main > section#About > section#education > section#DegreeLevel > div:nth-child(2) {
+    height: 219px;
+    width: 3px;
+    background: #2C3E50;
+    display: inline-block;
+    position: relative;
+    top: 210px;
+    left: 2px;
+}
+
+body > main > section#About > section#education > section#DegreeLevel > div:nth-child(3) {
+    height: 50px;
+    width: 200px;
+    background: #D9D9D9;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+    left: 60px;
+    bottom: 18px;
+    box-shadow: 0 -1px 8px 2px #1c1717e8;
+}
+
+body > main > section#About > section#education > section#DegreeLevel > h3#DFirst {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: #b2209f !important;
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    right: 126px;
+    bottom: 30px;
+}
+
+body > main > section#About > section#education > section#DegreeLevel > h3#DSecond {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: #67fffd !important;
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    left: 180px;
+}
+
+body > main > section#About > section#education > section#DegreeLevel > h3#DSecond span {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #ffffff !important;
+}
+
+body > main > section#About > section#education > section#DegreeLevel > p {
+    font-family: "Arial";
+    font-weight: bold;
+    font-size: 30px;
+    color: #ffffff !important;
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    left: 180px;
+    top: 15px;
+}
+
+
+/**-------------------------------------------- Main - Skills --------------------------------------------**/
+/** Main - Skills Header */
+#Skills {
+    width: 100%;
+    height: 1200px;
+    position: relative;
+}
+
+section#Skills {
+    position: relative;
+}
+
+/** Main - Skills About Header */
+body > main > section#Skills > article h4 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+}
+
+body > main > section#Skills > article > h1 {
+    position: absolute;
+    top: 135px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+
+body > main > section#Skills > article > div:nth-child(5) {
+    background: url("img/images/skillsMain.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 1250px;
+    opacity: 30%;
+    position: relative;
+    bottom: 21px;
+}
+
+/** Main - Skills Header Vector */
+/** Main - Skills Header  */
+body > main > section#Skills > div:nth-child(2) i {
+    color: #2C3E50;
+    font-size: 100px;
+    position: absolute;
+    left: 60px;
+    top: 120px;
+}
+
+/** Main - Skills  Footer */
+body > main > section#Skills > div:nth-child(3) i {
+    color: #2C3E50;
+    font-size: 100px;
+    position: absolute;
+    right: 80px;
+    bottom: 120px;
+}
+
+/** Main - Skills - Language */
+
+body > main > section#Skills > section:nth-child(4) {
+    width: 1377px;
+    height: 825px;
+    position: absolute;
+    top: 172px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+body > main > section#Skills > section:nth-child(4) > section#Language {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    display: flex;
+}
+
+body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child {
+    background: #000000;
+    width: 520px;
+    height: 600px;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: 0 -1px 8px 2px #ffffff;
+    margin-left:-170px ;
+}
+
+/** Main - Skills - Language Header*/
+body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(1) {
+    background: #ffffff;
+    position: absolute;
+    width: 350px;
+    height: 80px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 0 -1px 8px 2px #ffffff;
+}
+
+body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(1) h1 {
+    font-size: 35px;
+    font-family: "JetBrains Mono NL ExtraBold";
+    font-weight: bold;
+    color: #0e269c;
+    text-align: center;
+    margin-top: calc(40px / 2);
+}
+
+/** Main - Skills - Language First Row */
+body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(2) {
+    background: #000000;
+    position: relative;
+    width: 400px;
+    height: 150px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 200px;
+    margin: auto;
+}
+
+body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(2) > div:nth-child(1) {
+    background-image: url("img/vector/svg/java.svg");
+    background-size: cover;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border-radius: 15px;
+    box-shadow: 0 -1px 8px 2px #ffffff;
+}
+
+body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(2) > div:nth-child(2) {
+    background-image: url("img/vector/svg/html.svg");
+    position: absolute;
+    background-size: cover;
+    width: 110px;
+    height: 110px;
+    border-radius: 15px;
+    left: 145px;
+    box-shadow: 0 -1px 8px 2px #ffffff;
+}
+
+body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(2) > div:nth-child(3) {
+    background-image: url("img/vector/svg/css.svg");
+    background-size: cover;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border-radius: 15px;
+    right: 0;
+    box-shadow: 0 -1px 8px 2px #ffffff;
+}
+
+/** Main - Skills - Language Second Row */
+body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(3) {
+    background: #000000;
+    position: relative;
+    width: 400px;
+    height: 150px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 200px;
+    margin: auto;
+}
+
+body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(3) > div:nth-child(1) {
+    background-image: url("img/vector/svg/javascript.svg");
+    background-size: cover;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border-radius: 15px;
+    left: 0;
+    box-shadow: 0 -1px 8px 2px #ffffff;
+}
+
+body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(3) > div:nth-child(2) {
+    background-image: url("img/vector/svg/pythone.svg");
+    background-size: cover;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border-radius: 15px;
+    left: 145px;
+    box-shadow: 0 -1px 8px 2px #ffffff;
+}
+
+body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(3) > div:nth-child(3) {
+    background-image: url("img/vector/svg/nodejs.png");
+    background-size: cover;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border-radius: 15px;
+    right: 0;
+    box-shadow: 0 -1px 8px 2px #ffffff;
+}
+
+body > main > section#Skills > section:nth-child(4) > section#FreeLancer {
+    width: 520px;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+}
+
+
+/*set up Freelancer Section*/
+
+#FreeLancer{
+    background: #000000;
+    width: 520px;
+    height: 600px;
+    position: relative;
+    border-radius: 50px;
+    margin-right: auto;
+    box-shadow: 0 -1px 8px 2px #ffffff;
+
+}
+
+/*!** Main - Skills - Language Header*!*/
+body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(1) {
+    background: #ffffff;
+    position: absolute;
+    width: 350px;
+    height: 80px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 0 -1px 8px 2px #1c1717e8;
+}
+
+body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(1) h1 {
+    font-size: 35px;
+    font-family: "JetBrains Mono NL ExtraBold";
+    font-weight: bold;
+    color: #0e269c;
+    text-align: center;
+    margin-top: calc(40px / 2);
+}
+
+/*!** Main - Skills - Language First Row *!*/
+body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(2) {
+    background: #000000;
+    position: relative;
+    width: 400px;
+    height: 150px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 200px;
+    margin: auto;
+}
+
+body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(2) > div:nth-child(1) {
+    background-image: url("/assets/GalleryImages/icons8-ebay-96.png");
+    background-size: cover;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border-radius: 15px;
+    box-shadow: 0 -1px 8px 2px #ffffff;
+}
+
+body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(2) > div:nth-child(2) {
+    background-image: url("/assets/GalleryImages/icons8-depop-96.png");
+    position: absolute;
+    background-size: cover;
+    width: 110px;
+    height: 110px;
+    border-radius: 15px;
+    left: 145px;
+    box-shadow: 0 -1px 8px 2px #ffffff;
+}
+
+body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(2) > div:nth-child(3) {
+    background-image: url("/assets/GalleryImages/icons8-amazon-96.png");
+    background-size: cover;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border-radius: 15px;
+    right: 0;
+    box-shadow: 0 -1px 8px 2px #ffffff;
+}
+
+/*!** Main - Skills - Language Second Row *!*/
+body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(3) {
+    background: #000000;
+    position: relative;
+    width: 400px;
+    height: 150px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 200px;
+    margin: auto;
+}
+
+body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(3) > div:nth-child(1) {
+    background-image: url("/assets/GalleryImages/icons8-etsy-96.png");
+    background-size: cover;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border-radius: 15px;
+    left: 0;
+    box-shadow: 0 -1px 8px 2px #ffffff;
+}
+
+body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(3) > div:nth-child(2) {
+    background-image: url("/assets/GalleryImages/icons8-fiverr-96.png");
+    background-size: cover;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border-radius: 15px;
+    left: 145px;
+    box-shadow: 0 -1px 8px 2px #ffffff;
+}
+
+body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(3) > div:nth-child(3) {
+    background-image: url("/assets/GalleryImages/icons8-shopify-96.png");
+    background-size: cover;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border-radius: 15px;
+    right: 0;
+    box-shadow: 0 -1px 8px 2px #ffffff;
+
+}
+
+
+/** Main - Skills - Tool */
+body > main > section#Skills > section:nth-child(4) > section#Tool {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child {
+    background: #000000;
+    width: 520px;
+    height: 600px;
+    position: relative;
+    border-radius: 50px;
+    margin-right: -170px;
+    box-shadow: 0 -1px 8px 2px #ffffff;
+}
+
+/** Main - Skills - Language Header*/
+body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(1) {
+    background: #ffffff;
+    position: absolute;
+    width: 350px;
+    height: 80px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 0 -1px 8px 2px #1c1717e8;
+}
+
+body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(1) h1 {
+    font-size: 35px;
+    font-family: "JetBrains Mono NL ExtraBold";
+    font-weight: bold;
+    color: #0e269c;
+    text-align: center;
+    margin-top: calc(40px / 2);
+}
+
+/** Main - Skills - Language First Row */
+body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(2) {
+    background: #000000;
+    position: relative;
+    width: 400px;
+    height: 150px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 200px;
+    margin: auto;
+}
+
+body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(2) > div:nth-child(1) {
+    background-image: url("img/vector/svg/icons8-intellij-idea.svg");
+    background-size: cover;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border-radius: 15px;
+    left: 0;
+    box-shadow: 0 -1px 8px 2px #ffffff;
+}
+
+body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(2) > div:nth-child(2) {
+    background-image: url("img/vector/svg/icons8-visual-studio-code-2019.svg");
+    background-size: cover;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border-radius: 15px;
+    left: 145px;
+    box-shadow: 0 -1px 8px 2px #ffffff;
+}
+
+body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(2) > div:nth-child(3) {
+    background-image: url("img/vector/svg/icons8-figma.svg");
+    background-size: cover;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border-radius: 15px;
+    right: 0;
+    box-shadow: 0 -1px 8px 2px #ffffff;
+}
+
+/** Main - Skills - Language Second Row */
+body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(3) {
+    background: #000000;
+    position: relative;
+    width: 400px;
+    height: 150px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 200px;
+    margin: auto;
+}
+
+body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(3) > div:nth-child(1) {
+    background-image: url("/assets/GalleryImages/icons8-adobe-premiere-pro-96.png");
+    background-size: cover;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border-radius: 15px;
+    left: 0;
+    box-shadow: 0 -1px 8px 2px #ffffff;
+}
+
+body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(3) > div:nth-child(2) {
+    background-image: url("/assets/GalleryImages/icons8-adobe-illustrator-96.png");
+    background-size: cover;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border-radius: 15px;
+    left: 145px;
+    box-shadow: 0 -1px 8px 2px #ffffff;
+}
+
+body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(3) > div:nth-child(3) {
+    background-image: url("/assets/GalleryImages/icons8-adobe-photoshop-96.png");
+    background-size: cover;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border-radius: 15px;
+    right: 0;
+    box-shadow: 0 -1px 8px 2px #ffffff;
+}
+
+
+/**-------------------------------------------- Main - Gallery --------------------------------------------**/
+
+
+
+/** Main - Gallery Header */
+#Gallery {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+}
+
+section#Gallery {
+    position: relative;
+}
+
+
+body > main > section#Gallery > section#image_section {
+    width: 1600px;
+    height: 1000px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 250px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+body > main > section#Gallery > section#image_section > div {
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.68);
+}
+
+body > main > section#Gallery > section#image_section > div:hover {
+    cursor: pointer;
+    box-shadow: 2px 5px 3px 3px rgba(0, 0, 0, 0.68);
+}
+
+/** Main - Gallery Images Section */
+body > main > section#Gallery > section#image_section > div:nth-child(1) {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    background: url("/assets/GalleryImages/Gopro.jpg");
+    background-position: center;
+    background-size: cover;
+    box-shadow: 2px 5px 3px 3px rgba(0, 0, 0, 0.68);
+}
+
+body > main > section#Gallery > section#image_section > div:nth-child(2) {
+    background: url("/assets/GalleryImages/Cricket.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+body > main > section#Gallery > section#image_section > div:nth-child(3) {
+    background: url("/assets/GalleryImages/IMG-8530.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+body > main > section#Gallery > section#image_section > div:nth-child(4) {
+    background: url("/assets/GalleryImages/Cap.jpg");
+    grid-column: 4/4;
+    grid-row: 1/3;
+    background-position: center;
+    background-size: cover;
+}
+
+body > main > section#Gallery > section#image_section > div:nth-child(5) {
+    grid-column: 2/4;
+    grid-row: 2/4;
+    background: url("/assets/GalleryImages/Mates.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+/**-------------------------------------------- Main - Achievements --------------------------------------------**/
+/** Main - Achievements Header */
+#Achievements {
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+
+section#Achievements {
+    position: relative;
+}
+
+/** Main - Achievements About Header */
+body > main > section#Achievements > article h4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+}
+
+body > main > section#Achievements > article > h1 {
+    position: absolute;
+    top: 140px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+}
+
+/** Main - Achievements Header Underline */
+body > main > section#Achievements > article > div:nth-child(3) {
+    width: 135px;
+    height: 7px;
+    background: #2ED573;
+    position: relative;
+    left: 41%;
+    top: 195px;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+body > main > section#Achievements > article > div:nth-child(4) {
+    width: 100px;
+    height: 7px;
+    position: relative;
+    background: #2ED573;
+    margin-top: 0.5em;
+    left: 41%;
+    top: 195px;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+/** Main - Achievements Main Image */
+body > main > section#Achievements > section div#images > img:nth-child(1) {
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    top: 0;
+    opacity: 30%;
+}
+
+/** Main - Achievements Main Vector */
+body > main > section#Achievements > section div#images > img:nth-child(2) {
+    position: absolute;
+    top: 70px;
+    bottom: 0;
+    left: 0;
+    right: 65px;
+    margin: auto;
+}
+
+/** Main - Achievements Star Vector 1 */
+body > main > section#Achievements > section div#images > img:nth-child(3) {
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    margin: auto;
+}
+
+/** Main - Achievements Star Vector 2 */
+body > main > section#Achievements > section div#images > img:nth-child(4) {
+    position: absolute;
+    bottom: 70px;
+    right: 100px;
+    margin: auto;
+}
+
+/**-------------------------------------------- Main - Project --------------------------------------------**/
+/** Main - Project Header */
+#Project {
+    width: 100%;
+    height: 1100px;
+    position: relative;
+}
+
+
+#projects{
+    position: relative;
+}
+.project-about{
+    position: relative;
+    height: 22vh;
+    width: 35vw;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.project-about>h5:nth-child(1){
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.4vw;
+    font-size: 1.2vw;
+    font-weight: 900;
+    margin: auto;
+}
+.project-about>h1:nth-child(2){
+    font-size: 1.5vw;
+    margin-top: 2.5vh;
+}
+.project-about>p{
+    font-size: 1.2vw;
+    opacity: 40%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.project-about>p:hover{
+    transition: 0.3s;
+    opacity: 100%;
+}
+
+
+#projects {
+    height: 100vh;
+    z-index: 50;
+    padding: 2vh 0;
+    text-align: center;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.project {
+    width: 30vw;
+    height: 32vh;
+    margin: 3vh 5vw;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+}
+
+.project:hover {
+    transform: translateY(-4vh);
+    box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.7);
+}
+
+.project-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 1vw;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-out;
+}
+
+.project:hover .project-overlay {
+    transform: translateY(0);
+
+}
+.project-container>div:nth-child(1){
+    background-image: url("/assets/GalleryImages/computer.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 3vh;
+}
+.project-container>div:nth-child(2){
+    background-image: url("/assets/GalleryImages/hostel.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 3vh;
+}
+.project-container>div:nth-child(3){
+    background-image: url("/assets/GalleryImages/hotel.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 3vh;
+}
+.project-container>div:nth-child(4){
+    background-image: url("/assets/GalleryImages/mine.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 3vh;
+}
+
+section#Project {
+    position: relative;
+}
+.assignment {
+    top: 2vh;
+    bottom: 8vh;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    padding: 0.9vw 1.8vw;
+    background-color: #0c0c0c;
+    border: 0.15vw solid #fff;
+    color: #fff;
+    border-radius: 2vw;
+    font-size: 1vw;
+    letter-spacing: 0.25vw;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    z-index: 1;
+    text-decoration: none;
+}
+.assignment::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.assignment:hover {
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.7);
+}
+
+.assignment:hover::before {
+    left: 0;
+}
+.assignment:active{
+    scale: 0.98;
+}
+
+
+/**-------------------------------------------- Main - Services --------------------------------------------**/
+/** Main - Services Header */
+#Services {
+    width: 100%;
+    height: 900px;
+    position: relative;
+}
+
+section#Services {
+    position: relative;
+}
+
+
+
+/** Main - Services About Header */
+body > main > section#Services > article h4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+}
+
+body > main > section#Services > article > h1 {
+    position: absolute;
+    top: 140px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+}
+
+/** Main - Services Header Underline */
+body > main > section#Services > article > div:nth-child(3) {
+    width: 135px;
+    height: 7px;
+    background: #2ED573;
+    position: relative;
+    left: 45%;
+    top: 195px;
+    border-radius: 3px;
+    z-index: 1;
+    transition: all 3s ease;
+}
+
+body > main > section#Services > article > div:nth-child(4) {
+    width: 100px;
+    height: 7px;
+    position: relative;
+    background: #2ED573;
+    margin-top: 0.5em;
+    left: 45%;
+    top: 195px;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+/** Main - Services Background Image*/
+body > main > section#Services > section:nth-child(1) img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 50%;
+}
+
+/** Main - Services Background Design*/
+body > main > section#Services > section#ServicesBGDesign > aside:first-child {
+    position: relative;
+    transition: all 3s ease;
+
+
+}
+
+
+
+/** Main - Services Background Vector*/
+body > main > section#Services > section#ServicesBGDesign > img {
+    position: absolute;
+    top: 200px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+
+}
+
+
+/** Main - Services Development - Section*/
+body > main > section#Services > section#MainSection {
+    position: relative;
+    width: 1450px;
+    height: 600px;
+    top: 170px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/** Main - Services Development - Section - Enterprise Application */
+body > main > section#Services > section#MainSection > div:nth-child(1) {
+    position: absolute;
+    width: calc(1600px / 4);
+    height: 550px;
+    background: #000000;
+    left: 0;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px 2px #ffffff;
+    animation: move  3s infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: scale(0.6);
+    }
+}
+
+
+
+body > main > section#Services > section#MainSection > div:nth-child(1) > div:first-child {
+    position: absolute;
+    width: calc(1600px / 4);
+    height: 130px;
+    background: #000000;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: inset -13px -13px 16px #000000, inset 13px 13px 16px rgba(13, 39, 80, 0.16);
+    transition: all 3s ease;
+    cursor: pointer;
+}
+
+body > main > section#Services > section#MainSection > div:nth-child(1) > div:first-child > div:first-child {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: #ffffff;
+    border-radius: 100%;
+    box-shadow: 0 -1px 8px 2px #ffffff, inset -13px -13px 16px #ffffff, inset 13px 13px 16px rgb(255, 255, 255), inset 13px 13px 16px rgb(255, 255, 255);
+    top: 120px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+body > main > section#Services > section#MainSection > div:nth-child(1) > div:first-child > div:first-child > i {
+    font-size: 60px;
+    color: #000000;
+    position: absolute;
+    top: 30px;
+    left: 25px;
+}
+
+body > main > section#Services > section#MainSection > div:nth-child(1) > h2 {
+    position: absolute;
+    top: 205px;
+    left: 75px;
+    font-family: "JetBrains Mono NL ExtraBold";
+    font-weight: bold;
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 26px;
+}
+
+body > main > section#Services > section#MainSection > div:nth-child(1) > p {
+    position: absolute;
+    top: 255px;
+    left: 63px;
+    color: #ffffff;
+    font-family: Inter, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    padding-right: 60px;
+    border-left-width: 30px;
+}
+
+/** Main - Services Development - Section - Web Development */
+body > main > section#Services > section#MainSection > div:nth-child(2) {
+    position: absolute;
+    width: calc(1600px / 4);
+    height: 550px;
+    background: #000000;
+    border-radius: 20px;
+    left: 520px;
+    box-shadow: 0 2px 8px 2px #ffffff;
+    animation: move  3s infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: scale(0.6);
+    }
+}
+
+
+body > main > section#Services > section#MainSection > div:nth-child(2) > div:first-child {
+    position: absolute;
+    width: calc(1600px / 4);
+    height: 130px;
+    background: #000000;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: inset -13px -13px 16px #000000, inset 13px 13px 16px rgba(13, 39, 80, 0.16);
+}
+
+body > main > section#Services > section#MainSection > div:nth-child(2) > div:first-child > div:first-child {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: #ffffff;
+    border-radius: 100%;
+    box-shadow: 0 -1px 8px 2px #ffffff, inset -13px -13px 16px #F9FAFB, inset 13px 13px 16px rgb(255, 255, 255), inset 13px 13px 16px rgb(255, 255, 255);
+    top: 120px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+body > main > section#Services > section#MainSection > div:nth-child(2) > div:first-child > div:first-child > i {
+    font-size: 60px;
+    color: #000000;
+    position: absolute;
+    top: 30px;
+    left: 25px;
+}
+
+body > main > section#Services > section#MainSection > div:nth-child(2) > h2 {
+    position: absolute;
+    top: 205px;
+    left: 75px;
+    font-family: "JetBrains Mono NL ExtraBold";
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+body > main > section#Services > section#MainSection > div:nth-child(2) > p {
+    position: absolute;
+    top: 255px;
+    left: 63px;
+    color: #ffffff;
+    font-family: Inter, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    padding-right: 60px;
+    border-left-width: 30px;
+}
+
+
+/** Main - Services Development - Section - App Development */
+body > main > section#Services > section#MainSection > div:nth-child(3) {
+    position: absolute;
+    width: calc(1600px / 4);
+    height: 550px;
+    background: #000000;
+    right: 0;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px 2px #ffffff;
+    animation: move  3s infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: scale(0.6);
+    }
+}
+
+
+
+
+
+body > main > section#Services > section#MainSection > div:nth-child(3) > div:first-child {
+    position: absolute;
+    width: calc(1600px / 4);
+    height: 130px;
+    background: #000000;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: inset -13px -13px 16px #000000, inset 13px 13px 16px rgba(13, 39, 80, 0.16);
+}
+
+body > main > section#Services > section#MainSection > div:nth-child(3) > div:first-child > div:first-child {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: #F9FAFB;
+    border-radius: 100%;
+    box-shadow: 0 -1px 8px 2px #ffffff, inset -13px -13px 16px #F9FAFB, inset 13px 13px 16px rgb(255, 255, 255), inset 13px 13px 16px rgb(255, 255, 255);
+    top: 120px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: auto;
+}
+
+body > main > section#Services > section#MainSection > div:nth-child(3) > div:first-child > div:first-child > i {
+    font-size: 60px;
+    color: #000000;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+body > main > section#Services > section#MainSection > div:nth-child(3) > h2 {
+    position: absolute;
+    top: 205px;
+    left: 75px;
+    font-family: "JetBrains Mono NL ExtraBold";
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 26px;
+}
+
+body > main > section#Services > section#MainSection > div:nth-child(3) > p {
+    position: absolute;
+    top: 255px;
+    left: 63px;
+    color: #ffffff;
+    font-family: Inter, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    padding-right: 60px;
+    border-left-width: 30px;
+}
+
+
+/**-------------------------------------------- Main - Contact --------------------------------------------**/
+/** Main - Contact Header */
+#Contact {
+    width: 100%;
+    height: 1150px;
+    position: relative;
+}
+
+
+/** Main - Contact Style Box */
+body > main > section#Contact > section:nth-child(2) > div {
+    position: absolute;
+    width: calc(100% / 3.50);
+    height: 100%;
+    background: #38ff00;
+    top: 0;
+    left: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 1;
+}
+
+/** Main - Contact Details Box sectioning */
+body > main > section#Contact > section:nth-child(3) {
+    position: absolute;
+    width: 597px;
+    height: 650px;
+    background: #606060;
+    box-shadow: 0 -1px 8px 2px #1c1717e8;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    top: 320px;
+    left: 308px;
+    z-index: 1;
+}
+
+body > main > section#Contact > section:nth-child(3) > form > input:nth-child(1) {
+    width: 445px;
+    height: 55px;
+    font-size: 20px;
+    font-family: Inter, sans-serif;
+    position: absolute;
+    top: 55px;
+    left: 70px;
+    border-radius: 15px;
+    padding-left: 15px;
+    box-shadow: 0 4px 9px 5px #000000;
+    border: none;
+}
+
+body > main > section#Contact > section:nth-child(3) > form > input:nth-child(2) {
+    width: 445px;
+    height: 55px;
+    font-size: 20px;
+    font-family: Inter, sans-serif;
+    position: absolute;
+    top: 145px;
+    left: 70px;
+    border-radius: 15px;
+    padding-left: 15px;
+    box-shadow: 0 4px 9px 5px #878585e8;
+    border: none;
+}
+
+body > main > section#Contact > section:nth-child(3) > form > input:nth-child(3) {
+    width: 445px;
+    height: 55px;
+    font-size: 20px;
+    font-family: Inter, sans-serif;
+    position: absolute;
+    top: 235px;
+    left: 70px;
+    border-radius: 15px;
+    padding-left: 15px;
+    box-shadow: 0 4px 9px 5px #878585e8;
+    border: none;
+}
+
+body > main > section#Contact > section:nth-child(3) > form > textarea:nth-child(4) {
+    width: 445px;
+    height: 152px;
+    font-size: 20px;
+    font-family: Inter, sans-serif;
+    position: absolute;
+    top: 331px;
+    left: 70px;
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+    box-shadow: 0 4px 9px 5px #878585e8;
+    border: none;
+}
+
+/** Main - Contact Details Button */
+body > main > section#Contact > section:nth-child(3) > div:nth-child(2) {
+    position: absolute;
+    top: 545px;
+    left: 70px;
+}
+
+body > main > section#Contact > section:nth-child(3) > div:nth-child(2) > button {
+    background-color: #2ED573;
+    border-radius: 100px;
+    box-shadow: 0 -1px 8px 2px #1c1717e8;
+    border: none;
+    color: #ECF0F3;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 15px 0 15px;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: Poppins, sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+body > main > section#Contact > section:nth-child(3) > div:nth-child(2) > button > div {
+    height: 40px;
+    width: 40px;
+    float: right;
+    margin-left: 9px;
+    background: #F9FAFB;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    bottom: 5px;
+    left: 5px;
+    box-shadow: inset -13px -13px 16px #FFFFFF, inset 13px 13px 16px rgba(13, 39, 80, 0.16);
+}
+
+body > main > section#Contact > section:nth-child(3) > div:nth-child(2) > button i {
+    color: #2ED573;
+    position: absolute;
+    left: 200px;
+    top: 14px;
+    z-index: 1;
+}
+
+/** Main - Contact Details Get In Touch */
+body > main > section#Contact > section:nth-child(4) {
+    width: 580px;
+    height: 550px;
+    position: absolute;
+    top: 70px;
+    left: 682px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+body > main > section#Contact > section:nth-child(4) > article {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body > main > section#Contact > section:nth-child(4) > article:nth-child(1) {
+    width: 100%;
+    height: 60px;
+}
+
+body > main > section#Contact > section:nth-child(4) > article:nth-child(1) > h2:nth-child(1) {
+    font-size: 30px;
+    font-family: Poppins, sans-serif;
+    color: #FF6348;
+    display: flex;
+}
+
+/** Main - Contact Details Get In Touch Underline */
+body > main > section#Contact > section:nth-child(4) > article:nth-child(1) > div:nth-child(2) {
+    width: 135px;
+    height: 7px;
+    background: rgb(46, 213, 115);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 36px;
+    right: 186px;
+}
+
+body > main > section#Contact > section:nth-child(4) > article:nth-child(1) > div:nth-child(3) {
+    width: 100px;
+    height: 7px;
+    background: #2ED573;
+    border-radius: 3px;
+    position: relative;
+    top: 48px;
+    right: 321px;
+}
+
+body > main > section#Contact > section:nth-child(4) > article:nth-child(2) {
+    width: 100%;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+}
+
+body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > div {
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > div:nth-child(1) {
+    height: 150px;
+}
+
+body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > div:nth-child(1) > h2 {
+    font-size: 28px;
+    font-family: cursive;
+    font-weight: bolder;
+    margin-left: 35px;
+}
+
+/** Main - Contact Details Get In Touch Section - Address*/
+body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > div:nth-child(2) i {
+    font-size: 35px;
+    margin-left: 80px;
+}
+
+body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > div:nth-child(2) p {
+    font-family: cursive;
+    font-weight: bolder;
+    position: relative;
+    font-size: 25px;
+    left: 16px;
+}
+
+/** Main - Contact Details Get In Touch Section - Contact*/
+body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > div:nth-child(3) i {
+    font-size: 35px;
+    margin-left: 80px;
+}
+
+body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > div:nth-child(3) h3 {
+    font-family: cursive;
+    font-weight: bolder;
+    position: relative;
+    font-size: 25px;
+    left: 16px;
+}
+
+/** Main - Contact Details Get In Touch Section - Email*/
+body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > div:nth-child(4) i {
+    font-size: 35px;
+    margin-left: 80px;
+}
+
+body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > div:nth-child(4) h3 {
+    font-family: cursive;
+    font-weight: bolder;
+    position: relative;
+    font-size: 25px;
+    left: 16px;
+}
+
+/** Main - Contact Details - Social Media*/
+body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > div:nth-child(5) {
+    height: 150px;
+}
+
+.social-menu ul {
+    position: relative;
+    bottom: 0;
+    left: 289px;
+    right: 0;
+    top: 46px;
+    margin: auto;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    display: flex;
+}
+
+.social-menu ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.social-menu ul li .fa {
+    color: #000000;
+    font-size: 35px;
+    line-height: 50px;
+    transition: 0.5s;
+}
+
+.social-menu > ul > li .fa:hover {
+    color: #F8F7F3;
+}
+
+.social-menu ul > li > a > i {
+    font-size: 35px;
+    position: absolute;
+    top: 13px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+/*Social Animation*/
+
+
+.social-menu ul > li > a {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #95A5A6;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0, 0px);
+    box-shadow: rgb(28 23 23) -1px 4px 5px 3px;
+}
+
+.social-menu ul > li > a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+    border-radius: 100%;
+    color: #F8F7F3;
+}
+
+.social-menu > ul > li:nth-child(1) a:hover {
+    background: #3b5998;
+}
+
+.social-menu > ul > li:nth-child(2) a:hover {
+    background: #0A66C2;
+}
+
+.social-menu > ul > li:nth-child(3) a:hover {
+    background: #1DA1F2;
+}
+
+.social-menu > ul > li:nth-child(4) a:hover {
+    background: #333;
+}
+
+.social-menu > ul > li:nth-child(5) a:hover {
+    background: #247ef4;
+}
+
+.social-menu > ul > li:nth-child(6) a:hover {
+    background: deeppink;
+}
+
+/** Footer Section -Footer copyright*/
+
+#small {
+    font-family: cursive;
+    font-weight: bold;;
+    font-size: 30px;
+    color: #ffffff;
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    top: 28px;
+}
