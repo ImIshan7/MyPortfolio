@@ -331,6 +331,7 @@ body > main > section#Home > section:nth-child(2) > section:nth-child(3) {
     position: relative;
     width: 100%;
     height: 2200px;
+    background-color: black;
 
 }
 
@@ -402,22 +403,16 @@ body > main > section#About > article#paragraphTwo p {
 
 #aboutImg {
     position: relative;
-    box-shadow: 0 -1px 8px 2px #1c1717e8;
-    height: 100%;
-    width: 480px;
-    border-radius: 20px;
-    bottom: 300px;
-    left: 1180px;
+    box-shadow: 0 -1px 8px 2px #ffffff;
+    height: 95%;
+    width: 550px;
+    border-radius: 50%;
+    bottom: 250px;
+    left: 1200px;
     z-index: 1;
+    cursor: pointer;
 }
 
-/** Main - About Section Vector Star Div  */
-
-#vectorStar {
-    position: relative;
-    left: 1270px;
-    bottom: 890px;
-}
 
 /** Main - About Section Article h3 First Child */
 #details {
@@ -915,6 +910,7 @@ body > main > section#About > section#education > section#DegreeLevel > p {
     width: 100%;
     height: 1200px;
     position: relative;
+    background-color: black;
 }
 
 section#Skills {
@@ -1049,6 +1045,7 @@ body > main > section#Skills > section:nth-child(4) > section#Language > div:fir
     height: 110px;
     border-radius: 15px;
     box-shadow: 0 -1px 8px 2px #ffffff;
+    cursor: pointer;
 }
 
 body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(2) > div:nth-child(2) {
@@ -1060,6 +1057,7 @@ body > main > section#Skills > section:nth-child(4) > section#Language > div:fir
     border-radius: 15px;
     left: 145px;
     box-shadow: 0 -1px 8px 2px #ffffff;
+    cursor: pointer;
 }
 
 body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(2) > div:nth-child(3) {
@@ -1071,6 +1069,7 @@ body > main > section#Skills > section:nth-child(4) > section#Language > div:fir
     border-radius: 15px;
     right: 0;
     box-shadow: 0 -1px 8px 2px #ffffff;
+    cursor: pointer;
 }
 
 /** Main - Skills - Language Second Row */
@@ -1095,6 +1094,7 @@ body > main > section#Skills > section:nth-child(4) > section#Language > div:fir
     border-radius: 15px;
     left: 0;
     box-shadow: 0 -1px 8px 2px #ffffff;
+    cursor: pointer;
 }
 
 body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(3) > div:nth-child(2) {
@@ -1106,6 +1106,7 @@ body > main > section#Skills > section:nth-child(4) > section#Language > div:fir
     border-radius: 15px;
     left: 145px;
     box-shadow: 0 -1px 8px 2px #ffffff;
+    cursor: pointer;
 }
 
 body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(3) > div:nth-child(3) {
@@ -1117,6 +1118,7 @@ body > main > section#Skills > section:nth-child(4) > section#Language > div:fir
     border-radius: 15px;
     right: 0;
     box-shadow: 0 -1px 8px 2px #ffffff;
+    cursor: pointer;
 }
 
 body > main > section#Skills > section:nth-child(4) > section#FreeLancer {
@@ -1187,6 +1189,7 @@ body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:f
     height: 110px;
     border-radius: 15px;
     box-shadow: 0 -1px 8px 2px #ffffff;
+    cursor: pointer;
 }
 
 body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(2) > div:nth-child(2) {
@@ -1198,6 +1201,7 @@ body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:f
     border-radius: 15px;
     left: 145px;
     box-shadow: 0 -1px 8px 2px #ffffff;
+    cursor: pointer;
 }
 
 body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(2) > div:nth-child(3) {
@@ -1209,6 +1213,7 @@ body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:f
     border-radius: 15px;
     right: 0;
     box-shadow: 0 -1px 8px 2px #ffffff;
+    cursor: pointer;
 }
 
 /*!** Main - Skills - Language Second Row *!*/
@@ -1233,6 +1238,7 @@ body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:f
     border-radius: 15px;
     left: 0;
     box-shadow: 0 -1px 8px 2px #ffffff;
+    cursor: pointer;
 }
 
 body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(3) > div:nth-child(2) {
@@ -1244,6 +1250,7 @@ body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:f
     border-radius: 15px;
     left: 145px;
     box-shadow: 0 -1px 8px 2px #ffffff;
+    cursor: pointer;
 }
 
 body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(3) > div:nth-child(3) {
@@ -1255,6 +1262,7 @@ body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:f
     border-radius: 15px;
     right: 0;
     box-shadow: 0 -1px 8px 2px #ffffff;
+    cursor: pointer;
 
 }
 
@@ -1321,6 +1329,7 @@ body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-c
     border-radius: 15px;
     left: 0;
     box-shadow: 0 -1px 8px 2px #ffffff;
+    cursor: pointer;
 }
 
 body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(2) > div:nth-child(2) {
@@ -1332,6 +1341,7 @@ body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-c
     border-radius: 15px;
     left: 145px;
     box-shadow: 0 -1px 8px 2px #ffffff;
+    cursor: pointer;
 }
 
 body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(2) > div:nth-child(3) {
@@ -1343,6 +1353,7 @@ body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-c
     border-radius: 15px;
     right: 0;
     box-shadow: 0 -1px 8px 2px #ffffff;
+    cursor: pointer;
 }
 
 /** Main - Skills - Language Second Row */
@@ -1367,6 +1378,7 @@ body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-c
     border-radius: 15px;
     left: 0;
     box-shadow: 0 -1px 8px 2px #ffffff;
+    cursor: pointer;
 }
 
 body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(3) > div:nth-child(2) {
@@ -1378,6 +1390,7 @@ body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-c
     border-radius: 15px;
     left: 145px;
     box-shadow: 0 -1px 8px 2px #ffffff;
+    cursor: pointer;
 }
 
 body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(3) > div:nth-child(3) {
@@ -1389,6 +1402,7 @@ body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-c
     border-radius: 15px;
     right: 0;
     box-shadow: 0 -1px 8px 2px #ffffff;
+    cursor: pointer;
 }
 
 
@@ -1399,8 +1413,9 @@ body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-c
 /** Main - Gallery Header */
 #Gallery {
     width: 100%;
-    height: 1000px;
+    height: 900px;
     position: relative;
+    background-color: black;
 }
 
 section#Gallery {
@@ -1423,7 +1438,8 @@ body > main > section#Gallery > section#image_section {
 }
 
 body > main > section#Gallery > section#image_section > div {
-    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.68);
+    box-shadow: 1px 2px 3px 1px rgb(255, 174, 0);
+    border-radius: 10%;
 }
 
 body > main > section#Gallery > section#image_section > div:hover {
@@ -1477,6 +1493,7 @@ body > main > section#Gallery > section#image_section > div:nth-child(5) {
     width: 100%;
     height: 800px;
     position: relative;
+    background-color: black;
 }
 
 section#Achievements {
@@ -1528,6 +1545,14 @@ body > main > section#Achievements > article > div:nth-child(4) {
     z-index: 1;
 }
 
+#intro{
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+
+}
+
 /** Main - Achievements Main Image */
 body > main > section#Achievements > section div#images > img:nth-child(1) {
     position: absolute;
@@ -1570,6 +1595,7 @@ body > main > section#Achievements > section div#images > img:nth-child(4) {
     width: 100%;
     height: 1100px;
     position: relative;
+    background-color: black;
 }
 
 
@@ -1734,6 +1760,7 @@ section#Project {
     width: 100%;
     height: 900px;
     position: relative;
+    background-color: black;
 }
 
 section#Services {
@@ -2065,6 +2092,7 @@ body > main > section#Services > section#MainSection > div:nth-child(3) > p {
     width: 100%;
     height: 1150px;
     position: relative;
+    background-color: black;
 }
 
 
@@ -2419,6 +2447,7 @@ body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > di
     font-weight: bold;;
     font-size: 30px;
     color: #ffffff;
+    background-color: black;
     display: flex;
     align-content: space-around;
     flex-wrap: wrap;
