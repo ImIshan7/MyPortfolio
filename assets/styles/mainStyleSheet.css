@@ -1046,7 +1046,23 @@ body > main > section#Skills > section:nth-child(4) > section#Language > div:fir
     border-radius: 15px;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
+    /*
+    animation: pop-up 1s ease-in-out infinite alternate;
+    */
+
 }
+
+/*@keyframes pop-up {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}*/
 
 body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(2) > div:nth-child(2) {
     background-image: url("img/vector/svg/html.svg");
@@ -1058,7 +1074,23 @@ body > main > section#Skills > section:nth-child(4) > section#Language > div:fir
     left: 145px;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
+  /*
+  animation: pop-up 1s ease-in-out infinite alternate;
+  */
+
 }
+
+/*@keyframes pop-up {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}*/
 
 body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(2) > div:nth-child(3) {
     background-image: url("img/vector/svg/css.svg");
@@ -1070,7 +1102,23 @@ body > main > section#Skills > section:nth-child(4) > section#Language > div:fir
     right: 0;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
+    /*
+    animation: pop-up 1s ease-in-out infinite alternate;
+    */
+
 }
+
+/*@keyframes pop-up {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}*/
 
 /** Main - Skills - Language Second Row */
 body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(3) {
@@ -1095,8 +1143,23 @@ body > main > section#Skills > section:nth-child(4) > section#Language > div:fir
     left: 0;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
+    /*
+    animation: pop-up 1s ease-in-out infinite alternate;
+    */
+
 }
 
+/*@keyframes pop-up {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}*/
 body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(3) > div:nth-child(2) {
     background-image: url("img/vector/svg/pythone.svg");
     background-size: cover;
@@ -1107,7 +1170,23 @@ body > main > section#Skills > section:nth-child(4) > section#Language > div:fir
     left: 145px;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
+    /*
+    animation: pop-up 1s ease-in-out infinite alternate;
+    */
+
 }
+/*
+@keyframes pop-up {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}*/
 
 body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(3) > div:nth-child(3) {
     background-image: url("img/vector/svg/nodejs.png");
@@ -1119,8 +1198,23 @@ body > main > section#Skills > section:nth-child(4) > section#Language > div:fir
     right: 0;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
+    /*
+    animation: pop-up 1s ease-in-out infinite alternate;
+    */
+
 }
 
+/*@keyframes pop-up {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}*/
 body > main > section#Skills > section:nth-child(4) > section#FreeLancer {
     width: 520px;
     height: 600px;
@@ -1190,7 +1284,23 @@ body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:f
     border-radius: 15px;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
+    /*
+    animation: pop-up 1s ease-in-out infinite alternate;
+    */
+
 }
+/*
+@keyframes pop-up {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}*/
 
 body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(2) > div:nth-child(2) {
     background-image: url("/assets/GalleryImages/icons8-depop-96.png");
@@ -1202,7 +1312,23 @@ body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:f
     left: 145px;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
+    /*
+    animation: pop-up 1s ease-in-out infinite alternate;
+    */
+
 }
+
+/*@keyframes pop-up {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}*/
 
 body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(2) > div:nth-child(3) {
     background-image: url("/assets/GalleryImages/icons8-amazon-96.png");
@@ -1214,8 +1340,23 @@ body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:f
     right: 0;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
+    /*
+    animation: pop-up 1s ease-in-out infinite alternate;
+    */
+
 }
 
+/*@keyframes pop-up {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}*/
 /*!** Main - Skills - Language Second Row *!*/
 body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(3) {
     background: #000000;
@@ -1229,6 +1370,8 @@ body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:f
     margin: auto;
 }
 
+
+
 body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(3) > div:nth-child(1) {
     background-image: url("/assets/GalleryImages/icons8-etsy-96.png");
     background-size: cover;
@@ -1239,7 +1382,23 @@ body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:f
     left: 0;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
+    /*
+    animation: pop-up 1s ease-in-out infinite alternate;
+    */
+
 }
+
+/*@keyframes pop-up {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}*/
 
 body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(3) > div:nth-child(2) {
     background-image: url("/assets/GalleryImages/icons8-fiverr-96.png");
@@ -1251,7 +1410,23 @@ body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:f
     left: 145px;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
+    /*
+    animation: pop-up 1s ease-in-out infinite alternate;
+    */
+
 }
+
+/*@keyframes pop-up {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}*/
 
 body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(3) > div:nth-child(3) {
     background-image: url("/assets/GalleryImages/icons8-shopify-96.png");
@@ -1263,9 +1438,23 @@ body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:f
     right: 0;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
+    /*
+    animation: pop-up 1s ease-in-out infinite alternate;
+    */
 
 }
 
+/*@keyframes pop-up {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}*/
 
 /** Main - Skills - Tool */
 body > main > section#Skills > section:nth-child(4) > section#Tool {
@@ -1273,6 +1462,38 @@ body > main > section#Skills > section:nth-child(4) > section#Tool {
     right: 0;
     z-index: 1;
 }
+
+/*.project:hover {
+    transform: translateY(-4vh);
+    box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.7);
+}
+
+.project-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 1vw;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-out;
+}
+
+.project:hover .project-overlay {
+    transform: translateY(0);
+
+}*/
+
+
+
+
+
+
+
+
+
+
 
 body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child {
     background: #000000;
@@ -1330,7 +1551,26 @@ body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-c
     left: 0;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
+    /*
+    animation: pop-up 1s ease-in-out infinite alternate;
+    */
+
 }
+
+/*@keyframes pop-up {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}*/
+
+
+
 
 body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(2) > div:nth-child(2) {
     background-image: url("img/vector/svg/icons8-visual-studio-code-2019.svg");
@@ -1342,7 +1582,26 @@ body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-c
     left: 145px;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
+    /*
+    animation: pop-up 1s ease-in-out infinite alternate;
+    */
+
 }
+
+/*@keyframes pop-up {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}*/
+
+
+
 
 body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(2) > div:nth-child(3) {
     background-image: url("img/vector/svg/icons8-figma.svg");
@@ -1354,7 +1613,24 @@ body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-c
     right: 0;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
+    /*
+    animation: pop-up 1s ease-in-out infinite alternate;
+    */
+
 }
+/*
+@keyframes pop-up {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}*/
+
 
 /** Main - Skills - Language Second Row */
 body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(3) {
@@ -1379,8 +1655,23 @@ body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-c
     left: 0;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
+    /*
+    animation: pop-up 1s ease-in-out infinite alternate;
+    */
+
 }
 
+/*@keyframes pop-up {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}*/
 body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(3) > div:nth-child(2) {
     background-image: url("/assets/GalleryImages/icons8-adobe-illustrator-96.png");
     background-size: cover;
@@ -1391,8 +1682,23 @@ body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-c
     left: 145px;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
+    /*
+    animation: pop-up 1s ease-in-out infinite alternate;
+    */
+
 }
 
+/*@keyframes pop-up {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}*/
 body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(3) > div:nth-child(3) {
     background-image: url("/assets/GalleryImages/icons8-adobe-photoshop-96.png");
     background-size: cover;
@@ -1403,7 +1709,23 @@ body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-c
     right: 0;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
+    /*
+    animation: pop-up 1s ease-in-out infinite alternate;
+    */
+
 }
+
+/*@keyframes pop-up {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}*/
 
 
 /**-------------------------------------------- Main - Gallery --------------------------------------------**/
