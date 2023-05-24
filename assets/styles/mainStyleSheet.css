@@ -12,7 +12,9 @@
 }
 
 body {
-    overflow: hidden;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
 
 }
 
@@ -21,6 +23,17 @@ display: none;
 }
 
 
+/**  Customize Scrollbar  **/
+/*::-webkit-scrollbar {
+    display: none;
+    width: 10px;
+    background: #2ED573;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 5px;
+}*/
 
 /** Colors */
 .text-primary {
@@ -1568,7 +1581,10 @@ body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-c
     }
 }*/
 
-
+.skillItem > div:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
 
 
 body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(2) > div:nth-child(2) {
