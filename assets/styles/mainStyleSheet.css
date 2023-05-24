@@ -23,18 +23,6 @@ display: none;
 }
 
 
-/**  Customize Scrollbar  **/
-/*::-webkit-scrollbar {
-    display: none;
-    width: 10px;
-    background: #2ED573;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #000000;
-    border-radius: 5px;
-}*/
-
 /** Colors */
 .text-primary {
     color: #21ff06 !important;
@@ -74,12 +62,12 @@ section#loader {
 
 /** Header */
 .head {
-    background: #334442;
+    background: #02b292;
     height: 90px;
     top: 0;
     width: 100%;
     position: fixed;
-    box-shadow: 0 2px 8px 2px #ffab00;
+    box-shadow: 0 4px 8px 2px #ffab00;
     z-index: 3;
 }
 
@@ -235,7 +223,7 @@ body > main > section#Home > section:nth-child(2) > section:nth-child(3) {
     float: left;
     margin: 0 10px;
     overflow: hidden;
-    background: #95A5A6;
+    background: #ff6d00;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease-out;
@@ -363,7 +351,7 @@ body > main > section > article > h1 {
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-size: 40px;
-    color: #2C3E50 !important;
+    color: #fd8b05 !important;
     text-decoration: none;
     text-align: center;
     border-radius: 3px;
@@ -951,7 +939,9 @@ body > main > section#Skills > article > h1 {
 
 
 body > main > section#Skills > article > div:nth-child(5) {
+    /*
     background: url("img/images/skillsMain.jpg");
+    */
     background-size: cover;
     width: 100%;
     height: 1250px;
@@ -1009,7 +999,7 @@ body > main > section#Skills > section:nth-child(4) > section#Language > div:fir
     height: 600px;
     position: relative;
     border-radius: 50px;
-    box-shadow: 0 -1px 8px 2px #ffffff;
+    box-shadow: 0 -1px 8px 2px #2CFF00FF;
     margin-left:-170px ;
 }
 
@@ -1058,23 +1048,10 @@ body > main > section#Skills > section:nth-child(4) > section#Language > div:fir
     border-radius: 15px;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
-    /*
-    animation: pop-up 1s ease-in-out infinite alternate;
-    */
 
 }
 
-/*@keyframes pop-up {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-    50% {
-        transform: translate(-50%, -50%) scale(1.2);
-    }
-    100% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-}*/
+
 
 body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(2) > div:nth-child(2) {
     background-image: url("img/vector/svg/html.svg");
@@ -1086,23 +1063,10 @@ body > main > section#Skills > section:nth-child(4) > section#Language > div:fir
     left: 145px;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
-  /*
-  animation: pop-up 1s ease-in-out infinite alternate;
-  */
+
 
 }
 
-/*@keyframes pop-up {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-    50% {
-        transform: translate(-50%, -50%) scale(1.2);
-    }
-    100% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-}*/
 
 body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(2) > div:nth-child(3) {
     background-image: url("img/vector/svg/css.svg");
@@ -1114,23 +1078,10 @@ body > main > section#Skills > section:nth-child(4) > section#Language > div:fir
     right: 0;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
-    /*
-    animation: pop-up 1s ease-in-out infinite alternate;
-    */
 
 }
 
-/*@keyframes pop-up {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-    50% {
-        transform: translate(-50%, -50%) scale(1.2);
-    }
-    100% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-}*/
+
 
 /** Main - Skills - Language Second Row */
 body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(3) {
@@ -1155,23 +1106,9 @@ body > main > section#Skills > section:nth-child(4) > section#Language > div:fir
     left: 0;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
-    /*
-    animation: pop-up 1s ease-in-out infinite alternate;
-    */
 
 }
 
-/*@keyframes pop-up {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-    50% {
-        transform: translate(-50%, -50%) scale(1.2);
-    }
-    100% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-}*/
 body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(3) > div:nth-child(2) {
     background-image: url("img/vector/svg/pythone.svg");
     background-size: cover;
@@ -1182,23 +1119,9 @@ body > main > section#Skills > section:nth-child(4) > section#Language > div:fir
     left: 145px;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
-    /*
-    animation: pop-up 1s ease-in-out infinite alternate;
-    */
 
 }
-/*
-@keyframes pop-up {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-    50% {
-        transform: translate(-50%, -50%) scale(1.2);
-    }
-    100% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-}*/
+
 
 body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(3) > div:nth-child(3) {
     background-image: url("img/vector/svg/nodejs.png");
@@ -1210,23 +1133,10 @@ body > main > section#Skills > section:nth-child(4) > section#Language > div:fir
     right: 0;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
-    /*
-    animation: pop-up 1s ease-in-out infinite alternate;
-    */
 
 }
 
-/*@keyframes pop-up {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-    50% {
-        transform: translate(-50%, -50%) scale(1.2);
-    }
-    100% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-}*/
+
 body > main > section#Skills > section:nth-child(4) > section#FreeLancer {
     width: 520px;
     height: 600px;
@@ -1247,7 +1157,7 @@ body > main > section#Skills > section:nth-child(4) > section#FreeLancer {
     position: relative;
     border-radius: 50px;
     margin-right: auto;
-    box-shadow: 0 -1px 8px 2px #ffffff;
+    box-shadow: 0 -1px 8px 2px #2CFF00FF;
 
 }
 
@@ -1296,23 +1206,9 @@ body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:f
     border-radius: 15px;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
-    /*
-    animation: pop-up 1s ease-in-out infinite alternate;
-    */
 
 }
-/*
-@keyframes pop-up {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-    50% {
-        transform: translate(-50%, -50%) scale(1.2);
-    }
-    100% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-}*/
+
 
 body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(2) > div:nth-child(2) {
     background-image: url("/assets/GalleryImages/icons8-depop-96.png");
@@ -1324,23 +1220,11 @@ body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:f
     left: 145px;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
-    /*
-    animation: pop-up 1s ease-in-out infinite alternate;
-    */
+
 
 }
 
-/*@keyframes pop-up {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-    50% {
-        transform: translate(-50%, -50%) scale(1.2);
-    }
-    100% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-}*/
+
 
 body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(2) > div:nth-child(3) {
     background-image: url("/assets/GalleryImages/icons8-amazon-96.png");
@@ -1352,23 +1236,9 @@ body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:f
     right: 0;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
-    /*
-    animation: pop-up 1s ease-in-out infinite alternate;
-    */
 
 }
 
-/*@keyframes pop-up {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-    50% {
-        transform: translate(-50%, -50%) scale(1.2);
-    }
-    100% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-}*/
 /*!** Main - Skills - Language Second Row *!*/
 body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(3) {
     background: #000000;
@@ -1394,23 +1264,10 @@ body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:f
     left: 0;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
-    /*
-    animation: pop-up 1s ease-in-out infinite alternate;
-    */
 
 }
 
-/*@keyframes pop-up {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-    50% {
-        transform: translate(-50%, -50%) scale(1.2);
-    }
-    100% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-}*/
+
 
 body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(3) > div:nth-child(2) {
     background-image: url("/assets/GalleryImages/icons8-fiverr-96.png");
@@ -1422,23 +1279,11 @@ body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:f
     left: 145px;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
-    /*
-    animation: pop-up 1s ease-in-out infinite alternate;
-    */
+
 
 }
 
-/*@keyframes pop-up {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-    50% {
-        transform: translate(-50%, -50%) scale(1.2);
-    }
-    100% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-}*/
+
 
 body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(3) > div:nth-child(3) {
     background-image: url("/assets/GalleryImages/icons8-shopify-96.png");
@@ -1450,23 +1295,10 @@ body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:f
     right: 0;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
-    /*
-    animation: pop-up 1s ease-in-out infinite alternate;
-    */
 
 }
 
-/*@keyframes pop-up {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-    50% {
-        transform: translate(-50%, -50%) scale(1.2);
-    }
-    100% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-}*/
+
 
 /** Main - Skills - Tool */
 body > main > section#Skills > section:nth-child(4) > section#Tool {
@@ -1475,38 +1307,6 @@ body > main > section#Skills > section:nth-child(4) > section#Tool {
     z-index: 1;
 }
 
-/*.project:hover {
-    transform: translateY(-4vh);
-    box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.7);
-}
-
-.project-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    padding: 1vw;
-    transform: translateY(100%);
-    transition: transform 0.3s ease-out;
-}
-
-.project:hover .project-overlay {
-    transform: translateY(0);
-
-}*/
-
-
-
-
-
-
-
-
-
-
-
 body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child {
     background: #000000;
     width: 520px;
@@ -1514,7 +1314,7 @@ body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-c
     position: relative;
     border-radius: 50px;
     margin-right: -170px;
-    box-shadow: 0 -1px 8px 2px #ffffff;
+    box-shadow: 0 -1px 8px 2px #2cff00;
 }
 
 /** Main - Skills - Language Header*/
@@ -1563,23 +1363,10 @@ body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-c
     left: 0;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
-    /*
-    animation: pop-up 1s ease-in-out infinite alternate;
-    */
 
 }
 
-/*@keyframes pop-up {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-    50% {
-        transform: translate(-50%, -50%) scale(1.2);
-    }
-    100% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-}*/
+
 
 .skillItem > div:hover{
     cursor: pointer;
@@ -1597,23 +1384,10 @@ body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-c
     left: 145px;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
-    /*
-    animation: pop-up 1s ease-in-out infinite alternate;
-    */
 
 }
 
-/*@keyframes pop-up {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-    50% {
-        transform: translate(-50%, -50%) scale(1.2);
-    }
-    100% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-}*/
+
 
 
 
@@ -1628,23 +1402,9 @@ body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-c
     right: 0;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
-    /*
-    animation: pop-up 1s ease-in-out infinite alternate;
-    */
 
 }
-/*
-@keyframes pop-up {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-    50% {
-        transform: translate(-50%, -50%) scale(1.2);
-    }
-    100% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-}*/
+
 
 
 /** Main - Skills - Language Second Row */
@@ -1676,17 +1436,6 @@ body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-c
 
 }
 
-/*@keyframes pop-up {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-    50% {
-        transform: translate(-50%, -50%) scale(1.2);
-    }
-    100% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-}*/
 body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(3) > div:nth-child(2) {
     background-image: url("/assets/GalleryImages/icons8-adobe-illustrator-96.png");
     background-size: cover;
@@ -1697,23 +1446,10 @@ body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-c
     left: 145px;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
-    /*
-    animation: pop-up 1s ease-in-out infinite alternate;
-    */
 
 }
 
-/*@keyframes pop-up {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-    50% {
-        transform: translate(-50%, -50%) scale(1.2);
-    }
-    100% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-}*/
+
 body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(3) > div:nth-child(3) {
     background-image: url("/assets/GalleryImages/icons8-adobe-photoshop-96.png");
     background-size: cover;
@@ -1724,23 +1460,7 @@ body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-c
     right: 0;
     box-shadow: 0 -1px 8px 2px #ffffff;
     cursor: pointer;
-    /*
-    animation: pop-up 1s ease-in-out infinite alternate;
-    */
-
 }
-
-/*@keyframes pop-up {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-    50% {
-        transform: translate(-50%, -50%) scale(1.2);
-    }
-    100% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-}*/
 
 
 /**-------------------------------------------- Main - Gallery --------------------------------------------**/
@@ -2036,7 +1756,7 @@ body > main > section#Achievements > section div#images > img:nth-child(4) {
     border-radius: 3vh;
 }
 .project-container>div:nth-child(4){
-    background-image: url("/assets/GalleryImages/mine.png");
+    background-image: url("/assets/GalleryImages/Screenshot.png");
     background-size: cover;
     background-position: center;
     border-radius: 3vh;
@@ -2640,7 +2360,7 @@ body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > di
 
 body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > div:nth-child(1) > h2 {
     font-size: 28px;
-    font-family: cursive;
+    font-family: "Arial Black";
     font-weight: bolder;
     margin-left: 35px;
 }
@@ -2652,7 +2372,7 @@ body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > di
 }
 
 body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > div:nth-child(2) p {
-    font-family: cursive;
+    font-family: "Arial Black";
     font-weight: bolder;
     position: relative;
     font-size: 25px;
@@ -2666,7 +2386,7 @@ body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > di
 }
 
 body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > div:nth-child(3) h3 {
-    font-family: cursive;
+    font-family: "Arial Black";
     font-weight: bolder;
     position: relative;
     font-size: 25px;
@@ -2680,7 +2400,7 @@ body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > di
 }
 
 body > main > section#Contact > section:nth-child(4) > article:nth-child(2) > div:nth-child(4) h3 {
-    font-family: cursive;
+    font-family: "Arial Black";
     font-weight: bolder;
     position: relative;
     font-size: 25px;
