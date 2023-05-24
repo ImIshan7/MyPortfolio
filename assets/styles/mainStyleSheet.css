@@ -11,17 +11,16 @@
     box-sizing: border-box;
 }
 
-/**  Customize Scrollbar  **/
-::-webkit-scrollbar {
-    display: none;
-    width: 10px;
-    background: #2ED573;
+body {
+    overflow: hidden;
+
 }
 
-::-webkit-scrollbar-thumb {
-    background: #000000;
-    border-radius: 5px;
+body::-webkit-scrollbar {
+display: none;
 }
+
+
 
 /** Colors */
 .text-primary {
