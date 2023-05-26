@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Item</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <script src="../assets/js/bootstrap.js"></script>
+</head>
+<body>
+
+<header>
+
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" style="background-color: #ff4400;" >
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/assigment/CSS-FrameWork/ZenPosSystem/assets/Images/Zen-Final-Logo2-_Teal.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-center">
+                Zen Pos System
+            </a>
+            <a class="navbar-brand" id="Dashboard" href="DashBoard.html">
+                <img src="/assigment/CSS-FrameWork/ZenPosSystem/assets/Images/icons8-home-48.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
+                HOME
+            </a>
+            <a class="navbar-brand" id="linkCustomer" href="Customer.html">
+                <img src="/assigment/CSS-FrameWork/ZenPosSystem/assets/Images/icons8-customer-96.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
+                CUSTOMER
+
+            </a>
+            <a class="navbar-brand" id="linkItems" href="Items.html">
+                <img src="/assigment/CSS-FrameWork/ZenPosSystem/assets/Images/icons8-discount-64.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
+                ITEM
+
+            </a>
+            <a class="navbar-brand" id="linkOrders" href="Orders.html">
+                <img src="/assigment/CSS-FrameWork/ZenPosSystem/assets/Images/icons8-order-64.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
+                ORDER
+            </a>
+        </div>
+    </nav>
+</header>
+<main class="container">
+    <section class="row p-4 m-0 object-fit-contain "id="item" style="font-weight: bold">
+
+        <h2 class="text-success pt-5 m-lg-2">
+
+            <img src="/assigment/CSS-FrameWork/ZenPosSystem/assets/Images/icons8-discount-64.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
+            ITEMS
+
+        </h2>
+
+        <section class="col border-dark-subtle  m-3 border rounded-5 object-fit-contain" style="background-color: #1fc928"  >
+
+            <form>
+                <div class="form-floating mb-3 mt-2">
+                    <input type="text" class="form-control" id="iid" placeholder="Id">
+                    <label for="iid">Item ID</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="Name" placeholder="Name">
+                    <label for="Name">Item Name</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="price" placeholder="price">
+                    <label for="price">Item Price</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="qty" placeholder="QTY">
+                    <label for="qty">Item QTY</label>
+                </div>
+            </form>
+
+
+        </section>
+
+        <section class="col border-dark m-3 border rounded object-fit-contain" >
+
+
+            <h5 class="text-dark text-center m-lg-3 pb-3" ></h5>
+            <table class="table table-light table-striped">
+                <thead>
+                <tr>
+                    <th style="background-color: #1fc928" scope="col">Item Id</th>
+                    <th style="background-color: #1fc928" scope="col">Item Name</th>
+                    <th style="background-color: #1fc928" scope="col">Item Price</th>
+                    <th style="background-color: #1fc928" scope="col">Item QTY</th>
+                </tr>
+                </thead>
+                <tbody id="tblItems">
+                </tbody>
+            </table>
+        </section>
+    </section>
+
+</main>
+<div class="col-6 ms-5">
+    <button id="addItems" type="button" class="btn btn-primary me-1 mt-2 mb-3">ADD</button>
+    <button id="updateItems" type="button" class="btn btn-success me-1 mt-2 mb-3 ms-4">UPDATE</button>
+    <button id="deleteItems" type="button" class="btn btn-danger me-1 mt-2 mb-3">DELETE</button>
+    <button id="backItems" type="button" class="btn btn-outline-warning me-1 mt-2 mb-3 ms-4">BACK</button>
+</div>
+
+<script src="/assigment/Js/ZenPosSystem/Pages/JsPages/Items.js"></script>
+
+
+</body>
+</html>
