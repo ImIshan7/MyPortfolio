@@ -1462,7 +1462,7 @@ body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-c
 
 
 body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(3) > div:nth-child(3) {
-    background-image: url("/assets/GalleryImages/icons8-adobe-photoshop-96.png");
+    background-image: url("/assets/Images/icons8-adobe-photoshop-96.png");
     background-size: cover;
     position: absolute;
     width: 90px;
