@@ -125,10 +125,10 @@ function searchCustomer(cusID) {
 function updateCustomer(customerID) {
     let customer = searchCustomer(customerID);
     if (customer != null) {
-        customer.id = $("#txtCustomerID").val();
-        customer.name = $("#txtCustomerName").val();
-        customer.address = $("#txtCustomerAddress").val();
-        customer.contact = $("#txtCustomerContact").val();
+        customer.id = $("#txtcid").val();
+        customer.name = $("#txtName").val();
+        customer.address = $("#txtAddress").val();
+        customer.contact = $("#txtcontact").val();
         loadAllCustomers();
         return true;
     } else {
