@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <script src="../assets/js/bootstrap.js"></script>
+
+</head>
+
+<body>
+
+<header>
+
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" style="background-color: #ff4400;" >
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/assigment/CSS-FrameWork/ZenPosSystem/assets/Images/Zen-Final-Logo2-_Teal.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-center">
+                Zen Pos System
+            </a>
+            <a class="navbar-brand" id="Dashboard" href="DashBoard.html">
+                <img src="/assigment/CSS-FrameWork/ZenPosSystem/assets/Images/icons8-home-48.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
+                HOME
+            </a>
+            <a class="navbar-brand" id="linkCustomer" href="Customer.html">
+                <img src="/assigment/CSS-FrameWork/ZenPosSystem/assets/Images/icons8-customer-96.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
+                CUSTOMER
+
+            </a>
+            <a class="navbar-brand" id="linkItems" href="Items.html">
+                <img src="/assigment/CSS-FrameWork/ZenPosSystem/assets/Images/icons8-discount-64.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
+                ITEM
+
+            </a>
+            <a class="navbar-brand" id="linkOrders" href="Orders.html">
+                <img src="/assigment/CSS-FrameWork/ZenPosSystem/assets/Images/icons8-order-64.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
+                ORDER
+            </a>
+        </div>
+    </nav>
+</header>
+<main class="container">
+
+    <h2 style="color: #fd8b05" class="mt-2 ">
+
+        <img src="/assigment/CSS-FrameWork/ZenPosSystem/assets/Images/icons8-order-64.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
+        ORDER
+
+    </h2>
+
+    <section class="row mt-3 border border-dark rounded p-5" style="background-color: #22d3a4">
+        <form action="">
+            <div class="row">
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">CustomerID</span>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Select ID</option>
+                            <option value="1">C001</option>
+                            <option value="2">C002</option>
+                            <option value="3">C003</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Customer Name</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Customer Contact</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Date</span>
+                        <input class="form-control" type="text" placeholder="2023-05-17" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="row mt-5 mb-2 p-3">
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Item ID</span>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Select ID</option>
+                            <option value="1">I001</option>
+                            <option value="2">I002</option>
+                            <option value="3">I003</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Item Name</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Item Price</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Qty On Hand</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+
+
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">QTY</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-10"></div>
+                <div class="col-2">
+                    <button id="add" type="button" class="btn btn-success">Add </button>
+                    <button id="clear" type="button" class="btn btn-danger">Clear</button>
+                </div>
+            </div>
+
+        </form>
+    </section>
+
+    <section class="row mt-3">
+        <div class="row">
+            <table class="table table-light table-striped">
+                <thead>
+                <tr>
+                    <th style="background-color: #ffae00" scope="col">Item ID</th>
+                    <th style="background-color: #ffae00" scope="col">Item Name</th>
+                    <th style="background-color: #ffae00" scope="col">Qty</th>
+                    <th style="background-color: #ffae00" scope="col">Unit Price</th>
+                    <th style="background-color: #ffae00" scope="col">Total</th>
+                    <th style="background-color: #ffae00" scope="col">Action</th>
+                </tr>
+                </thead>
+                <tbody>
+
+
+                  <!--  <th scope="col">
+                        <button id="edit01" type="button" class="btn btn-warning">Edit</button>
+                        <button id="delete01" type="button" class="btn btn-danger">Delete</button>
+                    </th>
+
+                    <th scope="col">
+                        <button id="edit02" type="button" class="btn btn-warning">Edit</button>
+                        <button id="delete02" type="button" class="btn btn-danger">Delete</button>
+                    </th>
+-->
+
+
+                </tbody>
+            </table>
+        </div>
+        <form action="">
+            <div class="row mt-3">
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Total-Rs:</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Discount-Rs:</span>
+                        <input class="form-control" type="number" placeholder="" aria-label="Disabled input example">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Sub Tot-Rs:</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="row mt-3">
+            <div class="col-10"></div>
+            <div class="col-2">
+                <button id="purchase" type="button" class="btn btn-primary">Purchase</button>
+                <button id="cancel" type="button" class="btn btn-danger">Cancel</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="/assigment/Js/ZenPosSystem/Pages/JsPages/Orders.js"></script>
+
+</body>
+</html>
