@@ -1,7 +1,4 @@
-/**
- * @author : Nimesh Piyumantha
- * @since : 0.1.0
- **/
+
 
 @media (max-width: 425px) {
     /**-------------------------------------------- Main - Home --------------------------------------------**/
@@ -443,19 +440,19 @@
         height: 20px;
         width: 93px;
         left: 11px;
-        bottom: 25px;
+        bottom: 26px;
     }
 
     body > main > section#About > section#education > section#Advanced > h3#AFirst {
         font-size: 14px;
-        right: 57px;
+        right: -66px;
         bottom: 48px;
     }
 
     body > main > section#About > section#education > section#Advanced > h3#ASecond {
         font-size: 12px;
-        left: 74px;
-        top: -60px;
+        left: 47px;
+        top: -36px;
         width: 139px;
     }
 
@@ -497,12 +494,13 @@
     body > main > section#About > section#education > section#HNDLevel > h3#HFirst {
         font-size: 14px;
         right: -55px;
+        left: 52px;
         bottom: 52px;
     }
 
     body > main > section#About > section#education > section#HNDLevel > h3#HSecond {
         font-size: 12px;
-        left: 64px;
+        left: 31px;
         top: -42px;
         width: 139px;
     }
@@ -531,26 +529,26 @@
     body > main > section#About > section#education > section#DegreeLevel > div:nth-child(2) {
         height: 61px;
         width: 2px;
-        left: -7px;
+        left: -26px;
         top: 39px;
     }
 
     body > main > section#About > section#education > section#DegreeLevel > div:nth-child(3) {
         height: 20px;
         width: 93px;
-        left: 11px;
+        left: -2px;
         bottom: 25px;
     }
 
     body > main > section#About > section#education > section#DegreeLevel > h3#DFirst {
         font-size: 14px;
-        right: -68px;
+        right: -50px;
         bottom: 48px;
     }
 
     body > main > section#About > section#education > section#DegreeLevel > h3#DSecond {
         font-size: 12px;
-        left: 74px;
+        left: 29px;
         top: -42px;
         width: 139px;
     }

@@ -1,7 +1,4 @@
-/**
- * @author : Nimesh Piyumantha
- * @since : 0.1.0
- **/
+
 
 @media (max-width: 375px) {
 
@@ -186,7 +183,7 @@
     body > main > section#About > section#education > section#HNDLevel > div:nth-child(3) {
         height: 20px;
         width: 93px;
-        left: -15px;
+        left: 10px;
         bottom: 26px;
     }
 
