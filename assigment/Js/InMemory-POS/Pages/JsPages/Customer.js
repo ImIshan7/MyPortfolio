@@ -1,18 +1,92 @@
 
+initiateUI();
+
+function initiateUI() {
+    clearAll();
+    $("#dashboardContent").css("display", "block");
+    setTheLastView();
+}
+
+function saveLastView(clickedID) {
+    switch (clickedID) {
+        case "dashboardContent":
+            localStorage.setItem("view", "HOME");
+            break;
+        case "customerContent":
+            localStorage.setItem("view", "CUSTOMER");
+            break;
+        case "itemContent":
+            localStorage.setItem("view", "ITEM");
+            break;
+        case "orderContent":
+            localStorage.setItem("view", "ORDER");
+            break;
+    }
+}
+
+function setTheLastView() {
+    let view = localStorage.getItem("view");
+    switch (view) {
+        case "HOME":
+            setView($("#dashboardContent"));
+            break;
+        case "ITEM":
+            setView($("#itemContent"));
+            break;
+        case "CUSTOMER":
+            setView($("#customerContent"));
+            break;
+        case "ORDER":
+            setView($("#orderContent"));
+            break;
+        default:
+            setView($("#dashboardContent"));
+    }
+}
+
+function clearAll() {
+    $("#dashboardContent,#customerContent,#itemContent,#orderContent").css('display', 'none');
+}
+
+function setView(viewOb) {
+    clearAll();
+    viewOb.css("display", "block");
+    saveLastView(viewOb.get(0).id);
+    console.log(viewOb.get(0).id);
+}
+
+
+$("#linkHome").click(function () {
+    setView($("#dashboardContent"));
+});
+
+$("#linkcustomers").click(function () {
+    setView($("#customerContent"));
+});
+
+$("#linkitems").click(function () {
+    setView($("#itemContent"));
+});
+
+$("#linkplaceOrder").click(function () {
+    setView($("#orderContent"));
+});
+
 
 var customers=[];
 
 $("#addCustomer").click(function (){
-    let cusId=$("#txtcid").val();
-    let cusName=$("#txtName").val();
-    let cusAddress=$("#txtAddress").val();
-    let cusContact=$("#txtcontact").val();
+    let id=$("#txtcid").val();
+    let name=$("#txtName").val();
+    let address=$("#txtAddress").val();
+    let contact=$("#txtcontact").val();
 
     var customerObject={
-        id:cusId,
-        name:cusName,
-        address:cusAddress,
-        contact:cusContact
+
+        id:id,
+        name:name,
+        address:address,
+        contact:contact
 
     }
 
@@ -22,12 +96,11 @@ $("#addCustomer").click(function (){
 
     bindRowClickEvents();
 
-    loadAllCustomerId
+    loadAllCustomerId();
 });
 
 
 function bindRowClickEvents() {
-
     $("#tblCustomer>tr").click(function () {
         let id = $(this).children(":eq(0)").text();
         let name = $(this).children(":eq(1)").text();
@@ -61,7 +134,7 @@ $("#deleteCustomer").click(function (){
 
     let option=confirm("Do you Sure?"+deleteId);
     if (option){
-        if (deleteCustomer(deleteId)) {
+        if (deleteCustomers(deleteId)) {
             alert("Customer Successfully Deleted..");
             setTextfieldValues("", "", "", "");
         } else {
@@ -71,8 +144,8 @@ $("#deleteCustomer").click(function (){
 });
 
 $("#updateCustomer").click(function () {
-    let customerID = $("#txtcid").val();
-    let response = updateCustomer(customerID);
+    let cusID = $("#txtcid").val();
+    let response = updateCustomers(cusID);
     if (response) {
         alert("Customer Updated Successfully");
         setTextfieldValues("", "", "", "");
@@ -90,14 +163,14 @@ $("#txtcid").on('keyup', function (event) {
         if (customer != null) {
             setTextfieldValues(customer.id, customer.name, customer.address, customer.contact);
         } else {
-            alert("There is no cusotmer available for that " + typedId);
+            alert("There is no Customer available for that " + typedId);
             setTextfieldValues("", "", "", "");
         }
     }
 });
 
-function deleteCustomer(customerID) {
-    let customer = searchCustomer(customerID);
+function deleteCustomers(cusID) {
+    let customer = searchCustomer(cusID);
     if (customer != null) {
         let indexNumber = customers.indexOf(customer);
         customers.splice(indexNumber, 1);
@@ -109,9 +182,7 @@ function deleteCustomer(customerID) {
 }
 
 function setTextfieldValues(id, name, address, contact) {
-
     bindRowClickEvents();
-
     $("#txtcid").val(id);
     $("#txtName").val(name);
     $("#txtAddress").val(address);
@@ -120,7 +191,7 @@ function setTextfieldValues(id, name, address, contact) {
 
 
 
-$("#backCustomer").click(function () {
+$("#backCustomer").click(function (){
 
     $("#txtcid").val("");
     $("#txtName").val("");
@@ -128,6 +199,9 @@ $("#backCustomer").click(function () {
     $("#txtcontact").val("");
 
 });
+
+
+
 
 function searchCustomer(cusID) {
     for (let customer of customers) {
@@ -138,8 +212,8 @@ function searchCustomer(cusID) {
     return null;
 }
 
-function updateCustomer(customerID) {
-    let customer = searchCustomer(customerID);
+function updateCustomers(cusID) {
+    let customer = searchCustomer(cusID);
     if (customer != null) {
         customer.id = $("#txtcid").val();
         customer.name = $("#txtName").val();
@@ -152,16 +226,6 @@ function updateCustomer(customerID) {
     }
 
 }
-
-
-//disable tab
-$("#txtcid,#txtName,#txtAddress,#txtcontact").keydown(function (e) {
-
-    if (e.key == "Tab") {
-        e.preventDefault();
-    }
-});
-
 
 
 $("#txtcid").keydown(function (event){
@@ -192,12 +256,11 @@ $("#txtName").keydown(function (event){
         }else{
             $("#txtName").css('border-color','red').blur();
         }
-
     }
 });
 
 $("#txtAddress").keydown(function (event){
-    let customerIdPattern = /^[a-zA-Z-' ]{2,50}$/;
+    let customerIdPattern = /^[0-9]{1,}[.]?[0-5]{1,2}$/;
 
     let cId = $("#txtAddress").val();
 
@@ -211,7 +274,6 @@ $("#txtAddress").keydown(function (event){
 
     }
 });
-
 
 $("#txtcontact").keydown(function (event){
     let customerIdPattern = /^[0-9]{1,}[.]?[0-9]{1,2}$/;
@@ -228,17 +290,3 @@ $("#txtcontact").keydown(function (event){
 
     }
 });
-
-
-
-
-$("#txtCustomerSalary").keydown(function (e) {
-    if (e.key == "Enter") {
-        //save customer
-        $("#addCustomer").focus();
-
-    }
-});
-
-
-

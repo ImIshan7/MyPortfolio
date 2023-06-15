@@ -1,10 +1,83 @@
 
+initiateUI();
+
+function initiateUI() {
+    clearAll();
+    $("#dashboardContent").css("display", "block");
+    setTheLastView();
+}
+
+function saveLastView(clickedID) {
+    switch (clickedID) {
+        case "dashboardContent":
+            localStorage.setItem("view", "HOME");
+            break;
+        case "customerContent":
+            localStorage.setItem("view", "CUSTOMER");
+            break;
+        case "itemContent":
+            localStorage.setItem("view", "ITEM");
+            break;
+        case "orderContent":
+            localStorage.setItem("view", "ORDER");
+            break;
+    }
+}
+
+function setTheLastView() {
+    let view = localStorage.getItem("view");
+    switch (view) {
+        case "HOME":
+            setView($("#dashboardContent"));
+            break;
+        case "ITEM":
+            setView($("#itemContent"));
+            break;
+        case "CUSTOMER":
+            setView($("#customerContent"));
+            break;
+        case "ORDER":
+            setView($("#orderContent"));
+            break;
+        default:
+            setView($("#dashboardContent"));
+    }
+}
+
+function clearAll() {
+    $("#dashboardContent,#customerContent,#itemContent,#orderContent").css('display', 'none');
+}
+
+function setView(viewOb) {
+    clearAll();
+    viewOb.css("display", "block");
+    saveLastView(viewOb.get(0).id);
+    console.log(viewOb.get(0).id);
+}
+
+
+$("#linkHome").click(function () {
+    setView($("#dashboardContent"));
+});
+
+$("#linkcustomers").click(function () {
+    setView($("#customerContent"));
+});
+
+$("#linkitems").click(function () {
+    setView($("#itemContent"));
+});
+
+$("#linkplaceOrder").click(function () {
+    setView($("#orderContent"));
+});
+
 
 var items=[];
 
 $("#addItems").click(function (){
     let itemId=$("#txtiid").val();
-    let itemName=$("#txtName").val();
+    let itemName=$("#txtItemName").val();
     let itemPrice=$("#txtprice").val();
     let itemQTY=$("#txtqty").val();
 
@@ -35,7 +108,7 @@ function bindRowClickEvents() {
         let qty = $(this).children(":eq(3)").text();
 
         $('#txtiid').val(id);
-        $('#txtName').val(name);
+        $('#txtItemName').val(name);
         $('#txtprice').val(price);
         $('#txtqty').val(qty);
 
@@ -111,7 +184,7 @@ function deleteItems(itemID) {
 function setTextfieldValues(id, name, price, qty) {
     bindRowClickEvents();
     $("#txtiid").val(id);
-    $("#txtName").val(name);
+    $("#txtItemName").val(name);
     $("#txtprice").val(price);
     $("#txtqty").val(qty);
 }
@@ -121,7 +194,7 @@ function setTextfieldValues(id, name, price, qty) {
 $("#backItems").click(function (){
 
     $("#txtiid").val("");
-    $("#txtName").val("");
+    $("#txtItemName").val("");
     $("#txtprice").val("");
     $("#txtqty").val("");
 
@@ -143,7 +216,7 @@ function updateItems(ItemID) {
     let item = searchItem(ItemID);
     if (item != null) {
         item.id = $("#txtiid").val();
-        item.name = $("#txtName").val();
+        item.name = $("#txtItemName").val();
         item.price = $("#txtprice").val();
         item.qty = $("#txtqty").val();
         loadAllItems();
@@ -155,6 +228,65 @@ function updateItems(ItemID) {
 }
 
 
+$("#txtiid").keydown(function (event){
+    let customerIdPattern = /^(I00-)[0-9]{3}$/;
 
+    let cId = $("#txtiid").val();
 
+    if(event.key=="Enter"){
+        if(customerIdPattern.test(cId)){
+            $("#txtiid").css('border-color','green').blur();
+            $("#txtItemName").focus();
+        }else{
+            $("#txtiid").css('border-color','red').blur();
+        }
 
+    }
+});
+
+$("#txtItemName").keydown(function (event){
+    let customerIdPattern = /^[a-zA-Z-' ]{2,50}$/;
+
+    let cId = $("#txtItemName").val();
+
+    if(event.key=="Enter"){
+        if(customerIdPattern.test(cId)){
+            $("#txtItemName").css('border-color','green').blur();
+            $("#txtprice").focus();
+        }else{
+            $("#txtItemName").css('border-color','red').blur();
+        }
+    }
+});
+
+$("#txtprice").keydown(function (event){
+    let customerIdPattern = /^[0-9]{1,}[.]?[0-5]{1,2}$/;
+
+    let cId = $("#txtprice").val();
+
+    if(event.key=="Enter"){
+        if(customerIdPattern.test(cId)){
+            $("#txtprice").css('border-color','green').blur();
+            $("#txtqty").focus();
+        }else{
+            $("#txtprice").css('border-color','red').blur();
+        }
+
+    }
+});
+
+$("#txtqty").keydown(function (event){
+    let customerIdPattern = /^[0-9]{1,}[.]?[0-3]{1,2}$/;
+
+    let cId = $("#txtqty").val();
+
+    if(event.key=="Enter"){
+        if(customerIdPattern.test(cId)){
+            $("#txtqty").css('border-color','green').blur();
+            $("#addItems").focus();
+        }else{
+            $("#txtqty").css('border-color','red').blur();
+        }
+
+    }
+});
