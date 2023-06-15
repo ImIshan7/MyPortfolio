@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZEN POS System</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <script src="js.js"></script>
+
+
+</head>
+<style>
+
+</style>
+<body>
+
+<header>
+
+<!--
+    <main class="container" id="dashboardContent">
+-->
+
+    <nav class="navbar navbar-expand-lg navbar bg-dark d-flex flex-row " style="background-color: #f8af13;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+                <a class="navbar-brand text-white" href="#" id="linkHome">
+                    <img src="/assigment/CSS-FrameWork/ZenPosSystem/assets/Images/Zen-Final-Logo2-_Teal.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-center">
+                    ZEN POS System</a>
+
+                <ul class="navbar-nav me-auto ms-2 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href=#" id="linkcustomers">
+                            <img src="/assigment/CSS-FrameWork/ZenPosSystem/assets/Images/icons8-customer-96.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
+                            Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#" id="linkitems">
+                            <img src="/assigment/CSS-FrameWork/ZenPosSystem/assets/Images/icons8-discount-64.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
+                            Item</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#" id="linkplaceOrder">
+                            <img src="/assigment/CSS-FrameWork/ZenPosSystem/assets/Images/icons8-order-64.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
+                            Place Orders</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+<!--
+        </main>
+-->
+</header>
+
+
+<main class="container" id="customerContent">
+    <section class="row p-4 m-0 object-fit-contain "id="customer" style="font-weight: bold">
+
+        <h2 class="text-primary pt-5 m-lg-2">
+
+            <img src="/assigment/CSS-FrameWork/ZenPosSystem/assets/Images/customer.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
+            CUSTOMER
+
+        </h2>
+
+        <section class="col border-dark-subtle  m-3 border rounded-5 object-fit-contain" style="background-color: #1f1fc9"  >
+
+            <form id="customerForm">
+                <div class="form-floating mb-3 mt-2">
+                    <input type="text" class="form-control" id="txtcid" placeholder="Id">
+                    <label for="txtcid">CustomerID</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="txtName" placeholder="Name">
+                    <label for="txtName">CustomerName</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="txtAddress" placeholder="Address">
+                    <label for="txtAddress">CustomerAddress</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="txtcontact" placeholder="Address">
+                    <label for="txtcontact">CustomerAddress</label>
+
+                </div>
+            </form>
+
+        </section>
+
+        <section class="col border-dark m-2 border rounded object-fit-contain" >
+
+            <h5 class="text-dark text-center m-lg-3 pb-3" ></h5>
+            <table class="table table-light table-striped" id="customerDetails">
+                <thead>
+                <tr>
+                    <th style="background-color: #051e8f" scope="col">Customer Id</th>
+                    <th style="background-color: #051e8f" scope="col">Customer Name</th>
+                    <th style="background-color: #051e8f" scope="col">Customer Address</th>
+                    <th style="background-color: #051e8f" scope="col">Customer Contact</th>
+                </tr>
+                </thead>
+                <tbody id="tblCustomer">
+                </tbody>
+            </table>
+        </section>
+    </section>
+
+    <div class= "col-6 ms-5">
+        <button id="addCustomer" type="button" class="btn btn-primary me-1 mt-2 mb-3">ADD</button>
+        <button  id="updateCustomer" type="button" class="btn btn-success me-1 mt-2 mb-3 ms-4">UPDATE</button>
+        <button id="deleteCustomer" type="button" class="btn btn-danger me-1 mt-2 mb-3">DELETE</button>
+        <button id="backCustomer" type="button" class="btn btn-outline-warning me-1 mt-2 mb-3 ms-4">CLEAR</button>
+    </div>
+
+</main>
+
+
+
+
+<main class="container" id="itemContent">
+    <section class="row p-4 m-0 object-fit-contain "id="item" style="font-weight: bold">
+
+        <h2 class="text-success pt-5 m-lg-2">
+
+            <img src="/assigment/CSS-FrameWork/ZenPosSystem/assets/Images/icons8-discount-64.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
+            ITEMS
+
+        </h2>
+
+        <section class="col border-dark-subtle  m-3 border rounded-5 object-fit-contain" style="background-color: #1fc928"  >
+
+            <form>
+                <div class="form-floating mb-3 mt-2">
+                    <input type="text" class="form-control" id="txtiid" placeholder="Id">
+                    <label for="txtiid">Item ID</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="txtIName" placeholder="Name">
+                    <label for="txtName">Item Name</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="txtprice" placeholder="price">
+                    <label for="txtprice">Item Price</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="txtqty" placeholder="QTY">
+                    <label for="txtqty">Item QTY</label>
+                </div>
+            </form>
+
+
+        </section>
+
+        <section class="col border-dark m-3 border rounded object-fit-contain" >
+
+
+            <h5 class="text-dark text-center m-lg-3 pb-3" ></h5>
+            <table class="table table-light table-striped">
+                <thead>
+                <tr>
+                    <th style="background-color: #1fc928" scope="col">Item Id</th>
+                    <th style="background-color: #1fc928" scope="col">Item Name</th>
+                    <th style="background-color: #1fc928" scope="col">Item Price</th>
+                    <th style="background-color: #1fc928" scope="col">Item QTY</th>
+                </tr>
+                </thead>
+                <tbody id="tblItems">
+                </tbody>
+            </table>
+        </section>
+    </section>
+    <div class="col-6 ms-5">
+        <button id="addItems" type="button" class="btn btn-primary me-1 mt-2 mb-3">ADD</button>
+        <button id="updateItems" type="button" class="btn btn-success me-1 mt-2 mb-3 ms-4">UPDATE</button>
+        <button id="deleteItems" type="button" class="btn btn-danger me-1 mt-2 mb-3">DELETE</button>
+        <button id="backItems" type="button" class="btn btn-outline-warning me-1 mt-2 mb-3 ms-4">CLEAR</button>
+    </div>
+</main>
+
+
+
+<main class="container" id="orderContent">
+
+    <h2 style="color: #fd8b05" class="mt-2 ">
+
+        <img src="/assigment/CSS-FrameWork/ZenPosSystem/assets/Images/icons8-order-64.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
+        ORDER
+
+    </h2>
+
+    <section class="row mt-3 border border-dark rounded p-5" style="background-color: #22d3a4" id="placeOrders">
+        <form action="">
+            <div class="row">
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">CustomerID</span>
+                        <select class="form-select" aria-label="Default select example" id="customerOrdID">
+                            <option selected >Select ID</option>
+
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Customer Name</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Customer Contact</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Date</span>
+                        <input class="form-control" type="text" placeholder="2023-05-17" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="row mt-5 mb-2 p-3">
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Item ID</span>
+                        <select class="form-select" aria-label="Default select example" id="ItemIdOrd">
+                            <option selected >Select ID</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Item Name</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Item Price</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Qty On Hand</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+
+
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">QTY</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-10"></div>
+                <div class="col-2">
+                    <button id="add" type="button" class="btn btn-success">Add </button>
+                    <button id="clear" type="button" class="btn btn-danger">Clear</button>
+                </div>
+            </div>
+
+        </form>
+    </section>
+
+    <section class="row mt-3">
+        <div class="row">
+            <table class="table table-light table-striped">
+                <thead>
+                <tr>
+                    <th style="background-color: #ffae00" scope="col">Item ID</th>
+                    <th style="background-color: #ffae00" scope="col">Item Name</th>
+                    <th style="background-color: #ffae00" scope="col">Qty</th>
+                    <th style="background-color: #ffae00" scope="col">Unit Price</th>
+                    <th style="background-color: #ffae00" scope="col">Total</th>
+                    <th style="background-color: #ffae00" scope="col">Action</th>
+                </tr>
+                </thead>
+                <tbody>
+
+
+
+                </tbody>
+            </table>
+        </div>
+        <form action="">
+            <div class="row mt-3">
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Total-Rs:</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Discount-Rs:</span>
+                        <input class="form-control" type="number" placeholder="" aria-label="Disabled input example">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Sub Tot-Rs:</span>
+                        <input class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="row mt-3">
+            <div class="col-10"></div>
+            <div class="col-2">
+                <button id="purchase" type="button" class="btn btn-primary">Purchase</button>
+                <button id="cancel" type="button" class="btn btn-danger">Cancel</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="assets/js/jquery-3.7.0.min.js"></script>
+<script src="js.js"></script>
+
+</body>
+</html>

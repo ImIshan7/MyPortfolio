@@ -21,6 +21,8 @@ $("#addCustomer").click(function (){
     loadAllCustomers();
 
     bindRowClickEvents();
+
+    loadAllCustomerId
 });
 
 
@@ -107,6 +109,9 @@ function deleteCustomer(customerID) {
 }
 
 function setTextfieldValues(id, name, address, contact) {
+
+    bindRowClickEvents();
+
     $("#txtcid").val(id);
     $("#txtName").val(name);
     $("#txtAddress").val(address);
@@ -123,13 +128,6 @@ $("#backCustomer").click(function () {
     $("#txtcontact").val("");
 
 });
-
-
-
-
-
-
-
 
 function searchCustomer(cusID) {
     for (let customer of customers) {

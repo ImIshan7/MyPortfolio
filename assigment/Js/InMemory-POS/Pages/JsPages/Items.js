@@ -22,6 +22,8 @@ $("#addItems").click(function (){
     loadAllItems();
 
     bindRowClickEvents();
+
+    loadAllItemId();
 });
 
 
