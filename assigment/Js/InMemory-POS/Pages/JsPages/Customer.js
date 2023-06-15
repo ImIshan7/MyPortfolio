@@ -25,6 +25,7 @@ $("#addCustomer").click(function (){
 
 
 function bindRowClickEvents() {
+
     $("#tblCustomer>tr").click(function () {
         let id = $(this).children(":eq(0)").text();
         let name = $(this).children(":eq(1)").text();
