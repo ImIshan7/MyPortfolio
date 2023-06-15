@@ -107,11 +107,25 @@ function deleteItems(itemID) {
 }
 
 function setTextfieldValues(id, name, price, qty) {
+    bindRowClickEvents();
     $("#txtiid").val(id);
     $("#txtName").val(name);
     $("#txtprice").val(price);
     $("#txtqty").val(qty);
 }
+
+
+
+$("#backItems").click(function (){
+
+    $("#txtiid").val("");
+    $("#txtName").val("");
+    $("#txtprice").val("");
+    $("#txtqty").val("");
+
+});
+
+
 
 
 function searchItem(ItemID) {

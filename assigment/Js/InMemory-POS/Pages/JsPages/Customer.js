@@ -113,6 +113,23 @@ function setTextfieldValues(id, name, address, contact) {
 }
 
 
+
+$("#backCustomer").click(function () {
+
+    $("#txtcid").val("");
+    $("#txtName").val("");
+    $("#txtAddress").val("");
+    $("#txtcontact").val("");
+
+});
+
+
+
+
+
+
+
+
 function searchCustomer(cusID) {
     for (let customer of customers) {
         if (customer.id == cusID) {
