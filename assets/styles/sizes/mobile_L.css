@@ -704,6 +704,21 @@
         margin-left: 41px;
     }
 
+
+    #FreeLancer{
+
+        width: calc(380px / 2.2);
+        height: 230px;
+        left: 102px;
+        position: relative;
+        top: 19px;
+    }
+
+
+
+
+
+
     body > main > section#Skills > section:nth-child(4) > section#Language > div:first-child > div:nth-child(5) > div:nth-child(1) {
         width: 54px;
         height: 55px;

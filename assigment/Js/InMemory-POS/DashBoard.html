@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css">
 
 
+
 </head>
 <style>
 
@@ -72,23 +73,23 @@
 
             <form id="customerForm">
                 <div class="form-floating mb-3 mt-2">
-                    <input type="text" class="form-control" id="txtcid" placeholder="Id">
-                    <label for="txtcid">CustomerID</label>
+                    <input type="text" class="form-control" id="txtCustomerID" placeholder="Id">
+                    <label for="txtCustomerID">CustomerID</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="txtName" placeholder="Name">
-                    <label for="txtName">CustomerName</label>
+                    <input type="text" class="form-control" id="txtCustomerName" placeholder="Name">
+                    <label for="txtCustomerName">CustomerName</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="txtAddress" placeholder="Address">
-                    <label for="txtAddress">CustomerAddress</label>
+                    <input type="text" class="form-control" id="txtCustomerAddress" placeholder="Address">
+                    <label for="txtCustomerAddress">CustomerAddress</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="txtcontact" placeholder="Address">
-                    <label for="txtcontact">CustomerAddress</label>
+                    <input type="text" class="form-control" id="txtCustomerContact" placeholder="Address">
+                    <label for="txtCustomerContact">CustomerAddress</label>
 
                 </div>
             </form>
@@ -139,23 +140,23 @@
 
             <form>
                 <div class="form-floating mb-3 mt-2">
-                    <input type="text" class="form-control" id="txtiid" placeholder="Id">
-                    <label for="txtiid">Item ID</label>
+                    <input type="text" class="form-control" id="txtItemId" placeholder="Id">
+                    <label for="txtItemId">Item ID</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="txtItemName" placeholder="Name">
-                    <label for="txtName">Item Name</label>
+                    <input type="text" class="form-control" id="txtItemDescription" placeholder="Name">
+                    <label for="txtItemDescription">Item Name</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="txtprice" placeholder="price">
-                    <label for="txtprice">Item Price</label>
+                    <input type="text" class="form-control" id="txtItemUnitprice" placeholder="price">
+                    <label for="txtItemUnitprice">Item Price</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="txtqty" placeholder="QTY">
-                    <label for="txtqty">Item QTY</label>
+                    <input type="text" class="form-control" id="txtItemQty" placeholder="QTY">
+                    <label for="txtItemQty">Item QTY</label>
                 </div>
             </form>
 
@@ -349,10 +350,17 @@
 
 
 <script src="assets/js/jquery-3.7.0.min.js"></script>
-<script src="Pages/JsPages/Customer.js"></script>
-<script src="Pages/JsPages/Items.js"></script>
-<script src="Pages/JsPages/Orders.js"></script>
 
+<script src="controller/Customer.js"></script>
+<script src="controller/Items.js"></script>
+<script src="controller/Orders.js"></script>
+<script src="controller/PlaceOrder.js"></script>
+
+<script src="db/db.js"></script>
+<script src="model/Customer.js"></script>
+<script src="model/ItemsModel.js"></script>
+<script src="model/OrdersModel.js"></script>
+<script src="model/PlaceOrderModel.js"></script>
 
 
 
