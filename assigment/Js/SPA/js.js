@@ -8,9 +8,9 @@ function initiateUI() {
 
 function saveLastView(clickedID) {
     switch (clickedID) {
-        case "dashboardContent":
-            localStorage.setItem("view", "HOME");
-            break;
+        // case "dashboardContent":
+        //     localStorage.setItem("view", "HOME");
+        //     break;
         case "customerContent":
             localStorage.setItem("view", "CUSTOMER");
             break;
@@ -26,9 +26,9 @@ function saveLastView(clickedID) {
 function setTheLastView() {
     let view = localStorage.getItem("view");
     switch (view) {
-        case "HOME":
+       /* case "HOME":
             setView($("#dashboardContent"));
-            break;
+            break;*/
         case "ITEM":
             setView($("#itemContent"));
             break;
@@ -39,7 +39,7 @@ function setTheLastView() {
             setView($("#orderContent"));
             break;
         default:
-            setView($("#dashboardContent"));
+            setView($("#customerContent"));
     }
 }
 
