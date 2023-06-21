@@ -1210,9 +1210,10 @@ body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:f
 
 body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(2) > div:nth-child(1) {
  /*   background-image: url("/assets/styles/img/vector/svg/ebay-ar21.svg");*/
-    background-image: url("img/vector/svg/ebay-ar21.svg");
+    background-image: url("../styles/img/vector/svg/ebay-ar21.svg");
     background-size: cover;
     position: absolute;
+
     width: 90px;
     height: 90px;
     border-radius: 15px;
@@ -1520,26 +1521,26 @@ body > main > section#Gallery > section#image_section > div:hover {
 body > main > section#Gallery > section#image_section > div:nth-child(1) {
     grid-column: 1/2;
     grid-row: 1/4;
-    background: url("/assets/GalleryImages/Gopro.jpg");
+    background: url("../GalleryImages/Gopro.jpg");
     background-position: center;
     background-size: cover;
     box-shadow: 2px 5px 3px 3px rgba(0, 0, 0, 0.68);
 }
 
 body > main > section#Gallery > section#image_section > div:nth-child(2) {
-    background: url("/assets/GalleryImages/Cricket.jpg");
+    background: url("../GalleryImages/Cricket.jpg");
     background-position: center;
     background-size: cover;
 }
 
 body > main > section#Gallery > section#image_section > div:nth-child(3) {
-    background: url("/assets/GalleryImages/IMG-8530.jpg");
+    background: url("../GalleryImages/IMG-8530.jpg");
     background-position: center;
     background-size: cover;
 }
 
 body > main > section#Gallery > section#image_section > div:nth-child(4) {
-    background: url("/assets/GalleryImages/Cap.jpg");
+    background: url("../GalleryImages/Cap.jpg");
     grid-column: 4/4;
     grid-row: 1/3;
     background-position: center;
@@ -1549,7 +1550,7 @@ body > main > section#Gallery > section#image_section > div:nth-child(4) {
 body > main > section#Gallery > section#image_section > div:nth-child(5) {
     grid-column: 2/4;
     grid-row: 2/4;
-    background: url("/assets/GalleryImages/Mates.jpg");
+    background: url("../GalleryImages/Mates.jpg");
     background-position: center;
     background-size: cover;
 }

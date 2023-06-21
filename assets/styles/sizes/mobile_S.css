@@ -14,6 +14,35 @@
         top: -4px;
     }
 
+
+    body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(2) > div:nth-child(1) {
+        /*   background-image: url("/assets/styles/img/vector/svg/ebay-ar21.svg");*/
+        background-image: url("../img/vector/svg/ebay-ar21.svg");
+        background-size: cover;
+        position: absolute;
+
+        width: 90px;
+        height: 90px;
+        border-radius: 15px;
+        box-shadow: 0 -1px 8px 2px #ffffff;
+        cursor: pointer;
+
+    }
+
+    #FreeLancer{
+        background: #000000;
+        width: 400px;
+        height: 550px;
+        position: absolute;
+        border-radius: 50px;
+        margin-right: auto;
+        box-shadow: 0 -1px 8px 2px #2CFF00FF;
+        flex-direction: column;
+
+    }
+
+
+
     body > main > section#Home > section:nth-child(2) > section:nth-child(3) {
         height: 86px;
         margin-left: -40px;
