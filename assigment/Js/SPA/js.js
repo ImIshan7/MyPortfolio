@@ -2,7 +2,7 @@ initiateUI();
 
 function initiateUI() {
     clearAll();
-    $("#dashboardContent").css("display", "block");
+    $("#customerContent").css("display", "block");
     setTheLastView();
 }
 
@@ -44,7 +44,7 @@ function setTheLastView() {
 }
 
 function clearAll() {
-    $("#dashboardContent,#customerContent,#itemContent,#orderContent").css('display', 'none');
+    $("#customerContent,#itemContent,#orderContent").css('display', 'none');
 }
 
 function setView(viewOb) {
