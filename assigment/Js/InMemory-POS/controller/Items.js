@@ -239,68 +239,6 @@ function updateItem(Items) {
 }
 
 
-$("#txtItemId").keydown(function (event){
-    let customerIdPattern = /^(I00-)[0-9]{1,3}$/;
-
-    let cId = $("#txtItemId").val();
-
-    if(event.key=="Enter"){
-        if(customerIdPattern.test(cId)){
-            $("#txtItemId").css('border-color','green').blur();
-            $("#txtItemDescription").focus();
-        }else{
-            $("#txtItemId").css('border-color','red').blur();
-        }
-
-    }
-});
-
-$("#txtItemDescription").keydown(function (event){
-    let customerIdPattern = /^[a-zA-Z-' ]{2,50}$/;
-
-    let cId = $("#txtItemDescription").val();
-
-    if(event.key=="Enter"){
-        if(customerIdPattern.test(cId)){
-            $("#txtItemDescription").css('border-color','green').blur();
-            $("#txtItemUnitprice").focus();
-        }else{
-            $("#txtItemDescription").css('border-color','red').blur();
-        }
-    }
-});
-
-$("#txtItemUnitprice").keydown(function (event){
-    let customerIdPattern = /^[0-9]{1,}[.]?[0-5]{1,2}$/;
-
-    let cId = $("#txtItemUnitprice").val();
-
-    if(event.key=="Enter"){
-        if(customerIdPattern.test(cId)){
-            $("#txtItemUnitprice").css('border-color','green').blur();
-            $("#txtItemQty").focus();
-        }else{
-            $("#txtItemUnitprice").css('border-color','red').blur();
-        }
-
-    }
-});
-
-$("#txtItemQty").keydown(function (event){
-    let customerIdPattern = /^[0-9]{1,}[.]?[0-3]{1,2}$/;
-
-    let cId = $("#txtItemQty").val();
-
-    if(event.key=="Enter"){
-        if(customerIdPattern.test(cId)){
-            $("#txtItemQty").css('border-color','green').blur();
-            $("#addItems").focus();
-        }else{
-            $("#txtItemQty").css('border-color','red').blur();
-        }
-
-    }
-});
 
 
 
