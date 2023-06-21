@@ -105,13 +105,13 @@ $("#addItems").click(function (){
 
     loadAllItems();
 
-    bindRowClickEvents();
+    bindRowClickEventsItems();
 
     loadAllItemId();
 });
 
 
-function bindRowClickEvents() {
+function bindRowClickEventsItems() {
     $("#tblItems>tr").click(function () {
         let itemId  = $(this).children(":eq(0)").text();
         let Description = $(this).children(":eq(1)").text();
@@ -155,11 +155,11 @@ $("#deleteItems").click(function (){
 });
 
 $("#updateItems").click(function () {
-    let itemID = $("#txtItemId").val();
-    let response = updateItems(itemID);
-    if (response) {
+    let itemIDs = $("#txtItemId").val();
+    let responses = updateItem(itemIDs);
+    if (responses) {
         alert("Item Updated Successfully");
-        setTextfieldValues("", "", "", "");
+        setTextfieldValuesItems("", "", "", "");
     } else {
         alert("Update Failed..!");
 
@@ -172,10 +172,10 @@ $("#txtItemId").on('keyup', function (event) {
         let typedId = $("#txtItemId").val();
         let item = searchItem(typedId);
         if (item != null) {
-            setTextfieldValues(item.itemId, item.description, item.unitprice, item.qty);
+            setTextfieldValuesItems(item.itemId, item.description, item.unitprice, item.qty);
         } else {
             alert("There is no Item available for that " + typedId);
-            setTextfieldValues("", "", "", "");
+            setTextfieldValuesItems("", "", "", "");
         }
     }
 });
@@ -192,8 +192,8 @@ function deleteItems(itemID) {
     }
 }
 
-function setTextfieldValues(itemId,description, unitprice, qty) {
-    bindRowClickEvents();
+function setTextfieldValuesItems(itemId,description, unitprice, qty) {
+    bindRowClickEventsItems();
     $("#txtItemId").val(itemId);
     $("#txtItemDescription").val(description);
     $("#txtItemUnitprice").val(unitprice);
@@ -216,7 +216,7 @@ $("#backItems").click(function (){
 
 function searchItem(ItemID) {
     for (let item of items) {
-        if (item.id == ItemID) {
+        if (item.itemId == ItemID) {
             return item;
         }
     }
@@ -239,8 +239,8 @@ function updateItem(Items) {
 }
 
 
-/*$("#txtItemId").keydown(function (event){
-    let customerIdPattern = /^(I0-)[0-9]{3}$/;
+$("#txtItemId").keydown(function (event){
+    let customerIdPattern = /^(I00-)[0-9]{1,3}$/;
 
     let cId = $("#txtItemId").val();
 
@@ -253,7 +253,7 @@ function updateItem(Items) {
         }
 
     }
-});*/
+});
 
 $("#txtItemDescription").keydown(function (event){
     let customerIdPattern = /^[a-zA-Z-' ]{2,50}$/;
