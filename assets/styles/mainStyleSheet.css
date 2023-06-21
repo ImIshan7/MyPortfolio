@@ -1223,7 +1223,7 @@ body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:f
 
 
 body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(2) > div:nth-child(2) {
-    background-image: url("/assets/GalleryImages/icons8-depop-96.png");
+    background-image: url("../GalleryImages/icons8-depop-96.png");
     position: absolute;
     background-size: cover;
     width: 90px;
@@ -1239,7 +1239,7 @@ body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:f
 
 
 body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(2) > div:nth-child(3) {
-    background-image: url("/assets/GalleryImages/icons8-amazon-96.png");
+    background-image: url("../GalleryImages/icons8-amazon-96.png");
     background-size: cover;
     position: absolute;
     width: 90px;
@@ -1267,7 +1267,7 @@ body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:f
 
 
 body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(3) > div:nth-child(1) {
-    background-image: url("/assets/GalleryImages/icons8-etsy-96.png");
+    background-image: url("../GalleryImages/icons8-etsy-96.png");
     background-size: cover;
     position: absolute;
     width: 90px;
@@ -1282,7 +1282,7 @@ body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:f
 
 
 body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(3) > div:nth-child(2) {
-    background-image: url("/assets/GalleryImages/icons8-fiverr-96.png");
+    background-image: url("../GalleryImages/icons8-fiverr-96.png");
     background-size: cover;
     position: absolute;
     width: 90px;
@@ -1298,7 +1298,7 @@ body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:f
 
 
 body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(3) > div:nth-child(3) {
-    background-image: url("/assets/GalleryImages/icons8-shopify-96.png");
+    background-image: url("../GalleryImages/icons8-shopify-96.png");
     background-size: cover;
     position: absolute;
     width: 90px;
@@ -1433,7 +1433,7 @@ body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-c
 }
 
 body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(3) > div:nth-child(1) {
-    background-image: url("/assets/GalleryImages/icons8-adobe-premiere-pro-96.png");
+    background-image: url("../GalleryImages/icons8-adobe-premiere-pro-96.png");
     background-size: cover;
     position: absolute;
     width: 90px;
@@ -1449,7 +1449,7 @@ body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-c
 }
 
 body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(3) > div:nth-child(2) {
-    background-image: url("/assets/GalleryImages/icons8-adobe-illustrator-96.png");
+    background-image: url("../GalleryImages/icons8-adobe-illustrator-96.png");
     background-size: cover;
     position: absolute;
     width: 90px;
@@ -1463,7 +1463,7 @@ body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-c
 
 
 body > main > section#Skills > section:nth-child(4) > section#Tool > div:first-child > div:nth-child(3) > div:nth-child(3) {
-    background-image: url("/assets/Images/icons8-adobe-photoshop-96.png");
+    background-image: url("../GalleryImages/icons8-adobe-photoshop-96.png");
     background-size: cover;
     position: absolute;
     width: 90px;
