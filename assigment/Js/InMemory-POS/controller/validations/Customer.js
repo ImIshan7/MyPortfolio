@@ -1,5 +1,5 @@
 $("#txtCustomerID").keydown(function (event){
-    let customerIdPattern = /^(C00-)[0-9]{3}$/;
+    let customerIdPattern = /^(C00-)[0-9]{1,3}$/;
 
     let cId = $("#txtCustomerID").val();
 

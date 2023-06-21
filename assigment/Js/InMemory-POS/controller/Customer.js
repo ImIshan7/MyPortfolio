@@ -142,7 +142,7 @@ $("#deleteCustomer").click(function (){
     let option=confirm("Do you Sure?"+deleteId);
     if (option){
         if (deleteCustomer(deleteId)) {
-            alert("Customer Successfully Deleted..");
+            alert("Customer Deleted Successfully ");
             setTextfieldValues("", "", "", "");
         } else {
             alert("No such customer to delete");

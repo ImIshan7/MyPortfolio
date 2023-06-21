@@ -146,7 +146,7 @@ $("#deleteItems").click(function (){
     let option=confirm("Do you Sure?"+deleteId);
     if (option){
         if (deleteItems(deleteId)) {
-            alert("Item Successfully Deleted..");
+            alert("Item Deleted Successfully ");
             setTextfieldValues("", "", "", "");
         } else {
             alert("No such Item to delete");
