@@ -1210,7 +1210,7 @@ body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:f
 
 body > main > section#Skills > section:nth-child(4) > section#FreeLancer > div:first-child > div:nth-child(2) > div:nth-child(1) {
  /*   background-image: url("/assets/styles/img/vector/svg/ebay-ar21.svg");*/
-    background-image: url("../styles/img/vector/svg/ebay-ar21.svg");
+    background-image: url("img/vector/svg/ebay-ar21.svg");
     background-size: cover;
     position: absolute;
     width: 90px;
