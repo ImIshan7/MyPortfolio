@@ -73,25 +73,35 @@ $("#linkplaceOrder").click(function () {
 });
 
 
+
 /*
 var items=[];
+*/
 
 $("#addItems").click(function (){
-    let itemId=$("#txtiid").val();
-    let itemName=$("#txtItemName").val();
-    let itemPrice=$("#txtprice").val();
-    let itemQTY=$("#txtqty").val();
+    let itemId=$("#txtItemId").val();
+    let itemDescription=$("#txtItemDescription").val();
+    let itemUnitprice=$("#txtItemUnitprice").val();
+    let itemQty=$("#txtItemQty").val();
 
-    var itemObject={
+    /*var itemObject={
 
         id:itemId,
         name:itemName,
         price:itemPrice,
         qty:itemQTY
 
-    }
+    }*/
 
-    items.push(itemObject);
+
+
+    let newItems=Object.assign({},itemObject);
+    newItems.itemId=itemId;
+    newItems.descriptions=itemDescription;
+    newItems.unitprice=itemUnitprice;
+    newItems.qty=itemQty;
+
+    items.push(newItems);
 
     loadAllItems();
 
@@ -103,15 +113,15 @@ $("#addItems").click(function (){
 
 function bindRowClickEvents() {
     $("#tblItems>tr").click(function () {
-        let id = $(this).children(":eq(0)").text();
-        let name = $(this).children(":eq(1)").text();
+        let itemId  = $(this).children(":eq(0)").text();
+        let Description = $(this).children(":eq(1)").text();
         let price = $(this).children(":eq(2)").text();
         let qty = $(this).children(":eq(3)").text();
 
-        $('#txtiid').val(id);
-        $('#txtItemName').val(name);
-        $('#txtprice').val(price);
-        $('#txtqty').val(qty);
+        $('#txtItemId').val(itemId);
+        $('#txtItemDescription').val(Description);
+        $('#txtItemUnitprice').val(price);
+        $('#txtItemQty').val(qty);
 
     });
 }
@@ -122,7 +132,7 @@ function loadAllItems() {
     $("#tblItems").empty();
 
     for (var item of items) {
-        var row = `<tr><td>${item.id}</td><td>${item.name}</td><td>${item.price}</td><td>${item.qty}</td></tr>`;
+        var row = `<tr><td>${item.itemId}</td><td>${item.descriptions}</td><td>${item.unitprice}</td><td>${item.qty}</td></tr>`;
 
         $("#tblItems").append(row);
     }
@@ -131,7 +141,7 @@ function loadAllItems() {
 
 $("#deleteItems").click(function (){
 
-    let deleteId=$("#txtiid").val();
+    let deleteId=$("#txtItemId").val();
 
     let option=confirm("Do you Sure?"+deleteId);
     if (option){
@@ -139,13 +149,13 @@ $("#deleteItems").click(function (){
             alert("Item Successfully Deleted..");
             setTextfieldValues("", "", "", "");
         } else {
-            alert("No such customer to delete");
+            alert("No such Item to delete");
         }
     }
 });
 
 $("#updateItems").click(function () {
-    let itemID = $("#txtiid").val();
+    let itemID = $("#txtItemId").val();
     let response = updateItems(itemID);
     if (response) {
         alert("Item Updated Successfully");
@@ -157,12 +167,12 @@ $("#updateItems").click(function () {
 });
 
 
-$("#txtiid").on('keyup', function (event) {
+$("#txtItemId").on('keyup', function (event) {
     if (event.code == "Enter") {
-        let typedId = $("#txtiid").val();
+        let typedId = $("#txtItemId").val();
         let item = searchItem(typedId);
         if (item != null) {
-            setTextfieldValues(item.id, item.name, item.price, item.qty);
+            setTextfieldValues(item.itemId, item.description, item.unitprice, item.qty);
         } else {
             alert("There is no Item available for that " + typedId);
             setTextfieldValues("", "", "", "");
@@ -182,22 +192,22 @@ function deleteItems(itemID) {
     }
 }
 
-function setTextfieldValues(id, name, price, qty) {
+function setTextfieldValues(itemId,description, unitprice, qty) {
     bindRowClickEvents();
-    $("#txtiid").val(id);
-    $("#txtItemName").val(name);
-    $("#txtprice").val(price);
-    $("#txtqty").val(qty);
+    $("#txtItemId").val(itemId);
+    $("#txtItemDescription").val(description);
+    $("#txtItemUnitprice").val(unitprice);
+    $("#txtItemQty").val(qty);
 }
 
 
 
 $("#backItems").click(function (){
 
-    $("#txtiid").val("");
-    $("#txtItemName").val("");
-    $("#txtprice").val("");
-    $("#txtqty").val("");
+    $("#txtItemId").val("");
+    $("#txtItemDescription").val("");
+    $("#txtItemUnitprice").val("");
+    $("#txtItemQty").val("");
 
 });
 
@@ -207,244 +217,6 @@ $("#backItems").click(function (){
 function searchItem(ItemID) {
     for (let item of items) {
         if (item.id == ItemID) {
-            return item;
-        }
-    }
-    return null;
-}
-
-function updateItems(ItemID) {
-    let item = searchItem(ItemID);
-    if (item != null) {
-        item.id = $("#txtiid").val();
-        item.name = $("#txtItemName").val();
-        item.price = $("#txtprice").val();
-        item.qty = $("#txtqty").val();
-        loadAllItems();
-        return true;
-    } else {
-        return false;
-    }
-
-}
-
-
-$("#txtiid").keydown(function (event){
-    let customerIdPattern = /^(I00-)[0-9]{3}$/;
-
-    let cId = $("#txtiid").val();
-
-    if(event.key=="Enter"){
-        if(customerIdPattern.test(cId)){
-            $("#txtiid").css('border-color','green').blur();
-            $("#txtItemName").focus();
-        }else{
-            $("#txtiid").css('border-color','red').blur();
-        }
-
-    }
-});
-
-$("#txtItemName").keydown(function (event){
-    let customerIdPattern = /^[a-zA-Z-' ]{2,50}$/;
-
-    let cId = $("#txtItemName").val();
-
-    if(event.key=="Enter"){
-        if(customerIdPattern.test(cId)){
-            $("#txtItemName").css('border-color','green').blur();
-            $("#txtprice").focus();
-        }else{
-            $("#txtItemName").css('border-color','red').blur();
-        }
-    }
-});
-
-$("#txtprice").keydown(function (event){
-    let customerIdPattern = /^[0-9]{1,}[.]?[0-5]{1,2}$/;
-
-    let cId = $("#txtprice").val();
-
-    if(event.key=="Enter"){
-        if(customerIdPattern.test(cId)){
-            $("#txtprice").css('border-color','green').blur();
-            $("#txtqty").focus();
-        }else{
-            $("#txtprice").css('border-color','red').blur();
-        }
-
-    }
-});
-
-$("#txtqty").keydown(function (event){
-    let customerIdPattern = /^[0-9]{1,}[.]?[0-3]{1,2}$/;
-
-    let cId = $("#txtqty").val();
-
-    if(event.key=="Enter"){
-        if(customerIdPattern.test(cId)){
-            $("#txtqty").css('border-color','green').blur();
-            $("#addItems").focus();
-        }else{
-            $("#txtqty").css('border-color','red').blur();
-        }
-
-    }
-});*/
-
-
-/*var items = [];*/
-
-$("#addItems").click(function () {
-    itemAdd();
-
-
-});
-
-function itemAdd() {
-    let itemIds = $("#txtItemId").val();
-    if (searchItem(itemIds.trim()) == undefined) {
-        let itemDescription = $("#txtItemDescription").val();
-        let itemUnitprice = $("#txtItemUnitprice").val();
-        let itemQty = $("#txtItemQty").val();
-
-
-
-        let newItems=Object.assign({},itemObject);
-        newItems.itemId=itemIds;
-        newItems.descriptions=itemDescription;
-        newItems.unitprice=itemUnitprice;
-        newItems.qty=itemQty;
-
-        items.push(newItems);
-
-        loadAllItems();
-        loadAllItemId();
-
-        bindRowClickEventsItems();
-    } else {
-        alert("Item already exits.!");
-    }
-}
-
-function clearItemData() {
-    $('#txtItemId').val("");
-    $('#txtItemDescription').val("");
-    $('#txtItemUnitprice').val("");
-    $('#txtItemQty').val("");
-}
-
-
-function bindRowClickEventsItems() {
-    $("#tblItem>tr").click(function () {
-        let itemId = $(this).children(":eq(0)").text();
-        let descriptions = $(this).children(":eq(1)").text();
-        let unitprice = $(this).children(":eq(2)").text();
-        let qty = $(this).children(":eq(3)").text();
-
-        $('#txtItemId').val(itemId);
-        $('#txtItemDescription').val(descriptions);
-        $('#txtItemUnitprice').val(unitprice);
-        $('#txtItemQty').val(qty);
-
-        setItemButtonUpdate(2);
-        $("#updateItems").attr('disabled', false);
-    });
-    $("#updateItems").attr('disabled', true);
-}
-
-function setItemButtonUpdate(value) {
-    if (value > 1) {
-        $("#updateItems").attr('disabled', true);
-    } else {
-        $("#updateItems").attr('disabled', disabled);
-    }
-}
-
-function loadAllItems() {
-
-    $("#tblItems").empty();
-
-    for (var item of items) {
-        var row = `<tr><td>${item.itemId}</td><td>${item.descriptions}</td><td>${item.unitprice}</td><td>${item.qty}</td></tr>`;
-
-        $("#tblItem").append(row);
-    }
-}
-
-
-$("#deleteItems").click(function () {
-    /*bindRowClickEventsItems();*/
-    let deleteIds = $("#txtItemId").val();
-
-    let option = confirm("Do you Sure?" + deleteIds);
-    if (option) {
-        if (deleteItem(deleteIds)) {
-            alert("Item Successfully Deleted..");
-            setTextfieldValuesItem("", "", "", "");
-        } else {
-            alert("No such Item to delete");
-        }
-    }
-});
-
-$("#backItems").click(function () {
-    clearItemData();
-});
-
-
-$("#updateItems").click(function () {
-    /* bindRowClickEventsItems();*/
-    let ItemId = $("#txtItemId").val();
-    let responses = updateItem(ItemId);
-    if (responses) {
-        alert("Item Updated Successfully");
-        setTextfieldValuesItem("", "", "", "");
-
-    } else {
-        alert("Update Failed..!");
-
-    }
-});
-
-
-$("#txtItemId").on('keyup', function (event) {
-    if (event.code == "Enter") {
-        let typedIds = $("#txtItemId").val();
-        let item = searchItem(typedIds);
-        if (item != null) {
-            setTextfieldValuesItem(item.itemId, item.descriptions, item.unitprice, item.qty);
-        } else {
-            alert("There is no cusotmer available for that " + typedIds);
-            setTextfieldValuesItem("", "", "", "");
-        }
-    }
-});
-
-function deleteItem(ItemID) {
-    let Item = searchItem(ItemID);
-    if (Item != null) {
-        let indexNumber = items.indexOf(Item);
-        items.splice(indexNumber, 1);
-        loadAllItems();
-        return true;
-    } else {
-        return false;
-    }
-}
-
-function setTextfieldValuesItem(itemId, descriptions, unitprice, qty) {
-    bindRowClickEventsItems();
-    $("#txtItemId").val(itemId);
-    $("#txtItemDescription").val(descriptions);
-    $("#txtItemUnitprice").val(unitprice);
-    $("#txtItemQty").val(qty);
-}
-
-
-function searchItem(itemID) {
-    for (let item of items) {
-        if (item.itemId == itemID) {
             return item;
         }
     }
@@ -466,76 +238,71 @@ function updateItem(Items) {
 
 }
 
-function addTable() {
-    $("#tblItem> tr").detach();
 
-    for (var itm of itemAr){
-        var row="<tr><td>"+itm.itemId+"</td><td>"+itm.descriptions+"</td><td>"+itm.unitprice+"</td><td>"+itm.qty+"</td></tr>";
-        $('#tblItem').append(row);
-    }
-    trSelector();
+/*$("#txtItemId").keydown(function (event){
+    let customerIdPattern = /^(I0-)[0-9]{3}$/;
 
-}
-
-$("#txtiid").keydown(function (event){
-    let customerIdPattern = /^(I00-)[0-9]{3}$/;
-
-    let cId = $("#txtiid").val();
+    let cId = $("#txtItemId").val();
 
     if(event.key=="Enter"){
         if(customerIdPattern.test(cId)){
-            $("#txtiid").css('border-color','green').blur();
-            $("#txtItemName").focus();
+            $("#txtItemId").css('border-color','green').blur();
+            $("#txtItemDescription").focus();
         }else{
-            $("#txtiid").css('border-color','red').blur();
+            $("#txtItemId").css('border-color','red').blur();
         }
 
     }
-});
+});*/
 
-$("#txtItemName").keydown(function (event){
+$("#txtItemDescription").keydown(function (event){
     let customerIdPattern = /^[a-zA-Z-' ]{2,50}$/;
 
-    let cId = $("#txtItemName").val();
+    let cId = $("#txtItemDescription").val();
 
     if(event.key=="Enter"){
         if(customerIdPattern.test(cId)){
-            $("#txtItemName").css('border-color','green').blur();
-            $("#txtprice").focus();
+            $("#txtItemDescription").css('border-color','green').blur();
+            $("#txtItemUnitprice").focus();
         }else{
-            $("#txtItemName").css('border-color','red').blur();
+            $("#txtItemDescription").css('border-color','red').blur();
         }
     }
 });
 
-$("#txtprice").keydown(function (event){
+$("#txtItemUnitprice").keydown(function (event){
     let customerIdPattern = /^[0-9]{1,}[.]?[0-5]{1,2}$/;
 
-    let cId = $("#txtprice").val();
+    let cId = $("#txtItemUnitprice").val();
 
     if(event.key=="Enter"){
         if(customerIdPattern.test(cId)){
-            $("#txtprice").css('border-color','green').blur();
-            $("#txtqty").focus();
+            $("#txtItemUnitprice").css('border-color','green').blur();
+            $("#txtItemQty").focus();
         }else{
-            $("#txtprice").css('border-color','red').blur();
+            $("#txtItemUnitprice").css('border-color','red').blur();
         }
 
     }
 });
 
-$("#txtqty").keydown(function (event){
+$("#txtItemQty").keydown(function (event){
     let customerIdPattern = /^[0-9]{1,}[.]?[0-3]{1,2}$/;
 
-    let cId = $("#txtqty").val();
+    let cId = $("#txtItemQty").val();
 
     if(event.key=="Enter"){
         if(customerIdPattern.test(cId)){
-            $("#txtqty").css('border-color','green').blur();
+            $("#txtItemQty").css('border-color','green').blur();
             $("#addItems").focus();
         }else{
-            $("#txtqty").css('border-color','red').blur();
+            $("#txtItemQty").css('border-color','red').blur();
         }
 
     }
-})
+});
+
+
+
+
+

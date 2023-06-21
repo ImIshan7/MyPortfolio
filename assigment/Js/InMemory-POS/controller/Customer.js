@@ -72,22 +72,24 @@ $("#linkplaceOrder").click(function () {
     setView($("#orderContent"));
 });
 
-/*
-var customers=[];*/
-
-/*$("#addCustomer").click(function () {
-
-    saveCustomer();
-});
 
 
-function saveCustomer() {
-    let cusId = $("#txtcid").val();
-    if (searchCustomer(cusId.trim()) == undefined) {
-        let cusName = $("#txtName").val();
-        let cusAddress = $("#txtAddress").val();
-        let cusContact = $("#txtcontact").val();
 
+
+
+$("#addCustomer").click(function (){
+    let cusId=$("#txtCustomerID").val();
+    let cusName=$("#txtCustomerName").val();
+    let cusAddress=$("#txtCustomerAddress").val();
+    let cusContact=$("#txtCustomerContact").val();
+
+    /*var customerObject={
+        id:cusId,
+        name:cusName,
+        address:cusAddress,
+        contact:cuscontact
+
+    }*/
 
     let newCustomer= Object.assign({},customerObject);
     newCustomer.id=cusId;
@@ -97,220 +99,27 @@ function saveCustomer() {
 
     customers.push(newCustomer);
 
-    clearCustomerInputFields();
+
     loadAllCustomers();
     loadAllCustomerId();
     bindRowClickEvents();
+});
 
-} else {
-    alert("Customer already exits.!");
-}
-
-}
 
 
 function bindRowClickEvents() {
     $("#tblCustomer>tr").click(function () {
-        let Cusid = $(this).children(":eq(0)").text();
-        let Cusname = $(this).children(":eq(1)").text();
-        let address = $(this).children(":eq(2)").text();
-        let contact = $(this).children(":eq(3)").text();
-
-        $('#txtcid').val(Cusid);
-        $('#txtName').val(Cusname);
-        $('#txtAddress').val(address);
-        $('#txtcontact').val(contact);
-
-    });
-}
-
-
-function loadAllCustomers() {
-
-    $("#tblCustomer").empty();
-
-    for (var customer of customers) {
-        var row = `<tr><td>${customer.customerid}</td><td>${customer.customername}</td><td>${customer.address}</td><td>${customer.contact}</td></tr>`;
-
-        $("#tblCustomer").append(row);
-    }
-}
-
-
-$("#deleteCustomer").click(function (){
-
-    let deleteId=$("#txtcid").val();
-
-    let option=confirm("Do you Sure?"+deleteId);
-    if (option){
-        if (deleteCustomers(deleteId)) {
-            alert("Customer Successfully Deleted..");
-            setTextfieldValues("", "", "", "");
-        } else {
-            alert("No such customer to delete");
-        }
-    }
-});
-
-$("#updateCustomer").click(function () {
-    let cusID = $("#txtcid").val();
-    let response = updateCustomers(cusID);
-    if (response) {
-        alert("Customer Updated Successfully");
-        setTextfieldValues("", "", "", "");
-    } else {
-        alert("Update Failed..!");
-
-    }
-});
-
-
-$("#txtcid").on('keyup', function (event) {
-    if (event.code == "Enter") {
-        let typedId = $("#txtcid").val();
-        let customer = searchCustomer(typedId);
-        if (customer != null) {
-            setTextfieldValues(customer.customerid, customer.customername, customer.address, customer.contact);
-        } else {
-            alert("There is no Customer available for that " + typedId);
-            setTextfieldValues("", "", "", "");
-        }
-    }
-});
-
-function deleteCustomers(cusID) {
-    let customer = searchCustomer(cusID);
-    if (customer != null) {
-        let indexNumber = customers.indexOf(customer);
-        customers.splice(indexNumber, 1);
-        loadAllCustomers();
-        return true;
-    } else {
-        return false;
-    }
-}
-
-function setTextfieldValues(Cusid, Cusname, address, contact) {
-    bindRowClickEvents();
-    $("#txtcid").val(Cusid);
-    $("#txtName").val(Cusname);
-    $("#txtAddress").val(address);
-    $("#txtcontact").val(contact);
-}
-
-
-
-$("#backCustomer").click(function (){
-
-    $("#txtcid").val("");
-    $("#txtName").val("");
-    $("#txtAddress").val("");
-    $("#txtcontact").val("");
-
-});
-
-
-
-
-function searchCustomer(cusID) {
-    for (let customer of customers) {
-        if (customer.customerid == cusID) {
-            return customer;
-        }
-    }
-    return null;
-}
-
-function updateCustomers(cusID) {
-    let customer = searchCustomer(cusID);
-    if (customer != null) {
-        customer.customerid = $("#txtcid").val();
-        customer.customername = $("#txtName").val();
-        customer.address = $("#txtAddress").val();
-        customer.contact = $("#txtcontact").val();
-        loadAllCustomers();
-        return true;
-    } else {
-        return false;
-    }
-
-}*/
-
-
-
-/*var customers = [];*/
-
-$("#addCustomer").click(function () {
-
-    saveCustomer();
-});
-
-
-function saveCustomer() {
-
-    let cusId = $("#txtCustomerID").val();
-    if (searchCustomer(cusId.trim()) == undefined) {
-        let cusName = $("#txtCustomerName").val();
-        let cusAddress = $("#txtCustomerAddress").val();
-        let cusContact = $("#txtCustomerContact").val();
-
-
-
-        let newCustomer= Object.assign({},customerObject);
-        newCustomer.id=cusId;
-        newCustomer.name=cusName;
-        newCustomer.address=cusAddress;
-        newCustomer.contact=cusContact;
-
-        customers.push(newCustomer);
-
-        clearCustomerInputFields();
-        loadAllCustomers();
-        loadAllCustomerId();
-        bindRowClickEvents();
-
-    } else {
-        alert("Customer already exits.!");
-    }
-
-}
-
-function clearAllDataCustomer() {
-    $('#txtCustomerID').val("");
-    $('#txtCustomerName').val("");
-    $('#txtCustomerAddress').val("");
-    $('#txtCustomerContact').val("");
-}
-
-
-
-function bindRowClickEvents() {
-
-    $("#tblCustomer>tr").click(function () {
-        let id = $(this).children(":eq(0)").text();
+        let customerid = $(this).children(":eq(0)").text();
         let name = $(this).children(":eq(1)").text();
         let address = $(this).children(":eq(2)").text();
         let contact = $(this).children(":eq(3)").text();
 
-        $('#txtCustomerID').val(id);
+        $('#txtCustomerID').val(customerid);
         $('#txtCustomerName').val(name);
         $('#txtCustomerAddress').val(address);
         $('#txtCustomerContact').val(contact);
 
-        setCusButtonUpdate(2);
-        $("#updateCustomer").attr('disabled', false);
     });
-    $("#updateCustomer").attr('disabled', disabled);
-
-
-}
-
-function setCusButtonUpdate(values) {
-    if (values > 1) {
-        $("#updateCustomer").attr('disabled', true);
-    } else {
-        $("#updateCustomer").attr('disabled', disabled);
-    }
 }
 
 
@@ -326,12 +135,12 @@ function loadAllCustomers() {
 }
 
 
-$("#deleteCustomer").click(function () {
+$("#deleteCustomer").click(function (){
 
-    let deleteId = $("#txtCustomerID").val();
+    let deleteId=$("#txtCustomerID").val();
 
-    let option = confirm("Do you Sure?" + deleteId);
-    if (option) {
+    let option=confirm("Do you Sure?"+deleteId);
+    if (option){
         if (deleteCustomer(deleteId)) {
             alert("Customer Successfully Deleted..");
             setTextfieldValues("", "", "", "");
@@ -342,12 +151,11 @@ $("#deleteCustomer").click(function () {
 });
 
 
-$("#backCustomer").click(function () {
-    /* $('#txtCustomerID').val("");
-     $('#txtCustomerName').val("");
-     $('#txtCustomerAddress').val("");
-     $('#txtCustomerContact').val("");*/
-    clearAllDataCustomer();
+$("#backCustomer").click(function (){
+    $('#txtCustomerID').val("");
+    $('#txtCustomerName').val("");
+    $('#txtCustomerAddress').val("");
+    $('#txtCustomerContact').val("");
 });
 
 $("#updateCustomer").click(function () {
@@ -398,7 +206,6 @@ function setTextfieldValues(id, name, address, contact) {
 }
 
 
-
 function searchCustomer(id) {
     for (let customer of customers) {
         if (customer.id == id) {
@@ -414,36 +221,12 @@ function updateCustomer(customerID) {
         customer.id = $("#txtCustomerID").val();
         customer.name = $("#txtCustomerName").val();
         customer.address = $("#txtCustomerAddress").val();
-        customer.contact = $("#txtCustomerContact").val();
+        customer.contact= $("#txtCustomerContact").val();
         loadAllCustomers();
         return true;
     } else {
         return false;
     }
-
-}
-
-
-function trCusSelector() {
-
-    $("#tblCustomer>tr").click(function (){
-        let id=$(this).children(':eq(0)').text();
-        let name=$(this).children(':eq(1)').text();
-        let address=$(this).children(':eq(2)').text();
-        let contact=$(this).children(':eq(3)').text();
-
-/*
-        console.log(id+"  "+name+"  "+address+" "+contact);
-*/
-
-        $('#txtCustomerID').val(id);
-        $('#txtCustomerName').val(name);
-        $('#txtCustomerAddress').val(address);
-        $('#txtCustomerContact').val(contact);
-
-
-
-    });
 
 }
 
