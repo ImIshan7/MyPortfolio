@@ -1,7 +1,4 @@
-/**
- * @author : Nimesh Piyumantha
- * @since : 0.1.0
- **/
+
 
     // execute after all the content fully loaded
     $(window).on('load', function () {
