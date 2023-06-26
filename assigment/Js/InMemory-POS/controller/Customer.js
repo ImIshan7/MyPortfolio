@@ -18,6 +18,11 @@ function saveLastView(clickedID) {
         case "itemContent":
             localStorage.setItem("view", "ITEM");
             break;
+
+        case "ordersContent":
+            localStorage.setItem("view", "ORDERS");
+            break;
+
         case "orderContent":
             localStorage.setItem("view", "PLACEORDER");
             break;
@@ -39,13 +44,18 @@ function setTheLastView() {
         case "PLACEORDER":
             setView($("#placOrderContent"));
             break;
+
+        case "ORDERS":
+            setView($("#ordersContent"));
+            break;
+
         default:
             setView($("#customerContent"));
     }
 }
 
 function clearAll() {
-    $("#customerContent,#itemContent,#placOrderContent").css('display', 'none');
+    $("#customerContent,#itemContent,#ordersContent,#placOrderContent").css('display', 'none');
 }
 
 function setView(viewOb) {
@@ -66,6 +76,10 @@ $("#linkcustomers").click(function () {
 
 $("#linkitems").click(function () {
     setView($("#itemContent"));
+});
+
+$("#linkOrders").click(function () {
+    setView($("#ordersContent"));
 });
 
 $("#linkplaceOrder").click(function () {

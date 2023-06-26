@@ -45,7 +45,7 @@ function setTheLastView() {
 }
 
 function clearAll() {
-    $("#customerContent,#itemContent,#placOrderContent").css('display', 'none');
+    $("#customerContent,#itemContent,#ordersContent,#placOrderContent").css('display', 'none');
 }
 
 function setView(viewOb) {
