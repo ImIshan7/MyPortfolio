@@ -3,15 +3,15 @@ initiateUI();
 
 function initiateUI() {
     clearAll();
-    $("#dashboardContent").css("display", "block");
+    $("#customerContent").css("display", "block");
     setTheLastView();
 }
 
 function saveLastView(clickedID) {
     switch (clickedID) {
-        case "dashboardContent":
+       /* case "dashboardContent":
             localStorage.setItem("view", "HOME");
-            break;
+            break;*/
         case "customerContent":
             localStorage.setItem("view", "CUSTOMER");
             break;
@@ -19,7 +19,7 @@ function saveLastView(clickedID) {
             localStorage.setItem("view", "ITEM");
             break;
         case "orderContent":
-            localStorage.setItem("view", "ORDER");
+            localStorage.setItem("view", "PLACEORDER");
             break;
     }
 }
@@ -27,25 +27,25 @@ function saveLastView(clickedID) {
 function setTheLastView() {
     let view = localStorage.getItem("view");
     switch (view) {
-        case "HOME":
+        /*case "HOME":
             setView($("#dashboardContent"));
-            break;
+            break;*/
         case "ITEM":
             setView($("#itemContent"));
             break;
         case "CUSTOMER":
             setView($("#customerContent"));
             break;
-        case "ORDER":
-            setView($("#orderContent"));
+        case "PLACEORDER":
+            setView($("#placOrderContent"));
             break;
         default:
-            setView($("#dashboardContent"));
+            setView($("#customerContent"));
     }
 }
 
 function clearAll() {
-    $("#dashboardContent,#customerContent,#itemContent,#orderContent").css('display', 'none');
+    $("#customerContent,#itemContent,#placOrderContent").css('display', 'none');
 }
 
 function setView(viewOb) {
@@ -56,9 +56,9 @@ function setView(viewOb) {
 }
 
 
-$("#linkHome").click(function () {
+/*$("#linkHome").click(function () {
     setView($("#dashboardContent"));
-});
+});*/
 
 $("#linkcustomers").click(function () {
     setView($("#customerContent"));
@@ -69,7 +69,7 @@ $("#linkitems").click(function () {
 });
 
 $("#linkplaceOrder").click(function () {
-    setView($("#orderContent"));
+    setView($("#placOrderContent"));
 });
 
 
