@@ -1,3 +1,4 @@
+/*
 
 initiateUI();
 
@@ -9,9 +10,9 @@ function initiateUI() {
 
 function saveLastView(clickedID) {
     switch (clickedID) {
-       /* case "dashboardContent":
+       /!* case "dashboardContent":
             localStorage.setItem("view", "HOME");
-            break;*/
+            break;*!/
         case "customerContent":
             localStorage.setItem("view", "CUSTOMER");
             break;
@@ -32,9 +33,9 @@ function saveLastView(clickedID) {
 function setTheLastView() {
     let view = localStorage.getItem("view");
     switch (view) {
-       /* case "HOME":
+       /!* case "HOME":
             setView($("#dashboardContent"));
-            break;*/
+            break;*!/
         case "ITEM":
             setView($("#itemContent"));
             break;
@@ -66,9 +67,9 @@ function setView(viewOb) {
 }
 
 
-/*$("#linkHome").click(function () {
+/!*$("#linkHome").click(function () {
     setView($("#dashboardContent"));
-});*/
+});*!/
 
 $("#linkcustomers").click(function () {
     setView($("#customerContent"));
@@ -97,13 +98,13 @@ $("#addCustomer").click(function (){
     let cusAddress=$("#txtCustomerAddress").val();
     let cusContact=$("#txtCustomerContact").val();
 
-    /*var customerObject={
+    /!*var customerObject={
         id:cusId,
         name:cusName,
         address:cusAddress,
         contact:cuscontact
 
-    }*/
+    }*!/
 
     let newCustomer= Object.assign({},customerObject);
     newCustomer.id=cusId;
@@ -246,3 +247,4 @@ function updateCustomer(customerID) {
 
 
 
+*/

@@ -1,3 +1,4 @@
+/*
 
 initiateUI();
 
@@ -9,9 +10,9 @@ function initiateUI() {
 
 function saveLastView(clickedID) {
     switch (clickedID) {
-       /* case "dashboardContent":
+       /!* case "dashboardContent":
             localStorage.setItem("view", "HOME");
-            break;*/
+            break;*!/
         case "customerContent":
             localStorage.setItem("view", "CUSTOMER");
             break;
@@ -27,9 +28,9 @@ function saveLastView(clickedID) {
 function setTheLastView() {
     let view = localStorage.getItem("view");
     switch (view) {
-        /*case "HOME":
+        /!*case "HOME":
             setView($("#dashboardContent"));
-            break;*/
+            break;*!/
         case "ITEM":
             setView($("#itemContent"));
             break;
@@ -56,9 +57,9 @@ function setView(viewOb) {
 }
 
 
-/*$("#linkHome").click(function () {
+/!*$("#linkHome").click(function () {
     setView($("#dashboardContent"));
-});*/
+});*!/
 
 $("#linkcustomers").click(function () {
     setView($("#customerContent"));
@@ -74,9 +75,9 @@ $("#linkplaceOrder").click(function () {
 
 
 
-/*
+/!*
 var items=[];
-*/
+*!/
 
 $("#addItems").click(function (){
     let itemId=$("#txtItemId").val();
@@ -84,14 +85,14 @@ $("#addItems").click(function (){
     let itemUnitprice=$("#txtItemUnitprice").val();
     let itemQty=$("#txtItemQty").val();
 
-    /*var itemObject={
+    /!*var itemObject={
 
         id:itemId,
         name:itemName,
         price:itemPrice,
         qty:itemQTY
 
-    }*/
+    }*!/
 
 
 
@@ -244,3 +245,4 @@ function updateItem(Items) {
 
 
 
+*/
