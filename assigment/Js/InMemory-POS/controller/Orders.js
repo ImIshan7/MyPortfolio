@@ -201,3 +201,14 @@ function loadAllOrder(){
         $('#tblOrder').append('<tr><td>'+i.orId+'</td>'+'<td>'+i.orDate+'</td>'+'<td>'+i.orCusName+'</td>'+'<td>'+i.orDis+'</td>'+'<td>'+i.orSubTotal+'</td></tr>');
     }
 }*/
+
+function addOrdersToTable(){
+    let orderTable = $("#allOrderTable");
+    orderTable.empty();
+
+    for (let order of Order) {
+
+        let tr = $('<tr> <td>'+ order.oId +'</td> <td>'+ order.date +'</td> <td>'+ order.customer.name +'</td>  <td>'+ order.subTotal +'</td> </tr>');
+        orderTable.append(tr);
+    }
+}

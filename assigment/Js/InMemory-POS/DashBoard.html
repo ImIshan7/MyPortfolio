@@ -394,8 +394,8 @@
 <script src="db/db.js"></script>
 <script src="model/Customer.js"></script>
 <script src="model/ItemsModel.js"></script>
-<script src="model/OrdersModel.js"></script>
-<script src="model/PlaceOrderModel.js"></script>
+<script src="model/Orders.js"></script>
+<script src="model/OrderDetails.js"></script>
 
 <script src="controller/validations/Customer.js"></script>
 <script src="controller/validations/Item.js"></script>
@@ -409,7 +409,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Pos</title>
+    <title>Zen POS System</title>
     <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <script src="assets/js/bootstrap.js"></script>
@@ -429,7 +429,7 @@
 <header>
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark" style="background-color: #a40b23;" >
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#" style="font-weight: bold">
 
                 <img src="../../CSS-FrameWork/ZenPosSystem/assets/Images/Zen-Final-Logo2-_Teal.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-center">
                 ZEN POS System</a>
@@ -440,22 +440,22 @@
             <div class="collapse navbar-collapse ms-4" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link text-white" aria-current="page" href="#customers" id="btnCustomer" >
+                        <a class="nav-link text-white" aria-current="page" href="#customers" id="btnCustomer" style="font-weight: bold" >
                             <img src="../../CSS-FrameWork/ZenPosSystem/assets/Images/icons8-customer-96.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
                             Customer</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#item" id="btnItem">
+                        <a class="nav-link text-white" href="#item" id="btnItem" style="font-weight: bold">
                             <img src="../../CSS-FrameWork/ZenPosSystem/assets/Images/icons8-discount-64.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
                             Items</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#orders" id="btnOrder">
+                        <a class="nav-link text-white" href="#orders" id="btnOrder" style="font-weight: bold">
                             <img src="../../CSS-FrameWork/ZenPosSystem/assets/Images/icons8-order-64.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
                             Orders</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#placeOrder" id="btnPlaceOrder">
+                        <a class="nav-link text-white" href="#placeOrder" id="btnPlaceOrder" style="font-weight: bold">
                             <img src="../../CSS-FrameWork/ZenPosSystem/assets/Images/icons8-purchase-96.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
                             Place Orders</a>
                     </li>
@@ -472,7 +472,7 @@
 
 <main class="container" id="customers">
     <section class="row p-4 m-0 object-fit-contain" id="customer" >
-        <h2 class="text-success pt-5 m-lg-2">
+        <h2 class="text-success pt-5 m-lg-2" style="font-weight: bold">
 
             <img src="../../CSS-FrameWork/ZenPosSystem/assets/Images/customer.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
             CUSTOMER</h2>
@@ -533,7 +533,7 @@
 
 <main class="container" id="item">
     <section class="row p-4 m-0 object-fit-contain" id="Items">
-        <h2 class="text-success pt-5 m-lg-2">
+        <h2 class="text-success pt-5 m-lg-2" style="font-weight: bold">
             <img src="../../CSS-FrameWork/ZenPosSystem/assets/Images/icons8-discount-64.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
             ITEMS</h2>
         <section class="col-12 col-sm-12 col-md-12 col-lg-4 border-dark m-3 border rounded-5 object-fit-contain" style="background-color: orange" >
@@ -591,7 +591,7 @@
 <!-- Oder -->
 
 <main class="container" id="orders">
-    <h2 class="text-success pt-5 m-lg-2 pb-3">
+    <h2 class="text-success pt-5 m-lg-2 pb-3" style="font-weight: bold">
 
         <img src="../../CSS-FrameWork/ZenPosSystem/assets/Images/icons8-order-64.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
 
@@ -786,12 +786,15 @@
 <script src="db/db.js"></script>
 <script src="model/Customer.js"></script>
 <script src="model/ItemsModel.js"></script>
-<script src="model/OrdersModel.js"></script>
-<script src="model/PlaceOrderModel.js"></script>
+<script src="model/Orders.js"></script>
+<script src="model/OrderDetails.js"></script>
 
 <script src="controller/validations/Customer.js"></script>
 <script src="controller/validations/Item.js"></script>
+
+<!--
 <script src="controller/validations/Order.js"></script>
+-->
 
 </body>
 </html>

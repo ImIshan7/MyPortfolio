@@ -1,7 +1,9 @@
-var customers = [];
 
-var items = [];
 
-var orders=[];
+let cartItem=[];
 
-var placeorders=[];
+let itemList=[];
+
+let customerList=[];
+
+let Order=[];

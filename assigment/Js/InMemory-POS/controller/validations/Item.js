@@ -1,3 +1,4 @@
+/*
 $("#txtItemId").keydown(function (event){
     let itemIdPattern = /^(I00-)[0-9]{1,3}$/;
 
@@ -60,3 +61,69 @@ $("#txtItemQty").keydown(function (event){
 
     }
 });
+*/
+itemDescF.keyup(function (event){
+
+
+    if (itemNameRegex.test(itemDescF.val())){
+
+        itemDescF.css('border-color', '#dee2e6');
+
+        if (event.key ==='Enter'){
+            itemPF.focus();
+        }
+
+    }else {
+        itemDescF.css('border-color', 'red');
+    }
+
+});
+
+itemPF.keyup(function (event){
+    if (itemPriceRegex.test(itemPF.val())){
+        itemPF.css('border-color', '#dee2e6');
+        if (event.key ==='Enter'){
+
+            itemQtyF.focus();
+        }
+    }else {
+        itemPF.css('border-color', 'red');
+    }
+
+});
+
+itemQtyF.keyup(function (event){
+
+    if (itemQuantityRegex.test(itemQtyF.val())){
+        itemQtyF.css('border-color', '#dee2e6');
+
+        if (event.key ==='Enter'){
+            addItem();
+        }
+    }else {
+        itemQtyF.css('border-color', 'red');
+    }
+});
+
+function validateItemFields(){
+    if (!itemNameRegex.test(itemDescF.val())){
+        itemDescF.focus();
+        itemDescF.css('border-color', 'red');
+        return false;
+    }
+    if (!itemPriceRegex.test(itemPF.val())){
+        cusAddressF.focus();
+        cusAddressF.css('border-color', 'red');
+        return false;
+    }
+    if (!itemQuantityRegex.test(itemQtyF.val())){
+        cusContactF.focus();
+        cusContactF.css('border-color', 'red');
+        return false;
+    }
+
+    cusNameF.css('border-color', '#dee2e6');
+    cusAddressF.css('border-color', '#dee2e6');
+    cusContactF.css('border-color', '#dee2e6');
+    return true;
+}
