@@ -50,3 +50,8 @@ https://www.figma.com/file/O0KO8vIDvaTSqCXQEloWPw/Zen-Pos-System?type=design&nod
 
 
  <img alt="Image1" id="education2" src="assets/GalleryImages/Zen Pos System.png">
+
+ <img alt="Image" id="education" src="assets/GalleryImages/My Portfolio Mock-up.png">
+
+
+ <img alt="Image1" id="education2" src="assets/GalleryImages/Zen Pos System.png">
