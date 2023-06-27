@@ -44,3 +44,6 @@ https://app.diagrams.net/#G1FEXc6slS4h2KrkH6JPuJP7AsLQlTtoh-
 
 * Mockup
 https://www.figma.com/file/O0KO8vIDvaTSqCXQEloWPw/Zen-Pos-System?type=design&node-id=0-1&mode=design&t=fZQy7y2oc4HpRt0m-0
+
+
+ <img alt="Image" id="education_2" src="assets/styles/img/vector/Education.png">
